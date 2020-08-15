@@ -1,0 +1,14 @@
+
+apply from: rootProject.file('version.gradle')
+
+ext{
+    MAVEN_URL = "$MAVEN_URL"
+    GROUP = "$GROUP"
+    ARTIFACT_ID = "breakpad"
+    VERSION_NAME = "$archives_breakpad_version"
+
+    DEVEOPER_ID = "123456"
+    DEVELOPER_NAME = "feifei"
+    DEVELOPER_EMAIL = "524790862@qq.com"
+
+}

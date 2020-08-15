@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_go2crash_natvie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="natviecrash"
+        android:onClick="onClick"
+        android:layout_gravity="center_horizontal" />
+    <Button
+            android:id="@+id/btn_go2crash_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="javacrash"
+            android:onClick="onClick"
+            android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_test_dynamic_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="unwind调用栈"
+        android:onClick="onClick"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_anr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANR"
+        android:onClick="onClick"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+            android:id="@+id/btn_coffee_catcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffe_catch"
+            android:onClick="onClick"
+            android:layout_gravity="center_horizontal" />
+
+    <Button
+            android:id="@+id/btn_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log"
+            android:onClick="onClick"
+            android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

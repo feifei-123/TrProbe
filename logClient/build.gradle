@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+
+
+//apply from: rootProject.file("plugin.gradle")
+
+apply from: 'p.config.gradle'
+apply from: rootProject.file('publish.gradle')
+
+android {
+    compileSdkVersion compile_SdkVersion
+    buildToolsVersion build_ToolsVersion
+    defaultConfig {
+        minSdkVersion min_sdk
+        targetSdkVersion target_sdk
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+
+//// ./gradlew upload
+//uploadArchives {
+//    configuration = configurations.archives
+//    repositories {
+//        mavenDeployer {
+//            pom.groupId = GROUP
+//            pom.artifactId = POM_ARTIFACT_ID
+//            pom.version = VERSION_NAME
+//            snapshotRepository(url: SNAPSHOT_REPOSITORY_URL) {
+////                authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
+//            }
+//            repository(url: RELEASE_REPOSITORY_URL) {
+////                authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
+//            }
+//
+//        }
+//    }
+//}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly "com.google.code.gson:gson:$gsonVersion"
+}

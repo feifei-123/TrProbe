@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sogou.tm.commonlib.logclient">
+
+    <application>
+        <receiver android:name="com.sogou.tm.commonlib.log.receiver.DateTimeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

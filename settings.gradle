@@ -1,0 +1,1 @@
+include ':app', ':blockcatcher', ':crashcatcher', ':store', ':trprobe', ":breakpad-build", ':logClient', ':logService'

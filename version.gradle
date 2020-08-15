@@ -1,0 +1,36 @@
+ext {
+
+    kotlin_version = '1.3.40'
+    room = "2.1.0"
+    log = "1.2.4"
+    support = "1.0.2"
+    constraintlayout = "1.1.3"
+    compile_SdkVersion = 28
+    min_sdk = 19
+    target_sdk = 28
+    build_ToolsVersion = "28.0.3"
+    android_gradle_plugin = "3.4.1"
+    gsonVersion = "2.8.1"
+
+
+
+    archives_probe_version = "1.0.5.4"
+
+    archives_blockcatcher_version = archives_probe_version
+    archives_crashcatcher_version = archives_probe_version
+    archives_trprobe_version = archives_probe_version
+    archives_breakpad_version = archives_probe_version
+
+    archives_logClient_version = archives_probe_version
+    archives_logService_version = archives_probe_version
+    archives_store_version = archives_probe_version
+
+    //私有maven 仓库
+    MAVEN_URL = "http://maven.timo.sogou/nexus/repository/Releases/"
+    //本地仓库 -临时调试使用
+    //MAVEN_URL = 'file:///Users/feifei/Desktop/TM/LocalMaven'
+    GROUP = "com.sogou.teemo.translate.trcomponent"
+
+
+}
+

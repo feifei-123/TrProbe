@@ -1,0 +1,5 @@
+/build
+/src/main/cpp/external/libbreakpad/src/build/
+/src/main/cpp/external/libbreakpad/src/build/
+/.externalNativeBuild/*
+/.externalNativeBuild/cmake/*

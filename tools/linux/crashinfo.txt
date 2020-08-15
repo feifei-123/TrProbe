@@ -1,0 +1,3506 @@
+Operating system: Android
+                  0.0.0 Linux 4.4.83 #2 SMP PREEMPT Sun Jan 12 10:48:20 CST 2020 aarch64
+CPU: arm64
+     4 CPUs
+
+GPU: UNKNOWN
+
+Crash reason:  SIGSEGV /SEGV_MAPERR
+Crash address: 0x0
+Process uptime: not available
+
+Thread 32 (crashed)
+ 0  libbreakpad-core.so!testCrash1() + 0x14
+     x0 = 0x0000000000000027    x1 = 0x00000078e60f5f30
+     x2 = 0x0000000000000005    x3 = 0x0000000000000003
+     x4 = 0x0000000040100401    x5 = 0xa800000040404000
+     x6 = 0x0000000000000000    x7 = 0x7f7f7f7f7f7f7f7f
+     x8 = 0x0000000000000000    x9 = 0x0000000000000001
+    x10 = 0x00000078e60f60c0   x11 = 0x0000000000000018
+    x12 = 0x000000000000000b   x13 = 0xffffffffffffffff
+    x14 = 0xff00000000000000   x15 = 0xffffffffffffffff
+    x16 = 0x00000078e82b7608   x17 = 0x00000078e823b454
+    x18 = 0x0000000000000008   x19 = 0x00000078e7e2fe00
+    x20 = 0x0000007902ae7f20   x21 = 0x00000078e7e2fe00
+    x22 = 0x00000078e60f693c   x23 = 0x00000078e8f1bc31
+    x24 = 0x0000000000000000   x25 = 0x00000078e60f7588
+    x26 = 0x00000078e7e2fea0   x27 = 0x0000000000000000
+    x28 = 0x0000000000000000    fp = 0x00000078e60f6650
+     lr = 0x00000078e823b4c8    sp = 0x00000078e60f6620
+     pc = 0x00000078e823b468
+    Found by: given as instruction pointer in context
+ 1  libbreakpad-core.so!testCoffeCacher() + 0x4c
+    x19 = 0x00000078e7e2fe00   x20 = 0x0000007902ae7f20
+    x21 = 0x00000078e7e2fe00   x22 = 0x00000078e60f693c
+    x23 = 0x00000078e8f1bc31   x24 = 0x0000000000000000
+    x25 = 0x00000078e60f7588   x26 = 0x00000078e7e2fea0
+    x27 = 0x0000000000000000   x28 = 0x0000000000000000
+     fp = 0x00000078e60f6650    sp = 0x00000078e60f6630
+     pc = 0x00000078e823b4c8
+    Found by: call frame info
+ 2  libbreakpad-core.so!call_dangerous_function() + 0x14
+    x19 = 0x00000078e7e2fe00   x20 = 0x0000007902ae7f20
+    x21 = 0x00000078e7e2fe00   x22 = 0x00000078e60f693c
+    x23 = 0x00000078e8f1bc31   x24 = 0x0000000000000000
+    x25 = 0x00000078e60f7588   x26 = 0x00000078e7e2fea0
+    x27 = 0x0000000000000000   x28 = 0x0000000000000000
+     fp = 0x00000078e60f6670    sp = 0x00000078e60f6660
+     pc = 0x00000078e823b508
+    Found by: call frame info
+ 3  libbreakpad-core.so!Java_com_sogou_translate_jni_BreakPadCore_go2crash + 0x14
+    x19 = 0x00000078e7e2fe00   x20 = 0x0000007902ae7f20
+    x21 = 0x00000078e7e2fe00   x22 = 0x00000078e60f693c
+    x23 = 0x00000078e8f1bc31   x24 = 0x0000000000000000
+    x25 = 0x00000078e60f7588   x26 = 0x00000078e7e2fea0
+    x27 = 0x0000000000000000   x28 = 0x0000000000000000
+     fp = 0x00000078e60f6690    sp = 0x00000078e60f6680
+     pc = 0x00000078e823b534
+    Found by: call frame info
+ 4  base.odex + 0x111c0
+    x19 = 0x00000078e7e2fe00   x20 = 0x0000007902ae7f20
+    x21 = 0x00000078e7e2fe00   x22 = 0x00000078e60f693c
+    x23 = 0x00000078e8f1bc31   x24 = 0x0000000000000000
+    x25 = 0x00000078e60f7588   x26 = 0x00000078e7e2fea0
+    x27 = 0x0000000000000000   x28 = 0x0000000000000000
+     fp = 0x00000078e60f6768    sp = 0x00000078e60f66a0
+     pc = 0x00000078e8e261c4
+    Found by: call frame info
+
+Thread 0
+ 0  libc.so + 0x69ec0
+     x0 = 0xfffffffffffffffc    x1 = 0x0000007fc3defb48
+     x2 = 0x0000000000000010    x3 = 0x0000000000001a23
+     x4 = 0x0000000000000000    x5 = 0x0000000000000008
+     x6 = 0x000000006fc3d788    x7 = 0x0000000000000000
+     x8 = 0x0000000000000016    x9 = 0xe00246b53f7f017c
+    x10 = 0x00000000000001f0   x11 = 0x0000000000000003
+    x12 = 0x0000007902c0d888   x13 = 0x0000007902ae8cc0
+    x14 = 0x0000007902ae8d20   x15 = 0x0000000000000000
+    x16 = 0x0000007986da6498   x17 = 0x0000007986cfa700
+    x18 = 0x0000007fc3df0304   x19 = 0x0000007987a46a40
+    x20 = 0x0000007902ccc0a8   x21 = 0x0000000000001a23
+    x22 = 0x0000007987a46a40   x23 = 0x0000007902ccc000
+    x24 = 0x0000000000000028   x25 = 0x000000000000000c
+    x26 = 0x0000007902cbeaa0   x27 = 0x0000000000000004
+    x28 = 0x0000000000000000    fp = 0x0000007fc3defaf0
+     lr = 0x0000007986cfa738    sp = 0x0000007fc3defad0
+     pc = 0x0000007986d44ec0
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x1f734
+     fp = 0x0000007fc3defca0    lr = 0x0000007983b1bdd0
+     sp = 0x0000007fc3defb00    pc = 0x0000007986cfa738
+    Found by: previous frame's frame pointer
+ 2  libutils.so + 0x15dcc
+     fp = 0x0000007fc3defcf0    lr = 0x0000007983b1bcb8
+     sp = 0x0000007fc3defcb0    pc = 0x0000007983b1bdd0
+    Found by: previous frame's frame pointer
+ 3  libutils.so + 0x15cb4
+     fp = 0x0000007fc3defd10    lr = 0x00000079858f4760
+     sp = 0x0000007fc3defd00    pc = 0x0000007983b1bcb8
+    Found by: previous frame's frame pointer
+ 4  libandroid_runtime.so + 0x10f75c
+     fp = 0x0000007fc3defdf8    lr = 0x000000007119e970
+     sp = 0x0000007fc3defd20    pc = 0x00000079858f4760
+    Found by: previous frame's frame pointer
+ 5  system@framework@boot.oat + 0x15d796c
+     fp = 0x0000007fc3defef0    lr = 0x000000790267cf78
+     sp = 0x0000007fc3defe08    pc = 0x000000007119e970
+    Found by: previous frame's frame pointer
+ 6  libart.so + 0xdcf74
+     fp = 0x0000007fc3deff80    lr = 0x000000790283b24c
+     sp = 0x0000007fc3deff00    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+ 7  libart.so + 0x29b248
+     fp = 0x0000007fc3df0090    lr = 0x0000007902835834
+     sp = 0x0000007fc3deff90    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+ 8  libart.so + 0x295830
+     fp = 0x0000007fc3df0120    lr = 0x0000007902ad1f8c
+     sp = 0x0000007fc3df00a0    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+ 9  libart.so + 0x531f88
+     fp = 0x0000007fc3df0170    lr = 0x0000007902adab98
+     sp = 0x0000007fc3df0130    pc = 0x0000007902ad1f8c
+    Found by: previous frame's frame pointer
+10  libart.so + 0x53ab94
+     fp = 0x0000007fc3df0200    lr = 0x0000007902815c98
+     sp = 0x0000007fc3df0180    pc = 0x0000007902adab98
+    Found by: previous frame's frame pointer
+11  libart.so + 0x275c94
+     fp = 0x0000007fc3df0280    lr = 0x000000790281b8a0
+     sp = 0x0000007fc3df0210    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+12  libart.so + 0x27b89c
+     fp = 0x0000007fc3df0410    lr = 0x0000007902835814
+     sp = 0x0000007fc3df0290    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+13  libart.so + 0x295810
+     fp = 0x0000007fc3df04a0    lr = 0x0000007902ad0d2c
+     sp = 0x0000007fc3df0420    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+14  libart.so + 0x530d28
+     fp = 0x0000007fc3df04f0    lr = 0x0000007902adaa98
+     sp = 0x0000007fc3df04b0    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+15  libart.so + 0x53aa94
+     fp = 0x0000007fc3df0580    lr = 0x0000007902815c98
+     sp = 0x0000007fc3df0500    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+16  libart.so + 0x275c94
+     fp = 0x0000007fc3df0600    lr = 0x000000790281b8a0
+     sp = 0x0000007fc3df0590    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+17  libart.so + 0x27b89c
+     fp = 0x0000007fc3df07c0    lr = 0x0000007902835814
+     sp = 0x0000007fc3df0610    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+18  libart.so + 0x295810
+     fp = 0x0000007fc3df0830    lr = 0x0000007902ad2174
+     sp = 0x0000007fc3df07d0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+19  libart.so + 0x532170
+     fp = 0x0000007fc3df0880    lr = 0x0000007902adac18
+     sp = 0x0000007fc3df0840    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+20  libart.so + 0x53ac14
+     fp = 0x0000007fc3df0910    lr = 0x0000007902815c98
+     sp = 0x0000007fc3df0890    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+21  libart.so + 0x275c94
+     fp = 0x0000007fc3df0ab0    lr = 0x0000007902ac38ec
+     sp = 0x0000007fc3df0920    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+22  libart.so + 0x5238e8
+     fp = 0x0000007fc3df0bb8    lr = 0x0000007902af1f10
+     sp = 0x0000007fc3df0ac0    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+23  libart.so + 0x551f0c
+     fp = 0x0000007fc3df0cb0    lr = 0x000000790267cfb4
+     sp = 0x0000007fc3df0bc8    pc = 0x0000007902af1f10
+    Found by: previous frame's frame pointer
+24  libart.so + 0xdcfb0
+     fp = 0x0000007fc3df0dc0    lr = 0x0000007902a0d5e8
+     sp = 0x0000007fc3df0cc0    pc = 0x000000790267cfb4
+    Found by: previous frame's frame pointer
+25  libart.so + 0x46d5e4
+     fp = 0x0000007fc3df0f30    lr = 0x0000007902a0f17c
+     sp = 0x0000007fc3df0dd0    pc = 0x0000007902a0d5e8
+    Found by: previous frame's frame pointer
+26  libart.so + 0x46f178
+     fp = 0x0000007fc3df0f70    lr = 0x000000790299261c
+     sp = 0x0000007fc3df0f40    pc = 0x0000007902a0f17c
+    Found by: previous frame's frame pointer
+27  libart.so + 0x3f2618
+     fp = 0x0000007fc3df1068    lr = 0x0000000070654f38
+     sp = 0x0000007fc3df0f80    pc = 0x000000790299261c
+    Found by: previous frame's frame pointer
+28  system@framework@boot.oat + 0xa8df34
+     fp = 0x0000007fc3df1160    lr = 0x000000790267cf78
+     sp = 0x0000007fc3df1078    pc = 0x0000000070654f38
+    Found by: previous frame's frame pointer
+29  libart.so + 0xdcf74
+     fp = 0x0000007fc3df11f0    lr = 0x000000790283b24c
+     sp = 0x0000007fc3df1170    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+30  libart.so + 0x29b248
+     fp = 0x0000007fc3df1300    lr = 0x0000007902835834
+     sp = 0x0000007fc3df1200    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+31  libart.so + 0x295830
+     fp = 0x0000007fc3df1390    lr = 0x0000007902ad0d2c
+     sp = 0x0000007fc3df1310    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+32  libart.so + 0x530d28
+     fp = 0x0000007fc3df13e0    lr = 0x0000007902adaa98
+     sp = 0x0000007fc3df13a0    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+33  libart.so + 0x53aa94
+     fp = 0x0000007fc3df1470    lr = 0x0000007902815c98
+     sp = 0x0000007fc3df13f0    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+34  libart.so + 0x275c94
+     fp = 0x0000007fc3df1600    lr = 0x0000007902ac38ec
+     sp = 0x0000007fc3df1480    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+35  libart.so + 0x5238e8
+     fp = 0x000000007241e7f8    lr = 0x0000007902af1f10
+     sp = 0x0000007fc3df1610    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+36  system@framework@boot.art + 0x9048ec
+     sp = 0x0000007fc3df1618    pc = 0x000000006fa908f0
+    Found by: stack scanning
+37  system@framework@boot.oat + 0x243b1f4
+     sp = 0x0000007fc3df1620    pc = 0x00000000720021f8
+    Found by: stack scanning
+38  dalvik-main space (region space) (deleted) + 0x47eac
+     sp = 0x0000007fc3df1668    pc = 0x0000000012c47eb0
+    Found by: stack scanning
+39  dalvik-main space (region space) (deleted) + 0x457d4
+     sp = 0x0000007fc3df1670    pc = 0x0000000012c457d8
+    Found by: stack scanning
+40  system@framework@boot.oat + 0xb936c
+     sp = 0x0000007fc3df1688    pc = 0x000000006fc80370
+    Found by: stack scanning
+41  system@framework@boot.oat + 0xb9370
+     sp = 0x0000007fc3df1690    pc = 0x000000006fc80374
+    Found by: stack scanning
+42  system@framework@boot.art + 0x357994
+     sp = 0x0000007fc3df16a8    pc = 0x000000006f4e3998
+    Found by: stack scanning
+43  dalvik-main space (region space) (deleted) + 0xa865e4
+     sp = 0x0000007fc3df16b0    pc = 0x00000000136865e8
+    Found by: stack scanning
+44  system@framework@boot.art + 0x39d344
+     sp = 0x0000007fc3df16b8    pc = 0x000000006f529348
+    Found by: stack scanning
+45  dalvik-zygote space (deleted) + 0x8f4
+     sp = 0x0000007fc3df16c0    pc = 0x000000007241e8f8
+    Found by: stack scanning
+46  dalvik-zygote space (deleted) + 0x3c4
+     sp = 0x0000007fc3df16d0    pc = 0x000000007241e3c8
+    Found by: stack scanning
+47  dalvik-main space (region space) (deleted) + 0x37f2d4
+     sp = 0x0000007fc3df16e0    pc = 0x0000000012f7f2d8
+    Found by: stack scanning
+48  dalvik-zygote space (deleted) + 0x7f4
+     sp = 0x0000007fc3df16e8    pc = 0x000000007241e7f8
+    Found by: stack scanning
+49  system@framework@boot.oat + 0x243fb64
+     sp = 0x0000007fc3df16f0    pc = 0x0000000072006b68
+    Found by: stack scanning
+50  system@framework@boot.art + 0x7fae5c
+     sp = 0x0000007fc3df16f8    pc = 0x000000006f986e60
+    Found by: stack scanning
+51  system@framework@boot.vdex + 0x1c22777
+     sp = 0x0000007fc3df1768    pc = 0x0000007901d4777b
+    Found by: stack scanning
+52  libart.so + 0x54904c
+     sp = 0x0000007fc3df17a0    pc = 0x0000007902ae9050
+    Found by: stack scanning
+53  libart.so + 0xdcfb0
+     sp = 0x0000007fc3df17c8    pc = 0x000000790267cfb4
+    Found by: stack scanning
+54  system@framework@boot.vdex + 0x1c22777
+     sp = 0x0000007fc3df17d8    pc = 0x0000007901d4777b
+    Found by: stack scanning
+55  system@framework@boot.art + 0x7fae5c
+     sp = 0x0000007fc3df17f0    pc = 0x000000006f986e60
+    Found by: stack scanning
+56  system@framework@boot.vdex + 0x1c22777
+     sp = 0x0000007fc3df1808    pc = 0x0000007901d4777b
+    Found by: stack scanning
+57  system@framework@boot.art + 0x28124
+     sp = 0x0000007fc3df1840    pc = 0x000000006f1b4128
+    Found by: stack scanning
+58  libart.so + 0x131f4c
+     sp = 0x0000007fc3df1850    pc = 0x00000079026d1f50
+    Found by: stack scanning
+59  system@framework@boot.vdex + 0x1c22777
+     sp = 0x0000007fc3df1888    pc = 0x0000007901d4777b
+    Found by: stack scanning
+60  system@framework@boot.art + 0x7fae5c
+     sp = 0x0000007fc3df18a0    pc = 0x000000006f986e60
+    Found by: stack scanning
+61  libart.so + 0x46d5e4
+     sp = 0x0000007fc3df18c0    pc = 0x0000007902a0d5e8
+    Found by: stack scanning
+62  system@framework@boot.vdex + 0x1eb9d4c
+     sp = 0x0000007fc3df18d0    pc = 0x0000007901fded50
+    Found by: stack scanning
+63  libart.so + 0x4a042c
+     sp = 0x0000007fc3df1920    pc = 0x0000007902a40430
+    Found by: stack scanning
+64  libart.so + 0x5b3284
+     sp = 0x0000007fc3df1958    pc = 0x0000007902b53288
+    Found by: stack scanning
+65  system@framework@boot.vdex + 0x1c22777
+     sp = 0x0000007fc3df1998    pc = 0x0000007901d4777b
+    Found by: stack scanning
+66  system@framework@boot.art + 0x7fae5c
+     sp = 0x0000007fc3df19b0    pc = 0x000000006f986e60
+    Found by: stack scanning
+67  libart.so + 0x46d210
+     sp = 0x0000007fc3df19d0    pc = 0x0000007902a0d214
+    Found by: stack scanning
+68  system@framework@boot.vdex + 0x1c22777
+     sp = 0x0000007fc3df1a00    pc = 0x0000007901d4777b
+    Found by: stack scanning
+69  libart.so + 0x12c768
+     sp = 0x0000007fc3df1a40    pc = 0x00000079026cc76c
+    Found by: stack scanning
+70  libart.so + 0x198b6c
+     sp = 0x0000007fc3df1a50    pc = 0x0000007902738b70
+    Found by: stack scanning
+71  libart.so + 0x56e687
+     sp = 0x0000007fc3df1a70    pc = 0x0000007902b0e68b
+    Found by: stack scanning
+72  libart.so + 0x56e67f
+     sp = 0x0000007fc3df1a78    pc = 0x0000007902b0e683
+    Found by: stack scanning
+73  libart.so + 0x56e64e
+     sp = 0x0000007fc3df1a80    pc = 0x0000007902b0e652
+    Found by: stack scanning
+74  libart.so + 0x56e635
+     sp = 0x0000007fc3df1a88    pc = 0x0000007902b0e639
+    Found by: stack scanning
+75  system@framework@boot.art + 0x7fae5c
+     sp = 0x0000007fc3df1aa0    pc = 0x000000006f986e60
+    Found by: stack scanning
+76  libart.so + 0x3743dc
+     sp = 0x0000007fc3df1ab0    pc = 0x00000079029143e0
+    Found by: stack scanning
+77  libart.so + 0x56e5fc
+     sp = 0x0000007fc3df1b28    pc = 0x0000007902b0e600
+    Found by: stack scanning
+78  libandroid_runtime.so + 0xa73d8
+     sp = 0x0000007fc3df1b90    pc = 0x000000798588c3dc
+    Found by: stack scanning
+79  dalvik-main space (region space) (deleted) + 0x28b4696a
+     sp = 0x0000007fc3df1bb8    pc = 0x000000003b74696e
+    Found by: stack scanning
+80  app_process64 + 0x394d
+     sp = 0x0000007fc3df1cb0    pc = 0x0000005c5965d951
+    Found by: stack scanning
+81  libandroid_runtime.so + 0xa9b48
+     sp = 0x0000007fc3df1cc0    pc = 0x000000798588eb4c
+    Found by: stack scanning
+82  libart.so + 0xe4098
+     sp = 0x0000007fc3df1cd8    pc = 0x000000790268409c
+    Found by: stack scanning
+83  libart.so + 0x302f18
+     sp = 0x0000007fc3df1ce0    pc = 0x00000079028a2f1c
+    Found by: stack scanning
+84  libart.so + 0x30338c
+     sp = 0x0000007fc3df1ce8    pc = 0x00000079028a3390
+    Found by: stack scanning
+85  libutils.so + 0x132bc
+     sp = 0x0000007fc3df1d40    pc = 0x0000007983b192c0
+    Found by: stack scanning
+86  app_process64 + 0x2440
+     sp = 0x0000007fc3df1db0    pc = 0x0000005c5965c444
+    Found by: stack scanning
+87  linker64 + 0x1cd2c
+     sp = 0x0000007fc3df1ed0    pc = 0x00000079878fad30
+    Found by: stack scanning
+88  linker64 + 0x1ba90
+     sp = 0x0000007fc3df1ed8    pc = 0x00000079878f9a94
+    Found by: stack scanning
+89  hyph-eu.hyb + 0x20c
+     sp = 0x0000007fc3df1ef8    pc = 0x0000007987227210
+    Found by: stack scanning
+90  dalvik-main space (region space) (deleted) + 0x2cbffffc
+     sp = 0x0000007fc3df1f08    pc = 0x000000003f800000
+    Found by: stack scanning
+
+Thread 1
+ 0  libc.so + 0x1d7ec
+     x0 = 0x0000007902c424f0    x1 = 0x0000000000000000
+     x2 = 0x000000000000001c    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x00000000002ff64c
+     x8 = 0x0000000000000062    x9 = 0xe00246b53f7f017c
+    x10 = 0x0000000000000000   x11 = 0x0000000000000001
+    x12 = 0x0000000000000001   x13 = 0x0000000000000002
+    x14 = 0x00000000000020a4   x15 = 0x00008fe7649bcfc6
+    x16 = 0x0000007902bcc5f8   x17 = 0x0000007986cf87d0
+    x18 = 0x0000000000000000   x19 = 0x0000007902c424e0
+    x20 = 0x00000078fa611000   x21 = 0x000000000000001c
+    x22 = 0x0000007902c424f0   x23 = 0x0000007902c424e0
+    x24 = 0x0000007902a53880   x25 = 0x00000078fa5ff588
+    x26 = 0x0000000000000001   x27 = 0x0000000000000001
+    x28 = 0x0000007902c42489    fp = 0x00000078fa5ff3e0
+     lr = 0x0000007902687020    sp = 0x00000078fa5ff380
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libart.so + 0xe701c
+     fp = 0x00000078fa5ff420    lr = 0x0000007902a5474c
+     sp = 0x00000078fa5ff3f0    pc = 0x0000007902687020
+    Found by: previous frame's frame pointer
+ 2  libart.so + 0x4b4748
+     fp = 0x00000078fa5ff450    lr = 0x0000007902a53e44
+     sp = 0x00000078fa5ff430    pc = 0x0000007902a5474c
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0x4b3e40
+     fp = 0x00000078fa5ff490    lr = 0x0000007902a53918
+     sp = 0x00000078fa5ff460    pc = 0x0000007902a53e44
+    Found by: previous frame's frame pointer
+ 4  libart.so + 0x4b3914
+     fp = 0x00000078fa5ff4b0    lr = 0x0000007986d42928
+     sp = 0x00000078fa5ff4a0    pc = 0x0000007902a53918
+    Found by: previous frame's frame pointer
+ 5  libc.so + 0x67924
+     fp = 0x00000078fa5ff4e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078fa5ff4c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+ 6  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078fa5ff4f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 2
+ 0  libc.so + 0x6a0a0
+     x0 = 0xfffffffffffffffc    x1 = 0x0000000000000000
+     x2 = 0x0000000000000000    x3 = 0x0000000000000008
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x7f7f7f7f7f7f7f7f
+     x8 = 0x0000000000000089    x9 = 0xe00246b53f7f017c
+    x10 = 0x0000000000000000   x11 = 0x0000000000000001
+    x12 = 0x0000000000000004   x13 = 0x0000000000000001
+    x14 = 0x0000000000000004   x15 = 0x0000000000000000
+    x16 = 0x0000007902bccc80   x17 = 0x0000007986d03690
+    x18 = 0x0000000013280000   x19 = 0x00000078fa4fe354
+    x20 = 0x00000078fa4fe430   x21 = 0x00000078fa4fe588
+    x22 = 0x0000007902ca4cc0   x23 = 0x00000078fa4fe588
+    x24 = 0x0000007902a2832c   x25 = 0x00000078fa402000
+    x26 = 0x00000078fa4fe588   x27 = 0x00000078fa4fe588
+    x28 = 0x0000007902bd1c78    fp = 0x00000078fa4fe330
+     lr = 0x0000007986d036d0    sp = 0x00000078fa4fe300
+     pc = 0x0000007986d450a0
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x286cc
+     fp = 0x00000078fa4fe380    lr = 0x0000007902a2a0fc
+     sp = 0x00000078fa4fe340    pc = 0x0000007986d036d0
+    Found by: previous frame's frame pointer
+ 2  libart.so + 0x48a0f8
+     fp = 0x00000078fa4fe410    lr = 0x0000007902a29c10
+     sp = 0x00000078fa4fe390    pc = 0x0000007902a2a0fc
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0x489c0c
+     fp = 0x00000078fa4fe490    lr = 0x0000007902a2843c
+     sp = 0x00000078fa4fe420    pc = 0x0000007902a29c10
+    Found by: previous frame's frame pointer
+ 4  libart.so + 0x488438
+     fp = 0x00000078fa4fe4b0    lr = 0x0000007986d42928
+     sp = 0x00000078fa4fe4a0    pc = 0x0000007902a2843c
+    Found by: previous frame's frame pointer
+ 5  libc.so + 0x67924
+     fp = 0x00000078fa4fe4e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078fa4fe4c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+ 6  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078fa4fe4f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 3
+ 0  libc.so + 0x69ff4
+     x0 = 0x000000000000001f    x1 = 0x00000078e9cb42e8
+     x2 = 0x0000000000000000    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x00000078e9cb39e0
+     x8 = 0x0000000000000048    x9 = 0x0000000000000000
+    x10 = 0x0000000020000100   x11 = 0x0000000000000001
+    x12 = 0x0000000000000001   x13 = 0x0000000000000001
+    x14 = 0x0000000000000004   x15 = 0x0000000000000000
+    x16 = 0x0000007902bcca48   x17 = 0x0000007986d017a4
+    x18 = 0x00000078e9cb1a7c   x19 = 0x0000000000000000
+    x20 = 0x0000000000000000   x21 = 0x0000000000000000
+    x22 = 0x00000078e9cb42e8   x23 = 0x000000000000001f
+    x24 = 0x00000078e9cb4588   x25 = 0x000000000000001e
+    x26 = 0x00000078e9cb4588   x27 = 0x00000078fa617400
+    x28 = 0x0000000000002068    fp = 0x00000078e9cb42d0
+     lr = 0x0000007986d01838    sp = 0x00000078e9cb4280
+     pc = 0x0000007986d44ff4
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x26834
+     fp = 0x00000078e9cb43c0    lr = 0x0000007902af66b4
+     sp = 0x00000078e9cb42e0    pc = 0x0000007986d01838
+    Found by: previous frame's frame pointer
+ 2  libart.so + 0x5566b0
+     fp = 0x00000078e9cb4460    lr = 0x00000079028b28c8
+     sp = 0x00000078e9cb43d0    pc = 0x0000007902af66b4
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0x3128c4
+     fp = 0x00000078e9cb4490    lr = 0x00000079028b1fb0
+     sp = 0x00000078e9cb4470    pc = 0x00000079028b28c8
+    Found by: previous frame's frame pointer
+ 4  libart.so + 0x311fac
+     fp = 0x00000078e9cb44b0    lr = 0x0000007986d42928
+     sp = 0x00000078e9cb44a0    pc = 0x00000079028b1fb0
+    Found by: previous frame's frame pointer
+ 5  libc.so + 0x67924
+     fp = 0x00000078e9cb44e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e9cb44c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+ 6  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e9cb44f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 4
+ 0  libc.so + 0x1d7ec
+     x0 = 0x0000007902ccb9d0    x1 = 0x0000000000000000
+     x2 = 0x0000000000000001    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x7f7f7f7f7f7f7f7f
+     x8 = 0x0000000000000062    x9 = 0xe00246b53f7f017c
+    x10 = 0x0000000000000000   x11 = 0x0000007902ae8c30
+    x12 = 0x0000007902ae8c78   x13 = 0x0000007902ae8cc0
+    x14 = 0x0000007902ae8d20   x15 = 0x0000000000000000
+    x16 = 0x0000007902bcc5f8   x17 = 0x0000007986cf87d0
+    x18 = 0x0000007902af0270   x19 = 0x0000007902ccb9c0
+    x20 = 0x0000007902cc6200   x21 = 0x0000000000000001
+    x22 = 0x0000007902ccb9d0   x23 = 0x0000000000000000
+    x24 = 0x0000007902d83700   x25 = 0x00000078e9bb7588
+    x26 = 0x0000000000000001   x27 = 0x00000078e9bb7588
+    x28 = 0x0000007902c1d070    fp = 0x00000078e9bb6250
+     lr = 0x0000007902687020    sp = 0x00000078e9bb61f0
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libart.so + 0xe701c
+     fp = 0x00000078e9bb62f0    lr = 0x00000079029663e4
+     sp = 0x00000078e9bb6260    pc = 0x0000007902687020
+    Found by: previous frame's frame pointer
+ 2  libart.so + 0x3c63e0
+     fp = 0x00000078e9bb6360    lr = 0x0000007902967e54
+     sp = 0x00000078e9bb6300    pc = 0x00000079029663e4
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0x3c7e50
+     fp = 0x00000078e9bb6448    lr = 0x00000000705ce710
+     sp = 0x00000078e9bb6370    pc = 0x0000007902967e54
+    Found by: previous frame's frame pointer
+ 4  system@framework@boot.oat + 0xa0770c
+     fp = 0x00000078e9bb6540    lr = 0x000000790267cf78
+     sp = 0x00000078e9bb6458    pc = 0x00000000705ce710
+    Found by: previous frame's frame pointer
+ 5  libart.so + 0xdcf74
+     fp = 0x00000078e9bb65d0    lr = 0x000000790283b24c
+     sp = 0x00000078e9bb6550    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+ 6  libart.so + 0x29b248
+     fp = 0x00000078e9bb66d0    lr = 0x0000007902835834
+     sp = 0x00000078e9bb65e0    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+ 7  libart.so + 0x295830
+     fp = 0x00000078e9bb6760    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e9bb66e0    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+ 8  libart.so + 0x530d28
+     fp = 0x00000078e9bb67b0    lr = 0x0000007902adaa98
+     sp = 0x00000078e9bb6770    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+ 9  libart.so + 0x53aa94
+     fp = 0x00000078e9bb6840    lr = 0x0000007902815c98
+     sp = 0x00000078e9bb67c0    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+10  libart.so + 0x275c94
+     fp = 0x00000078e9bb68c0    lr = 0x000000790281b8a0
+     sp = 0x00000078e9bb6850    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+11  libart.so + 0x27b89c
+     fp = 0x00000078e9bb69e0    lr = 0x0000007902835814
+     sp = 0x00000078e9bb68d0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+12  libart.so + 0x295810
+     fp = 0x00000078e9bb6a70    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e9bb69f0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+13  libart.so + 0x530d28
+     fp = 0x00000078e9bb6ac0    lr = 0x0000007902adaa98
+     sp = 0x00000078e9bb6a80    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+14  libart.so + 0x53aa94
+     fp = 0x00000078e9bb6b50    lr = 0x0000007902815c98
+     sp = 0x00000078e9bb6ad0    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+15  libart.so + 0x275c94
+     fp = 0x00000078e9bb6bd0    lr = 0x000000790281b8a0
+     sp = 0x00000078e9bb6b60    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+16  libart.so + 0x27b89c
+     fp = 0x00000078e9bb6cd0    lr = 0x0000007902835814
+     sp = 0x00000078e9bb6be0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+17  libart.so + 0x295810
+     fp = 0x00000078e9bb6da0    lr = 0x0000007902ad1ce8
+     sp = 0x00000078e9bb6ce0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+18  libart.so + 0x531ce4
+     fp = 0x00000078e9bb6df0    lr = 0x0000007902adac98
+     sp = 0x00000078e9bb6db0    pc = 0x0000007902ad1ce8
+    Found by: previous frame's frame pointer
+19  libart.so + 0x53ac94
+     fp = 0x00000078e9bb6e80    lr = 0x0000007902815c98
+     sp = 0x00000078e9bb6e00    pc = 0x0000007902adac98
+    Found by: previous frame's frame pointer
+20  libart.so + 0x275c94
+     fp = 0x00000078e9bb6fe0    lr = 0x0000007902ac38ec
+     sp = 0x00000078e9bb6e90    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+21  libart.so + 0x5238e8
+     fp = 0x00000078e9bb70e8    lr = 0x0000007902af1f10
+     sp = 0x00000078e9bb6ff0    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+22  libart.so + 0x551f0c
+     fp = 0x00000078e9bb71e0    lr = 0x000000790267cf78
+     sp = 0x00000078e9bb70f8    pc = 0x0000007902af1f10
+    Found by: previous frame's frame pointer
+23  libart.so + 0xdcf74
+     fp = 0x00000078e9bb72f0    lr = 0x0000007902a0d5e8
+     sp = 0x00000078e9bb71f0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+24  libart.so + 0x46d5e4
+     fp = 0x00000078e9bb73c0    lr = 0x0000007902a0e814
+     sp = 0x00000078e9bb7300    pc = 0x0000007902a0d5e8
+    Found by: previous frame's frame pointer
+25  libart.so + 0x46e810
+     fp = 0x00000078e9bb7490    lr = 0x0000007902a35154
+     sp = 0x00000078e9bb73d0    pc = 0x0000007902a0e814
+    Found by: previous frame's frame pointer
+26  libart.so + 0x495150
+     fp = 0x00000078e9bb74b0    lr = 0x0000007986d42928
+     sp = 0x00000078e9bb74a0    pc = 0x0000007902a35154
+    Found by: previous frame's frame pointer
+27  libc.so + 0x67924
+     fp = 0x00000078e9bb74e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e9bb74c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+28  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e9bb74f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 5
+ 0  libc.so + 0x1d7ec
+     x0 = 0x0000007902c26cb0    x1 = 0x0000000000000000
+     x2 = 0x0000000000000001    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x0000000000000000
+     x8 = 0x0000000000000062    x9 = 0xe00246b53f7f017c
+    x10 = 0x0000000000000000   x11 = 0x0000007902ae8c30
+    x12 = 0x0000007902ae8c78   x13 = 0x0000007902ae8cc0
+    x14 = 0x0000007902ae8d20   x15 = 0x0000000000000000
+    x16 = 0x0000007902bcc5f8   x17 = 0x0000007986cf87d0
+    x18 = 0x0000007902af0270   x19 = 0x0000007902c26ca0
+    x20 = 0x0000007902cc6c00   x21 = 0x0000000000000001
+    x22 = 0x0000007902c26cb0   x23 = 0x0000000000000000
+    x24 = 0x0000007902d83f40   x25 = 0x00000078e9ab2588
+    x26 = 0x0000000000000001   x27 = 0x00000078e9ab2588
+    x28 = 0x0000007902c1d1a0    fp = 0x00000078e9ab08e0
+     lr = 0x0000007902687020    sp = 0x00000078e9ab0880
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libart.so + 0xe701c
+     fp = 0x00000078e9ab0980    lr = 0x00000079029663e4
+     sp = 0x00000078e9ab08f0    pc = 0x0000007902687020
+    Found by: previous frame's frame pointer
+ 2  libart.so + 0x3c63e0
+     fp = 0x00000078e9ab09f0    lr = 0x0000007902967e54
+     sp = 0x00000078e9ab0990    pc = 0x00000079029663e4
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0x3c7e50
+     fp = 0x00000078e9ab0ad8    lr = 0x00000000705ceaf0
+     sp = 0x00000078e9ab0a00    pc = 0x0000007902967e54
+    Found by: previous frame's frame pointer
+ 4  system@framework@boot.oat + 0xa07aec
+     fp = 0x00000078e9ab0bd0    lr = 0x000000790267cf78
+     sp = 0x00000078e9ab0ae8    pc = 0x00000000705ceaf0
+    Found by: previous frame's frame pointer
+ 5  libart.so + 0xdcf74
+     fp = 0x00000078e9ab0c60    lr = 0x000000790283b24c
+     sp = 0x00000078e9ab0be0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+ 6  libart.so + 0x29b248
+     fp = 0x00000078e9ab0d70    lr = 0x0000007902835834
+     sp = 0x00000078e9ab0c70    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+ 7  libart.so + 0x295830
+     fp = 0x00000078e9ab0e00    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e9ab0d80    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+ 8  libart.so + 0x530d28
+     fp = 0x00000078e9ab0e50    lr = 0x0000007902adaa98
+     sp = 0x00000078e9ab0e10    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+ 9  libart.so + 0x53aa94
+     fp = 0x00000078e9ab0ee0    lr = 0x0000007902815c98
+     sp = 0x00000078e9ab0e60    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+10  libart.so + 0x275c94
+     fp = 0x00000078e9ab0f60    lr = 0x000000790281b8a0
+     sp = 0x00000078e9ab0ef0    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+11  libart.so + 0x27b89c
+     fp = 0x00000078e9ab1070    lr = 0x0000007902835814
+     sp = 0x00000078e9ab0f70    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+12  libart.so + 0x295810
+     fp = 0x00000078e9ab1100    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e9ab1080    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+13  libart.so + 0x530d28
+     fp = 0x00000078e9ab1150    lr = 0x0000007902adaa98
+     sp = 0x00000078e9ab1110    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+14  libart.so + 0x53aa94
+     fp = 0x00000078e9ab11e0    lr = 0x0000007902815c98
+     sp = 0x00000078e9ab1160    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+15  libart.so + 0x275c94
+     fp = 0x00000078e9ab1260    lr = 0x000000790281b8a0
+     sp = 0x00000078e9ab11f0    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+16  libart.so + 0x27b89c
+     fp = 0x00000078e9ab13d0    lr = 0x0000007902835814
+     sp = 0x00000078e9ab1270    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+17  libart.so + 0x295810
+     fp = 0x00000078e9ab1460    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e9ab13e0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+18  libart.so + 0x530d28
+     fp = 0x00000078e9ab14b0    lr = 0x0000007902adaa98
+     sp = 0x00000078e9ab1470    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+19  libart.so + 0x53aa94
+     fp = 0x00000078e9ab1540    lr = 0x0000007902815c98
+     sp = 0x00000078e9ab14c0    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+20  libart.so + 0x275c94
+     fp = 0x00000078e9ab15c0    lr = 0x000000790281b8a0
+     sp = 0x00000078e9ab1550    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+21  libart.so + 0x27b89c
+     fp = 0x00000078e9ab16d0    lr = 0x0000007902835814
+     sp = 0x00000078e9ab15d0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+22  libart.so + 0x295810
+     fp = 0x00000078e9ab1760    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e9ab16e0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+23  libart.so + 0x530d28
+     fp = 0x00000078e9ab17b0    lr = 0x0000007902adaa98
+     sp = 0x00000078e9ab1770    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+24  libart.so + 0x53aa94
+     fp = 0x00000078e9ab1840    lr = 0x0000007902815c98
+     sp = 0x00000078e9ab17c0    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+25  libart.so + 0x275c94
+     fp = 0x00000078e9ab18c0    lr = 0x000000790281b8a0
+     sp = 0x00000078e9ab1850    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+26  libart.so + 0x27b89c
+     fp = 0x00000078e9ab19e0    lr = 0x0000007902835814
+     sp = 0x00000078e9ab18d0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+27  libart.so + 0x295810
+     fp = 0x00000078e9ab1a70    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e9ab19f0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+28  libart.so + 0x530d28
+     fp = 0x00000078e9ab1ac0    lr = 0x0000007902adaa98
+     sp = 0x00000078e9ab1a80    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+29  libart.so + 0x53aa94
+     fp = 0x00000078e9ab1b50    lr = 0x0000007902815c98
+     sp = 0x00000078e9ab1ad0    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+30  libart.so + 0x275c94
+     fp = 0x00000078e9ab1bd0    lr = 0x000000790281b8a0
+     sp = 0x00000078e9ab1b60    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+31  libart.so + 0x27b89c
+     fp = 0x00000078e9ab1cd0    lr = 0x0000007902835814
+     sp = 0x00000078e9ab1be0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+32  libart.so + 0x295810
+     fp = 0x00000078e9ab1da0    lr = 0x0000007902ad1ce8
+     sp = 0x00000078e9ab1ce0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+33  libart.so + 0x531ce4
+     fp = 0x00000078e9ab1df0    lr = 0x0000007902adac98
+     sp = 0x00000078e9ab1db0    pc = 0x0000007902ad1ce8
+    Found by: previous frame's frame pointer
+34  libart.so + 0x53ac94
+     fp = 0x00000078e9ab1e80    lr = 0x0000007902815c98
+     sp = 0x00000078e9ab1e00    pc = 0x0000007902adac98
+    Found by: previous frame's frame pointer
+35  libart.so + 0x275c94
+     fp = 0x00000078e9ab1fe0    lr = 0x0000007902ac38ec
+     sp = 0x00000078e9ab1e90    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+36  libart.so + 0x5238e8
+     fp = 0x00000078e9ab20e8    lr = 0x0000007902af1f10
+     sp = 0x00000078e9ab1ff0    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+37  libart.so + 0x551f0c
+     fp = 0x00000078e9ab21e0    lr = 0x000000790267cf78
+     sp = 0x00000078e9ab20f8    pc = 0x0000007902af1f10
+    Found by: previous frame's frame pointer
+38  libart.so + 0xdcf74
+     fp = 0x00000078e9ab22f0    lr = 0x0000007902a0d5e8
+     sp = 0x00000078e9ab21f0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+39  libart.so + 0x46d5e4
+     fp = 0x00000078e9ab23c0    lr = 0x0000007902a0e814
+     sp = 0x00000078e9ab2300    pc = 0x0000007902a0d5e8
+    Found by: previous frame's frame pointer
+40  libart.so + 0x46e810
+     fp = 0x00000078e9ab2490    lr = 0x0000007902a35154
+     sp = 0x00000078e9ab23d0    pc = 0x0000007902a0e814
+    Found by: previous frame's frame pointer
+41  libart.so + 0x495150
+     fp = 0x00000078e9ab24b0    lr = 0x0000007986d42928
+     sp = 0x00000078e9ab24a0    pc = 0x0000007902a35154
+    Found by: previous frame's frame pointer
+42  libc.so + 0x67924
+     fp = 0x00000078e9ab24e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e9ab24c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+43  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e9ab24f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 6
+ 0  libc.so + 0x1d7ec
+     x0 = 0x0000007902c26df0    x1 = 0x0000000000000000
+     x2 = 0x0000000000000001    x3 = 0x00000078e99ab538
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0xffffffffffffffff
+     x8 = 0x0000000000000062    x9 = 0xe00246b53f7f017c
+    x10 = 0x0000000000000000   x11 = 0x00000000000f4240
+    x12 = 0x0000007902c86e88   x13 = 0x000000006fc173b4
+    x14 = 0x0000007902ae8fe4   x15 = 0x0000000000000000
+    x16 = 0x0000007902bcc5f8   x17 = 0x0000007986cf87d0
+    x18 = 0x0000007902af0270   x19 = 0x0000007902c26de0
+    x20 = 0x0000007902cc7600   x21 = 0x0000000000000001
+    x22 = 0x0000007902c26df0   x23 = 0x000000000000270f
+    x24 = 0x0000007902d83f80   x25 = 0x00000078e99ad588
+    x26 = 0x0000000000000001   x27 = 0x00000078e99ad588
+    x28 = 0x0000007902c1d108    fp = 0x00000078e99ab5a0
+     lr = 0x0000007902687440    sp = 0x00000078e99ab530
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libart.so + 0xe743c
+     fp = 0x00000078e99ab640    lr = 0x00000079029663f4
+     sp = 0x00000078e99ab5b0    pc = 0x0000007902687440
+    Found by: previous frame's frame pointer
+ 2  libart.so + 0x3c63f0
+     fp = 0x00000078e99ab6b0    lr = 0x0000007902967e54
+     sp = 0x00000078e99ab650    pc = 0x00000079029663f4
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0x3c7e50
+     fp = 0x00000078e99ab798    lr = 0x00000000705ec3f0
+     sp = 0x00000078e99ab6c0    pc = 0x0000007902967e54
+    Found by: previous frame's frame pointer
+ 4  system@framework@boot.oat + 0xa253ec
+     fp = 0x00000078e99ab890    lr = 0x000000790267cfb4
+     sp = 0x00000078e99ab7a8    pc = 0x00000000705ec3f0
+    Found by: previous frame's frame pointer
+ 5  libart.so + 0xdcfb0
+     fp = 0x00000078e99ab920    lr = 0x000000790283b24c
+     sp = 0x00000078e99ab8a0    pc = 0x000000790267cfb4
+    Found by: previous frame's frame pointer
+ 6  libart.so + 0x29b248
+     fp = 0x00000078e99aba30    lr = 0x0000007902835834
+     sp = 0x00000078e99ab930    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+ 7  libart.so + 0x295830
+     fp = 0x00000078e99abaa0    lr = 0x0000007902ad2174
+     sp = 0x00000078e99aba40    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+ 8  libart.so + 0x532170
+     fp = 0x00000078e99abaf0    lr = 0x0000007902adac18
+     sp = 0x00000078e99abab0    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+ 9  libart.so + 0x53ac14
+     fp = 0x00000078e99abb80    lr = 0x0000007902815c98
+     sp = 0x00000078e99abb00    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+10  libart.so + 0x275c94
+     fp = 0x00000078e99abc00    lr = 0x000000790281b8a0
+     sp = 0x00000078e99abb90    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+11  libart.so + 0x27b89c
+     fp = 0x00000078e99abda0    lr = 0x0000007902835814
+     sp = 0x00000078e99abc10    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+12  libart.so + 0x295810
+     fp = 0x00000078e99abe10    lr = 0x0000007902ad2174
+     sp = 0x00000078e99abdb0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+13  libart.so + 0x532170
+     fp = 0x00000078e99abe60    lr = 0x0000007902adac18
+     sp = 0x00000078e99abe20    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+14  libart.so + 0x53ac14
+     fp = 0x00000078e99abef0    lr = 0x0000007902815c98
+     sp = 0x00000078e99abe70    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+15  libart.so + 0x275c94
+     fp = 0x00000078e99abf70    lr = 0x000000790281b8a0
+     sp = 0x00000078e99abf00    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+16  libart.so + 0x27b89c
+     fp = 0x00000078e99ac080    lr = 0x0000007902835814
+     sp = 0x00000078e99abf80    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+17  libart.so + 0x295810
+     fp = 0x00000078e99ac0f0    lr = 0x0000007902ad2174
+     sp = 0x00000078e99ac090    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+18  libart.so + 0x532170
+     fp = 0x00000078e99ac140    lr = 0x0000007902adac18
+     sp = 0x00000078e99ac100    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+19  libart.so + 0x53ac14
+     fp = 0x00000078e99ac1d0    lr = 0x0000007902815c98
+     sp = 0x00000078e99ac150    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+20  libart.so + 0x275c94
+     fp = 0x00000078e99ac250    lr = 0x000000790281b8a0
+     sp = 0x00000078e99ac1e0    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+21  libart.so + 0x27b89c
+     fp = 0x00000078e99ac3c0    lr = 0x0000007902835814
+     sp = 0x00000078e99ac260    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+22  libart.so + 0x295810
+     fp = 0x00000078e99ac450    lr = 0x0000007902ad1f8c
+     sp = 0x00000078e99ac3d0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+23  libart.so + 0x531f88
+     fp = 0x00000078e99ac4a0    lr = 0x0000007902adab98
+     sp = 0x00000078e99ac460    pc = 0x0000007902ad1f8c
+    Found by: previous frame's frame pointer
+24  libart.so + 0x53ab94
+     fp = 0x00000078e99ac530    lr = 0x0000007902815c98
+     sp = 0x00000078e99ac4b0    pc = 0x0000007902adab98
+    Found by: previous frame's frame pointer
+25  libart.so + 0x275c94
+     fp = 0x00000078e99ac5b0    lr = 0x000000790281b8a0
+     sp = 0x00000078e99ac540    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+26  libart.so + 0x27b89c
+     fp = 0x00000078e99ac6e0    lr = 0x0000007902835814
+     sp = 0x00000078e99ac5c0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+27  libart.so + 0x295810
+     fp = 0x00000078e99ac770    lr = 0x0000007902ad1f8c
+     sp = 0x00000078e99ac6f0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+28  libart.so + 0x531f88
+     fp = 0x00000078e99ac7c0    lr = 0x0000007902adab98
+     sp = 0x00000078e99ac780    pc = 0x0000007902ad1f8c
+    Found by: previous frame's frame pointer
+29  libart.so + 0x53ab94
+     fp = 0x00000078e99ac850    lr = 0x0000007902815c98
+     sp = 0x00000078e99ac7d0    pc = 0x0000007902adab98
+    Found by: previous frame's frame pointer
+30  libart.so + 0x275c94
+     fp = 0x00000078e99ac8d0    lr = 0x000000790281b8a0
+     sp = 0x00000078e99ac860    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+31  libart.so + 0x27b89c
+     fp = 0x00000078e99ac9e0    lr = 0x0000007902835814
+     sp = 0x00000078e99ac8e0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+32  libart.so + 0x295810
+     fp = 0x00000078e99aca70    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e99ac9f0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+33  libart.so + 0x530d28
+     fp = 0x00000078e99acac0    lr = 0x0000007902adaa98
+     sp = 0x00000078e99aca80    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+34  libart.so + 0x53aa94
+     fp = 0x00000078e99acb50    lr = 0x0000007902815c98
+     sp = 0x00000078e99acad0    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+35  libart.so + 0x275c94
+     fp = 0x00000078e99acbd0    lr = 0x000000790281b8a0
+     sp = 0x00000078e99acb60    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+36  libart.so + 0x27b89c
+     fp = 0x00000078e99accd0    lr = 0x0000007902835814
+     sp = 0x00000078e99acbe0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+37  libart.so + 0x295810
+     fp = 0x00000078e99acda0    lr = 0x0000007902ad1ce8
+     sp = 0x00000078e99acce0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+38  libart.so + 0x531ce4
+     fp = 0x00000078e99acdf0    lr = 0x0000007902adac98
+     sp = 0x00000078e99acdb0    pc = 0x0000007902ad1ce8
+    Found by: previous frame's frame pointer
+39  libart.so + 0x53ac94
+     fp = 0x00000078e99ace80    lr = 0x0000007902815c98
+     sp = 0x00000078e99ace00    pc = 0x0000007902adac98
+    Found by: previous frame's frame pointer
+40  libart.so + 0x275c94
+     fp = 0x00000078e99acfe0    lr = 0x0000007902ac38ec
+     sp = 0x00000078e99ace90    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+41  libart.so + 0x5238e8
+     fp = 0x00000078e99ad0e8    lr = 0x0000007902af1f10
+     sp = 0x00000078e99acff0    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+42  libart.so + 0x551f0c
+     fp = 0x00000078e99ad1e0    lr = 0x000000790267cf78
+     sp = 0x00000078e99ad0f8    pc = 0x0000007902af1f10
+    Found by: previous frame's frame pointer
+43  libart.so + 0xdcf74
+     fp = 0x00000078e99ad2f0    lr = 0x0000007902a0d5e8
+     sp = 0x00000078e99ad1f0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+44  libart.so + 0x46d5e4
+     fp = 0x00000078e99ad3c0    lr = 0x0000007902a0e814
+     sp = 0x00000078e99ad300    pc = 0x0000007902a0d5e8
+    Found by: previous frame's frame pointer
+45  libart.so + 0x46e810
+     fp = 0x00000078e99ad490    lr = 0x0000007902a35154
+     sp = 0x00000078e99ad3d0    pc = 0x0000007902a0e814
+    Found by: previous frame's frame pointer
+46  libart.so + 0x495150
+     fp = 0x00000078e99ad4b0    lr = 0x0000007986d42928
+     sp = 0x00000078e99ad4a0    pc = 0x0000007902a35154
+    Found by: previous frame's frame pointer
+47  libc.so + 0x67924
+     fp = 0x00000078e99ad4e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e99ad4c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+48  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e99ad4f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 7
+ 0  libc.so + 0x1d7ec
+     x0 = 0x0000007902cf7210    x1 = 0x0000000000000000
+     x2 = 0x000000000000009a    x3 = 0x00000078e98a7238
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x00000000002ff45e
+     x8 = 0x0000000000000062    x9 = 0xe00246b53f7f017c
+    x10 = 0x0000000000000000   x11 = 0x00000000000f4240
+    x12 = 0x0000000000000018   x13 = 0x000000005def8ee2
+    x14 = 0x00350c17d2a2a3c0   x15 = 0x0000a56d9bfe03ce
+    x16 = 0x0000007902bcc5f8   x17 = 0x0000007986cf87d0
+    x18 = 0x0000007902af0270   x19 = 0x0000007902cf7200
+    x20 = 0x0000007902cd3000   x21 = 0x000000000000009a
+    x22 = 0x0000007902cf7210   x23 = 0x0000007902d83200
+    x24 = 0x00000078fa60fb90   x25 = 0x00000078e98a8588
+    x26 = 0x0000000000000001   x27 = 0x00000000fff0bdc0
+    x28 = 0x0000000000000000    fp = 0x00000078e98a72a0
+     lr = 0x0000007902687440    sp = 0x00000078e98a7230
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libart.so + 0xe743c
+     fp = 0x00000078e98a7330    lr = 0x00000079027f33c0
+     sp = 0x00000078e98a72b0    pc = 0x0000007902687440
+    Found by: previous frame's frame pointer
+ 2  libart.so + 0x2533bc
+     fp = 0x00000078e98a7380    lr = 0x00000079027f3c70
+     sp = 0x00000078e98a7340    pc = 0x00000079027f33c0
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0x253c6c
+     fp = 0x00000078e98a7468    lr = 0x0000000070600a90
+     sp = 0x00000078e98a7390    pc = 0x00000079027f3c70
+    Found by: previous frame's frame pointer
+ 4  system@framework@boot.oat + 0xa39a8c
+     fp = 0x00000078e98a7560    lr = 0x000000790267cf78
+     sp = 0x00000078e98a7478    pc = 0x0000000070600a90
+    Found by: previous frame's frame pointer
+ 5  libart.so + 0xdcf74
+     fp = 0x00000078e98a75f0    lr = 0x000000790283b24c
+     sp = 0x00000078e98a7570    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+ 6  libart.so + 0x29b248
+     fp = 0x00000078e98a76f0    lr = 0x0000007902835834
+     sp = 0x00000078e98a7600    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+ 7  libart.so + 0x295830
+     fp = 0x00000078e98a7780    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e98a7700    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+ 8  libart.so + 0x530d28
+     fp = 0x00000078e98a77d0    lr = 0x0000007902adaa98
+     sp = 0x00000078e98a7790    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+ 9  libart.so + 0x53aa94
+     fp = 0x00000078e98a7860    lr = 0x0000007902815c98
+     sp = 0x00000078e98a77e0    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+10  libart.so + 0x275c94
+     fp = 0x00000078e98a78e0    lr = 0x000000790281b8a0
+     sp = 0x00000078e98a7870    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+11  libart.so + 0x27b89c
+     fp = 0x00000078e98a79e0    lr = 0x0000007902835814
+     sp = 0x00000078e98a78f0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+12  libart.so + 0x295810
+     fp = 0x00000078e98a7a70    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e98a79f0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+13  libart.so + 0x530d28
+     fp = 0x00000078e98a7ac0    lr = 0x0000007902adaa98
+     sp = 0x00000078e98a7a80    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+14  libart.so + 0x53aa94
+     fp = 0x00000078e98a7b50    lr = 0x0000007902815c98
+     sp = 0x00000078e98a7ad0    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+15  libart.so + 0x275c94
+     fp = 0x00000078e98a7bd0    lr = 0x000000790281b8a0
+     sp = 0x00000078e98a7b60    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+16  libart.so + 0x27b89c
+     fp = 0x00000078e98a7cd0    lr = 0x0000007902835814
+     sp = 0x00000078e98a7be0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+17  libart.so + 0x295810
+     fp = 0x00000078e98a7da0    lr = 0x0000007902ad1ce8
+     sp = 0x00000078e98a7ce0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+18  libart.so + 0x531ce4
+     fp = 0x00000078e98a7df0    lr = 0x0000007902adac98
+     sp = 0x00000078e98a7db0    pc = 0x0000007902ad1ce8
+    Found by: previous frame's frame pointer
+19  libart.so + 0x53ac94
+     fp = 0x00000078e98a7e80    lr = 0x0000007902815c98
+     sp = 0x00000078e98a7e00    pc = 0x0000007902adac98
+    Found by: previous frame's frame pointer
+20  libart.so + 0x275c94
+     fp = 0x00000078e98a7fe0    lr = 0x0000007902ac38ec
+     sp = 0x00000078e98a7e90    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+21  libart.so + 0x5238e8
+     fp = 0x00000078e98a80e8    lr = 0x0000007902af1f10
+     sp = 0x00000078e98a7ff0    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+22  libart.so + 0x551f0c
+     fp = 0x00000078e98a81e0    lr = 0x000000790267cf78
+     sp = 0x00000078e98a80f8    pc = 0x0000007902af1f10
+    Found by: previous frame's frame pointer
+23  libart.so + 0xdcf74
+     fp = 0x00000078e98a82f0    lr = 0x0000007902a0d5e8
+     sp = 0x00000078e98a81f0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+24  libart.so + 0x46d5e4
+     fp = 0x00000078e98a83c0    lr = 0x0000007902a0e814
+     sp = 0x00000078e98a8300    pc = 0x0000007902a0d5e8
+    Found by: previous frame's frame pointer
+25  libart.so + 0x46e810
+     fp = 0x00000078e98a8490    lr = 0x0000007902a35154
+     sp = 0x00000078e98a83d0    pc = 0x0000007902a0e814
+    Found by: previous frame's frame pointer
+26  libart.so + 0x495150
+     fp = 0x00000078e98a84b0    lr = 0x0000007986d42928
+     sp = 0x00000078e98a84a0    pc = 0x0000007902a35154
+    Found by: previous frame's frame pointer
+27  libc.so + 0x67924
+     fp = 0x00000078e98a84e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e98a84c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+28  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e98a84f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 8
+ 0  libc.so + 0x69fac
+     x0 = 0x000000000000001b    x1 = 0x00000000c0306201
+     x2 = 0x00000078e96a52b8    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x00325f3134383732
+     x8 = 0x000000000000001d    x9 = 0x00000078e96a5268
+    x10 = 0x00000000ffffff80   x11 = 0x00000078e96a5230
+    x12 = 0x00000078e96a5268   x13 = 0x00000078e95a84f0
+    x14 = 0x0000000000000100   x15 = 0x00000078e96a4f38
+    x16 = 0x00000079836e5d90   x17 = 0x0000007986cff0c0
+    x18 = 0x0000000013300000   x19 = 0x00000078e96a5588
+    x20 = 0x0000007902cf4dc0   x21 = 0x0000007902cf4d00
+    x22 = 0x00000000fffffff7   x23 = 0x0000000000000100
+    x24 = 0x0000000000000004   x25 = 0x00000078e96a5588
+    x26 = 0x0000000000000000   x27 = 0x0000000000000000
+    x28 = 0x0000000000000000    fp = 0x00000078e96a52a0
+     lr = 0x0000007986cff14c    sp = 0x00000078e96a51b0
+     pc = 0x0000007986d44fac
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x24148
+     fp = 0x00000078e96a5330    lr = 0x000000798369f9f4
+     sp = 0x00000078e96a52b0    pc = 0x0000007986cff14c
+    Found by: previous frame's frame pointer
+ 2  libbinder.so + 0x549f0
+     fp = 0x00000078e96a5360    lr = 0x000000798369fb60
+     sp = 0x00000078e96a5340    pc = 0x000000798369f9f4
+    Found by: previous frame's frame pointer
+ 3  libbinder.so + 0x54b5c
+     fp = 0x00000078e96a5390    lr = 0x00000079836a021c
+     sp = 0x00000078e96a5370    pc = 0x000000798369fb60
+    Found by: previous frame's frame pointer
+ 4  libbinder.so + 0x55218
+     fp = 0x00000078e96a53b0    lr = 0x00000079836c2238
+     sp = 0x00000078e96a53a0    pc = 0x00000079836a021c
+    Found by: previous frame's frame pointer
+ 5  libbinder.so + 0x77234
+     fp = 0x00000078e96a5420    lr = 0x0000007983b17514
+     sp = 0x00000078e96a53c0    pc = 0x00000079836c2238
+    Found by: previous frame's frame pointer
+ 6  libutils.so + 0x11510
+     fp = 0x00000078e96a5490    lr = 0x000000798588ee4c
+     sp = 0x00000078e96a5430    pc = 0x0000007983b17514
+    Found by: previous frame's frame pointer
+ 7  libandroid_runtime.so + 0xa9e48
+     fp = 0x00000078e96a54b0    lr = 0x0000007986d42928
+     sp = 0x00000078e96a54a0    pc = 0x000000798588ee4c
+    Found by: previous frame's frame pointer
+ 8  libc.so + 0x67924
+     fp = 0x00000078e96a54e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e96a54c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+ 9  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e96a54f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 9
+ 0  libc.so + 0x69fac
+     x0 = 0x000000000000001b    x1 = 0x00000000c0306201
+     x2 = 0x00000078e95a82b8    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x00000078e95a7ea0
+     x8 = 0x000000000000001d    x9 = 0x00000078e95a8268
+    x10 = 0x00000000ffffff80   x11 = 0x00000078e95a8230
+    x12 = 0x00000078e95a8268   x13 = 0x0000007902ae8cc0
+    x14 = 0x0000007902ae8d20   x15 = 0x0000000000000000
+    x16 = 0x00000079836e5d90   x17 = 0x0000007986cff0c0
+    x18 = 0x0000000000000008   x19 = 0x00000078e95a8588
+    x20 = 0x00000078fa61cc00   x21 = 0x00000078fa61cb40
+    x22 = 0x00000000fffffff7   x23 = 0x0000000000000100
+    x24 = 0x0000000000000004   x25 = 0x00000078e95a8588
+    x26 = 0x0000000000000000   x27 = 0x0000000000000000
+    x28 = 0x0000000000000000    fp = 0x00000078e95a82a0
+     lr = 0x0000007986cff14c    sp = 0x00000078e95a81b0
+     pc = 0x0000007986d44fac
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x24148
+     fp = 0x00000078e95a8330    lr = 0x000000798369f9f4
+     sp = 0x00000078e95a82b0    pc = 0x0000007986cff14c
+    Found by: previous frame's frame pointer
+ 2  libbinder.so + 0x549f0
+     fp = 0x00000078e95a8360    lr = 0x000000798369fb60
+     sp = 0x00000078e95a8340    pc = 0x000000798369f9f4
+    Found by: previous frame's frame pointer
+ 3  libbinder.so + 0x54b5c
+     fp = 0x00000078e95a8390    lr = 0x00000079836a021c
+     sp = 0x00000078e95a8370    pc = 0x000000798369fb60
+    Found by: previous frame's frame pointer
+ 4  libbinder.so + 0x55218
+     fp = 0x00000078e95a83b0    lr = 0x00000079836c2238
+     sp = 0x00000078e95a83a0    pc = 0x00000079836a021c
+    Found by: previous frame's frame pointer
+ 5  libbinder.so + 0x77234
+     fp = 0x00000078e95a8420    lr = 0x0000007983b17514
+     sp = 0x00000078e95a83c0    pc = 0x00000079836c2238
+    Found by: previous frame's frame pointer
+ 6  libutils.so + 0x11510
+     fp = 0x00000078e95a8490    lr = 0x000000798588ee4c
+     sp = 0x00000078e95a8430    pc = 0x0000007983b17514
+    Found by: previous frame's frame pointer
+ 7  libandroid_runtime.so + 0xa9e48
+     fp = 0x00000078e95a84b0    lr = 0x0000007986d42928
+     sp = 0x00000078e95a84a0    pc = 0x000000798588ee4c
+    Found by: previous frame's frame pointer
+ 8  libc.so + 0x67924
+     fp = 0x00000078e95a84e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e95a84c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+ 9  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e95a84f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 10
+ 0  libc.so + 0x69fac
+     x0 = 0x000000000000001b    x1 = 0x00000000c0306201
+     x2 = 0x00000078e94ab2b8    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x00000078e94aaea0
+     x8 = 0x000000000000001d    x9 = 0x00000078e94ab268
+    x10 = 0x00000000ffffff80   x11 = 0x00000078e94ab230
+    x12 = 0x00000078e94ab268   x13 = 0x0000007902ae8cc0
+    x14 = 0x0000007902ae8d20   x15 = 0x0000000000000000
+    x16 = 0x00000079836e5d90   x17 = 0x0000007986cff0c0
+    x18 = 0x00000078e94a97bc   x19 = 0x00000078e94ab588
+    x20 = 0x0000007902cf52c0   x21 = 0x0000007902cf5200
+    x22 = 0x00000000fffffff7   x23 = 0x0000000000000100
+    x24 = 0x0000000000000004   x25 = 0x00000078e94ab588
+    x26 = 0x0000000000000000   x27 = 0x0000000000000000
+    x28 = 0x0000000000000000    fp = 0x00000078e94ab2a0
+     lr = 0x0000007986cff14c    sp = 0x00000078e94ab1b0
+     pc = 0x0000007986d44fac
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x24148
+     fp = 0x00000078e94ab330    lr = 0x000000798369f9f4
+     sp = 0x00000078e94ab2b0    pc = 0x0000007986cff14c
+    Found by: previous frame's frame pointer
+ 2  libbinder.so + 0x549f0
+     fp = 0x00000078e94ab360    lr = 0x000000798369fb60
+     sp = 0x00000078e94ab340    pc = 0x000000798369f9f4
+    Found by: previous frame's frame pointer
+ 3  libbinder.so + 0x54b5c
+     fp = 0x00000078e94ab390    lr = 0x00000079836a021c
+     sp = 0x00000078e94ab370    pc = 0x000000798369fb60
+    Found by: previous frame's frame pointer
+ 4  libbinder.so + 0x55218
+     fp = 0x00000078e94ab3b0    lr = 0x00000079836c2238
+     sp = 0x00000078e94ab3a0    pc = 0x00000079836a021c
+    Found by: previous frame's frame pointer
+ 5  libbinder.so + 0x77234
+     fp = 0x00000078e94ab420    lr = 0x0000007983b17514
+     sp = 0x00000078e94ab3c0    pc = 0x00000079836c2238
+    Found by: previous frame's frame pointer
+ 6  libutils.so + 0x11510
+     fp = 0x00000078e94ab490    lr = 0x000000798588ee4c
+     sp = 0x00000078e94ab430    pc = 0x0000007983b17514
+    Found by: previous frame's frame pointer
+ 7  libandroid_runtime.so + 0xa9e48
+     fp = 0x00000078e94ab4b0    lr = 0x0000007986d42928
+     sp = 0x00000078e94ab4a0    pc = 0x000000798588ee4c
+    Found by: previous frame's frame pointer
+ 8  libc.so + 0x67924
+     fp = 0x00000078e94ab4e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e94ab4c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+ 9  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e94ab4f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 11
+ 0  libc.so + 0x1d7ec
+     x0 = 0x0000007902c429b8    x1 = 0x0000000000000000
+     x2 = 0x0000000000000001    x3 = 0x00000078e8e14358
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x00000000002ff46a
+     x8 = 0x0000000000000062    x9 = 0xe00246b53f7f017c
+    x10 = 0x0000000000000000   x11 = 0x00000000000f4240
+    x12 = 0x0000000000000018   x13 = 0x000000005def8ee2
+    x14 = 0x00389f9ed297a740   x15 = 0x0000cacbdd8769a0
+    x16 = 0x0000007902bcc5f8   x17 = 0x0000007986cf87d0
+    x18 = 0x00000000133c0000   x19 = 0x0000007902c429a8
+    x20 = 0x00000078fa631c00   x21 = 0x0000000000000001
+    x22 = 0x0000007902c429b8   x23 = 0x0000131b67d9f8c1
+    x24 = 0x00000079028d8d64   x25 = 0x00000078e8e14588
+    x26 = 0x0000000000000001   x27 = 0x00000000000f4240
+    x28 = 0x0000000000000000    fp = 0x00000078e8e143c0
+     lr = 0x0000007902687440    sp = 0x00000078e8e14350
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libart.so + 0xe743c
+     fp = 0x00000078e8e14450    lr = 0x00000079028d6198
+     sp = 0x00000078e8e143d0    pc = 0x0000007902687440
+    Found by: previous frame's frame pointer
+ 2  libart.so + 0x336194
+     fp = 0x00000078e8e14490    lr = 0x00000079028d8dc4
+     sp = 0x00000078e8e14460    pc = 0x00000079028d6198
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0x338dc0
+     fp = 0x00000078e8e144b0    lr = 0x0000007986d42928
+     sp = 0x00000078e8e144a0    pc = 0x00000079028d8dc4
+    Found by: previous frame's frame pointer
+ 4  libc.so + 0x67924
+     fp = 0x00000078e8e144e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e8e144c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+ 5  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e8e144f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 12
+ 0  libc.so + 0x69ec0
+     x0 = 0xfffffffffffffffc    x1 = 0x00000078e8c110b8
+     x2 = 0x0000000000000010    x3 = 0x00000000ffffffff
+     x4 = 0x0000000000000000    x5 = 0x0000000000000008
+     x6 = 0x000000006fc3d788    x7 = 0x0000000000000000
+     x8 = 0x0000000000000016    x9 = 0x7fffffffffffffff
+    x10 = 0x000000000000000c   x11 = 0x0000000000000000
+    x12 = 0x0000007902ae8c78   x13 = 0x0000007902ae8cc0
+    x14 = 0x0000007902ae8d20   x15 = 0x0000000000000000
+    x16 = 0x0000007986da6498   x17 = 0x0000007986cfa700
+    x18 = 0x0000007902af0270   x19 = 0x00000078e8c12588
+    x20 = 0x00000078fa6580a8   x21 = 0x00000000ffffffff
+    x22 = 0x00000078e8c12588   x23 = 0x00000078fa658000
+    x24 = 0x0000000000000028   x25 = 0x000000000000000c
+    x26 = 0x0000007902cd44a0   x27 = 0x0000000000000004
+    x28 = 0x0000000000000000    fp = 0x00000078e8c11060
+     lr = 0x0000007986cfa738    sp = 0x00000078e8c11040
+     pc = 0x0000007986d44ec0
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x1f734
+     fp = 0x00000078e8c11210    lr = 0x0000007983b1bdd0
+     sp = 0x00000078e8c11070    pc = 0x0000007986cfa738
+    Found by: previous frame's frame pointer
+ 2  libutils.so + 0x15dcc
+     fp = 0x00000078e8c11260    lr = 0x0000007983b1bcb8
+     sp = 0x00000078e8c11220    pc = 0x0000007983b1bdd0
+    Found by: previous frame's frame pointer
+ 3  libutils.so + 0x15cb4
+     fp = 0x00000078e8c11280    lr = 0x00000079858f4760
+     sp = 0x00000078e8c11270    pc = 0x0000007983b1bcb8
+    Found by: previous frame's frame pointer
+ 4  libandroid_runtime.so + 0x10f75c
+     fp = 0x00000078e8c11368    lr = 0x000000007119e970
+     sp = 0x00000078e8c11290    pc = 0x00000079858f4760
+    Found by: previous frame's frame pointer
+ 5  system@framework@boot.oat + 0x15d796c
+     fp = 0x00000078e8c11460    lr = 0x000000790267cf78
+     sp = 0x00000078e8c11378    pc = 0x000000007119e970
+    Found by: previous frame's frame pointer
+ 6  libart.so + 0xdcf74
+     fp = 0x00000078e8c114f0    lr = 0x000000790283b24c
+     sp = 0x00000078e8c11470    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+ 7  libart.so + 0x29b248
+     fp = 0x00000078e8c11600    lr = 0x0000007902835834
+     sp = 0x00000078e8c11500    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+ 8  libart.so + 0x295830
+     fp = 0x00000078e8c11690    lr = 0x0000007902ad1f8c
+     sp = 0x00000078e8c11610    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+ 9  libart.so + 0x531f88
+     fp = 0x00000078e8c116e0    lr = 0x0000007902adab98
+     sp = 0x00000078e8c116a0    pc = 0x0000007902ad1f8c
+    Found by: previous frame's frame pointer
+10  libart.so + 0x53ab94
+     fp = 0x00000078e8c11770    lr = 0x0000007902815c98
+     sp = 0x00000078e8c116f0    pc = 0x0000007902adab98
+    Found by: previous frame's frame pointer
+11  libart.so + 0x275c94
+     fp = 0x00000078e8c117f0    lr = 0x000000790281b8a0
+     sp = 0x00000078e8c11780    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+12  libart.so + 0x27b89c
+     fp = 0x00000078e8c11980    lr = 0x0000007902835814
+     sp = 0x00000078e8c11800    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+13  libart.so + 0x295810
+     fp = 0x00000078e8c11a10    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e8c11990    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+14  libart.so + 0x530d28
+     fp = 0x00000078e8c11a60    lr = 0x0000007902adaa98
+     sp = 0x00000078e8c11a20    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+15  libart.so + 0x53aa94
+     fp = 0x00000078e8c11af0    lr = 0x0000007902815c98
+     sp = 0x00000078e8c11a70    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+16  libart.so + 0x275c94
+     fp = 0x00000078e8c11b70    lr = 0x000000790281b8a0
+     sp = 0x00000078e8c11b00    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+17  libart.so + 0x27b89c
+     fp = 0x00000078e8c11d30    lr = 0x0000007902835814
+     sp = 0x00000078e8c11b80    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+18  libart.so + 0x295810
+     fp = 0x00000078e8c11da0    lr = 0x0000007902ad2174
+     sp = 0x00000078e8c11d40    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+19  libart.so + 0x532170
+     fp = 0x00000078e8c11df0    lr = 0x0000007902adac18
+     sp = 0x00000078e8c11db0    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+20  libart.so + 0x53ac14
+     fp = 0x00000078e8c11e80    lr = 0x0000007902815c98
+     sp = 0x00000078e8c11e00    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+21  libart.so + 0x275c94
+     fp = 0x00000078e8c11fe0    lr = 0x0000007902ac38ec
+     sp = 0x00000078e8c11e90    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+22  libart.so + 0x5238e8
+     fp = 0x00000078e8c120e8    lr = 0x0000007902af1f10
+     sp = 0x00000078e8c11ff0    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+23  libart.so + 0x551f0c
+     fp = 0x00000078e8c121e0    lr = 0x000000790267cf78
+     sp = 0x00000078e8c120f8    pc = 0x0000007902af1f10
+    Found by: previous frame's frame pointer
+24  libart.so + 0xdcf74
+     fp = 0x00000078e8c122f0    lr = 0x0000007902a0d5e8
+     sp = 0x00000078e8c121f0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+25  libart.so + 0x46d5e4
+     fp = 0x00000078e8c123c0    lr = 0x0000007902a0e814
+     sp = 0x00000078e8c12300    pc = 0x0000007902a0d5e8
+    Found by: previous frame's frame pointer
+26  libart.so + 0x46e810
+     fp = 0x00000078e8c12490    lr = 0x0000007902a35154
+     sp = 0x00000078e8c123d0    pc = 0x0000007902a0e814
+    Found by: previous frame's frame pointer
+27  libart.so + 0x495150
+     fp = 0x00000078e8c124b0    lr = 0x0000007986d42928
+     sp = 0x00000078e8c124a0    pc = 0x0000007902a35154
+    Found by: previous frame's frame pointer
+28  libc.so + 0x67924
+     fp = 0x00000078e8c124e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e8c124c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+29  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e8c124f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 13
+ 0  libc.so + 0x1d7ec
+     x0 = 0x0000007902d0b9b0    x1 = 0x0000000000000000
+     x2 = 0x0000000000000002    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x0000000000000000
+     x8 = 0x0000000000000062    x9 = 0xe00246b53f7f017c
+    x10 = 0x0000000000000000   x11 = 0x0000007902ae8c30
+    x12 = 0x0000007902ae8c78   x13 = 0x0000007902ae8cc0
+    x14 = 0x0000007902ae8d20   x15 = 0x0000000000000000
+    x16 = 0x0000007902bcc5f8   x17 = 0x0000007986cf87d0
+    x18 = 0x0000000000000008   x19 = 0x0000007902d0b9a0
+    x20 = 0x0000007902cd3a00   x21 = 0x0000000000000002
+    x22 = 0x0000007902d0b9b0   x23 = 0x0000000000000000
+    x24 = 0x0000007902c97100   x25 = 0x00000078e8d17588
+    x26 = 0x0000000000000001   x27 = 0x00000078e8d17588
+    x28 = 0x0000007902d0f9f0    fp = 0x00000078e8d16870
+     lr = 0x0000007902687020    sp = 0x00000078e8d16810
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libart.so + 0xe701c
+     fp = 0x00000078e8d16910    lr = 0x00000079029663e4
+     sp = 0x00000078e8d16880    pc = 0x0000007902687020
+    Found by: previous frame's frame pointer
+ 2  libart.so + 0x3c63e0
+     fp = 0x00000078e8d16980    lr = 0x0000007902967e54
+     sp = 0x00000078e8d16920    pc = 0x00000079029663e4
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0x3c7e50
+     fp = 0x00000078e8d16a68    lr = 0x00000000705ce710
+     sp = 0x00000078e8d16990    pc = 0x0000007902967e54
+    Found by: previous frame's frame pointer
+ 4  system@framework@boot.oat + 0xa0770c
+     fp = 0x00000078e8d16b60    lr = 0x000000790267cf78
+     sp = 0x00000078e8d16a78    pc = 0x00000000705ce710
+    Found by: previous frame's frame pointer
+ 5  libart.so + 0xdcf74
+     fp = 0x00000078e8d16bf0    lr = 0x000000790283b24c
+     sp = 0x00000078e8d16b70    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+ 6  libart.so + 0x29b248
+     fp = 0x00000078e8d16cf0    lr = 0x0000007902835834
+     sp = 0x00000078e8d16c00    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+ 7  libart.so + 0x295830
+     fp = 0x00000078e8d16d80    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e8d16d00    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+ 8  libart.so + 0x530d28
+     fp = 0x00000078e8d16dd0    lr = 0x0000007902adaa98
+     sp = 0x00000078e8d16d90    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+ 9  libart.so + 0x53aa94
+     fp = 0x00000078e8d16e60    lr = 0x0000007902815c98
+     sp = 0x00000078e8d16de0    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+10  libart.so + 0x275c94
+     fp = 0x00000078e8d16fe0    lr = 0x0000007902ac38ec
+     sp = 0x00000078e8d16e70    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+11  libart.so + 0x5238e8
+     fp = 0x00000078e8d170e8    lr = 0x0000007902af1f10
+     sp = 0x00000078e8d16ff0    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+12  libart.so + 0x551f0c
+     fp = 0x00000078e8d171e0    lr = 0x000000790267cf78
+     sp = 0x00000078e8d170f8    pc = 0x0000007902af1f10
+    Found by: previous frame's frame pointer
+13  libart.so + 0xdcf74
+     fp = 0x00000078e8d172f0    lr = 0x0000007902a0d5e8
+     sp = 0x00000078e8d171f0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+14  libart.so + 0x46d5e4
+     fp = 0x00000078e8d173c0    lr = 0x0000007902a0e814
+     sp = 0x00000078e8d17300    pc = 0x0000007902a0d5e8
+    Found by: previous frame's frame pointer
+15  libart.so + 0x46e810
+     fp = 0x00000078e8d17490    lr = 0x0000007902a35154
+     sp = 0x00000078e8d173d0    pc = 0x0000007902a0e814
+    Found by: previous frame's frame pointer
+16  libart.so + 0x495150
+     fp = 0x00000078e8d174b0    lr = 0x0000007986d42928
+     sp = 0x00000078e8d174a0    pc = 0x0000007902a35154
+    Found by: previous frame's frame pointer
+17  libc.so + 0x67924
+     fp = 0x00000078e8d174e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e8d174c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+18  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e8d174f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 14
+ 0  libc.so + 0x6a9e4
+     x0 = 0x0000000000000023    x1 = 0x00000078e8b0c748
+     x2 = 0x0000000000000200    x3 = 0x0000000000000200
+     x4 = 0x00000078e8b0ce10    x5 = 0x000000790140a810
+     x6 = 0xfefefeff71647571    x7 = 0x7f7f7f7f7f7f7f7f
+     x8 = 0x000000000000003f    x9 = 0x0000000000000200
+    x10 = 0x0000000000430000   x11 = 0x0000007902ae8c30
+    x12 = 0x0000007902ae8c78   x13 = 0x0000007902ae8cc0
+    x14 = 0x0000007902ae8d20   x15 = 0x0000000000000000
+    x16 = 0x0000007986da6260   x17 = 0x0000007986d459e0
+    x18 = 0x0000007902af0270   x19 = 0x0000000000000023
+    x20 = 0x00000078e8b0c9c4   x21 = 0x0000007902cf5980
+    x22 = 0x00000078e8b0cc5c   x23 = 0x000000790140a810
+    x24 = 0x00000078e8b0d588   x25 = 0x00000078e8b0c748
+    x26 = 0x00000079859fb000   x27 = 0x0000000000000002
+    x28 = 0x0000000000000001    fp = 0x00000078e8b0c9a0
+     lr = 0x0000007985950f20    sp = 0x00000078e8b0c740
+     pc = 0x0000007986d459e4
+    Found by: given as instruction pointer in context
+ 1  libandroid_runtime.so + 0x16bf1c
+     fp = 0x00000078e8b0ca88    lr = 0x00000000705eb918
+     sp = 0x00000078e8b0c9b0    pc = 0x0000007985950f20
+    Found by: previous frame's frame pointer
+ 2  system@framework@boot.oat + 0xa24914
+     fp = 0x00000078e8b0cb80    lr = 0x000000790267cf78
+     sp = 0x00000078e8b0ca98    pc = 0x00000000705eb918
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0xdcf74
+     fp = 0x00000078e8b0cc10    lr = 0x000000790283b24c
+     sp = 0x00000078e8b0cb90    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+ 4  libart.so + 0x29b248
+     fp = 0x00000078e8b0cd10    lr = 0x0000007902835834
+     sp = 0x00000078e8b0cc20    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+ 5  libart.so + 0x295830
+     fp = 0x00000078e8b0cda0    lr = 0x0000007902ad1f8c
+     sp = 0x00000078e8b0cd20    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+ 6  libart.so + 0x531f88
+     fp = 0x00000078e8b0cdf0    lr = 0x0000007902adab98
+     sp = 0x00000078e8b0cdb0    pc = 0x0000007902ad1f8c
+    Found by: previous frame's frame pointer
+ 7  libart.so + 0x53ab94
+     fp = 0x00000078e8b0ce80    lr = 0x0000007902815c98
+     sp = 0x00000078e8b0ce00    pc = 0x0000007902adab98
+    Found by: previous frame's frame pointer
+ 8  libart.so + 0x275c94
+     fp = 0x00000078e8b0cfe0    lr = 0x0000007902ac38ec
+     sp = 0x00000078e8b0ce90    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+ 9  libart.so + 0x5238e8
+     fp = 0x00000078e8b0d0e8    lr = 0x0000007902af1f10
+     sp = 0x00000078e8b0cff0    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+10  libart.so + 0x551f0c
+     fp = 0x00000078e8b0d1e0    lr = 0x000000790267cf78
+     sp = 0x00000078e8b0d0f8    pc = 0x0000007902af1f10
+    Found by: previous frame's frame pointer
+11  libart.so + 0xdcf74
+     fp = 0x00000078e8b0d2f0    lr = 0x0000007902a0d5e8
+     sp = 0x00000078e8b0d1f0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+12  libart.so + 0x46d5e4
+     fp = 0x00000078e8b0d3c0    lr = 0x0000007902a0e814
+     sp = 0x00000078e8b0d300    pc = 0x0000007902a0d5e8
+    Found by: previous frame's frame pointer
+13  libart.so + 0x46e810
+     fp = 0x00000078e8b0d490    lr = 0x0000007902a35154
+     sp = 0x00000078e8b0d3d0    pc = 0x0000007902a0e814
+    Found by: previous frame's frame pointer
+14  libart.so + 0x495150
+     fp = 0x00000078e8b0d4b0    lr = 0x0000007986d42928
+     sp = 0x00000078e8b0d4a0    pc = 0x0000007902a35154
+    Found by: previous frame's frame pointer
+15  libc.so + 0x67924
+     fp = 0x00000078e8b0d4e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e8b0d4c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+16  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e8b0d4f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 15
+ 0  libc.so + 0x1d7ec
+     x0 = 0x0000007902d0b970    x1 = 0x0000000000000000
+     x2 = 0x0000000000000000    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0xffffffffffffffff
+     x8 = 0x0000000000000062    x9 = 0xe00246b53f7f017c
+    x10 = 0x0000000000000000   x11 = 0x0000000000000001
+    x12 = 0x00000078fa1eba88   x13 = 0x00000000000001e0
+    x14 = 0x0000000000000001   x15 = 0x0000000000000000
+    x16 = 0x0000007902bcc5f8   x17 = 0x0000007986cf87d0
+    x18 = 0x0000000000000008   x19 = 0x0000007902d0b960
+    x20 = 0x00000078fa1e4c00   x21 = 0x0000000000000000
+    x22 = 0x0000007902d0b970   x23 = 0x0000000000000000
+    x24 = 0x0000007902c97280   x25 = 0x00000078e8a08588
+    x26 = 0x0000000000000001   x27 = 0x00000078e8a08588
+    x28 = 0x0000007902c1db20    fp = 0x00000078e8a05f80
+     lr = 0x0000007902687020    sp = 0x00000078e8a05f20
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libart.so + 0xe701c
+     fp = 0x00000078e8a06020    lr = 0x00000079029663e4
+     sp = 0x00000078e8a05f90    pc = 0x0000007902687020
+    Found by: previous frame's frame pointer
+ 2  libart.so + 0x3c63e0
+     fp = 0x00000078e8a06090    lr = 0x0000007902967e54
+     sp = 0x00000078e8a06030    pc = 0x00000079029663e4
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0x3c7e50
+     fp = 0x00000078e8a06178    lr = 0x00000000705ce710
+     sp = 0x00000078e8a060a0    pc = 0x0000007902967e54
+    Found by: previous frame's frame pointer
+ 4  system@framework@boot.oat + 0xa0770c
+     fp = 0x00000078e8a06270    lr = 0x000000790267cf78
+     sp = 0x00000078e8a06188    pc = 0x00000000705ce710
+    Found by: previous frame's frame pointer
+ 5  libart.so + 0xdcf74
+     fp = 0x00000078e8a06300    lr = 0x000000790283b24c
+     sp = 0x00000078e8a06280    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+ 6  libart.so + 0x29b248
+     fp = 0x00000078e8a06400    lr = 0x0000007902835834
+     sp = 0x00000078e8a06310    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+ 7  libart.so + 0x295830
+     fp = 0x00000078e8a06490    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e8a06410    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+ 8  libart.so + 0x530d28
+     fp = 0x00000078e8a064e0    lr = 0x0000007902adaa98
+     sp = 0x00000078e8a064a0    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+ 9  libart.so + 0x53aa94
+     fp = 0x00000078e8a06570    lr = 0x0000007902815c98
+     sp = 0x00000078e8a064f0    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+10  libart.so + 0x275c94
+     fp = 0x00000078e8a065f0    lr = 0x000000790281b8a0
+     sp = 0x00000078e8a06580    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+11  libart.so + 0x27b89c
+     fp = 0x00000078e8a066f0    lr = 0x0000007902835814
+     sp = 0x00000078e8a06600    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+12  libart.so + 0x295810
+     fp = 0x00000078e8a06780    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e8a06700    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+13  libart.so + 0x530d28
+     fp = 0x00000078e8a067d0    lr = 0x0000007902adaa98
+     sp = 0x00000078e8a06790    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+14  libart.so + 0x53aa94
+     fp = 0x00000078e8a06860    lr = 0x0000007902815c98
+     sp = 0x00000078e8a067e0    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+15  libart.so + 0x275c94
+     fp = 0x00000078e8a068e0    lr = 0x000000790281b8a0
+     sp = 0x00000078e8a06870    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+16  libart.so + 0x27b89c
+     fp = 0x00000078e8a06a70    lr = 0x0000007902835814
+     sp = 0x00000078e8a068f0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+17  libart.so + 0x295810
+     fp = 0x00000078e8a06ae0    lr = 0x0000007902ad2174
+     sp = 0x00000078e8a06a80    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+18  libart.so + 0x532170
+     fp = 0x00000078e8a06b30    lr = 0x0000007902adac18
+     sp = 0x00000078e8a06af0    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+19  libart.so + 0x53ac14
+     fp = 0x00000078e8a06bc0    lr = 0x0000007902815c98
+     sp = 0x00000078e8a06b40    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+20  libart.so + 0x275c94
+     fp = 0x00000078e8a06c40    lr = 0x000000790281b8a0
+     sp = 0x00000078e8a06bd0    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+21  libart.so + 0x27b89c
+     fp = 0x00000078e8a06d60    lr = 0x0000007902835814
+     sp = 0x00000078e8a06c50    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+22  libart.so + 0x295810
+     fp = 0x00000078e8a06dd0    lr = 0x0000007902ad2174
+     sp = 0x00000078e8a06d70    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+23  libart.so + 0x532170
+     fp = 0x00000078e8a06e20    lr = 0x0000007902adac18
+     sp = 0x00000078e8a06de0    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+24  libart.so + 0x53ac14
+     fp = 0x00000078e8a06eb0    lr = 0x0000007902815c98
+     sp = 0x00000078e8a06e30    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+25  libart.so + 0x275c94
+     fp = 0x00000078e8a06f30    lr = 0x000000790281b8a0
+     sp = 0x00000078e8a06ec0    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+26  libart.so + 0x27b89c
+     fp = 0x00000078e8a07070    lr = 0x0000007902835814
+     sp = 0x00000078e8a06f40    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+27  libart.so + 0x295810
+     fp = 0x00000078e8a07100    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e8a07080    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+28  libart.so + 0x530d28
+     fp = 0x00000078e8a07150    lr = 0x0000007902adaa98
+     sp = 0x00000078e8a07110    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+29  libart.so + 0x53aa94
+     fp = 0x00000078e8a071e0    lr = 0x0000007902815c98
+     sp = 0x00000078e8a07160    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+30  libart.so + 0x275c94
+     fp = 0x00000078e8a07260    lr = 0x000000790281b8a0
+     sp = 0x00000078e8a071f0    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+31  libart.so + 0x27b89c
+     fp = 0x00000078e8a07370    lr = 0x0000007902835814
+     sp = 0x00000078e8a07270    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+32  libart.so + 0x295810
+     fp = 0x00000078e8a07440    lr = 0x0000007902ad1ce8
+     sp = 0x00000078e8a07380    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+33  libart.so + 0x531ce4
+     fp = 0x00000078e8a07490    lr = 0x0000007902adac98
+     sp = 0x00000078e8a07450    pc = 0x0000007902ad1ce8
+    Found by: previous frame's frame pointer
+34  libart.so + 0x53ac94
+     fp = 0x00000078e8a07520    lr = 0x0000007902815c98
+     sp = 0x00000078e8a074a0    pc = 0x0000007902adac98
+    Found by: previous frame's frame pointer
+35  libart.so + 0x275c94
+     fp = 0x00000078e8a075a0    lr = 0x000000790281b8a0
+     sp = 0x00000078e8a07530    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+36  libart.so + 0x27b89c
+     fp = 0x00000078e8a076a0    lr = 0x0000007902835814
+     sp = 0x00000078e8a075b0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+37  libart.so + 0x295810
+     fp = 0x00000078e8a07710    lr = 0x0000007902ad2174
+     sp = 0x00000078e8a076b0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+38  libart.so + 0x532170
+     fp = 0x00000078e8a07760    lr = 0x0000007902adac18
+     sp = 0x00000078e8a07720    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+39  libart.so + 0x53ac14
+     fp = 0x00000078e8a077f0    lr = 0x0000007902815c98
+     sp = 0x00000078e8a07770    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+40  libart.so + 0x275c94
+     fp = 0x00000078e8a07870    lr = 0x000000790281b8a0
+     sp = 0x00000078e8a07800    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+41  libart.so + 0x27b89c
+     fp = 0x00000078e8a07980    lr = 0x0000007902835814
+     sp = 0x00000078e8a07880    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+42  libart.so + 0x295810
+     fp = 0x00000078e8a07a10    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e8a07990    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+43  libart.so + 0x530d28
+     fp = 0x00000078e8a07a60    lr = 0x0000007902adaa98
+     sp = 0x00000078e8a07a20    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+44  libart.so + 0x53aa94
+     fp = 0x00000078e8a07af0    lr = 0x0000007902815c98
+     sp = 0x00000078e8a07a70    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+45  libart.so + 0x275c94
+     fp = 0x00000078e8a07b70    lr = 0x000000790281b8a0
+     sp = 0x00000078e8a07b00    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+46  libart.so + 0x27b89c
+     fp = 0x00000078e8a07d30    lr = 0x0000007902835814
+     sp = 0x00000078e8a07b80    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+47  libart.so + 0x295810
+     fp = 0x00000078e8a07da0    lr = 0x0000007902ad2174
+     sp = 0x00000078e8a07d40    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+48  libart.so + 0x532170
+     fp = 0x00000078e8a07df0    lr = 0x0000007902adac18
+     sp = 0x00000078e8a07db0    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+49  libart.so + 0x53ac14
+     fp = 0x00000078e8a07e80    lr = 0x0000007902815c98
+     sp = 0x00000078e8a07e00    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+50  libart.so + 0x275c94
+     fp = 0x00000078e8a07fe0    lr = 0x0000007902ac38ec
+     sp = 0x00000078e8a07e90    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+51  libart.so + 0x5238e8
+     fp = 0x00000078e8a080e8    lr = 0x0000007902af1f10
+     sp = 0x00000078e8a07ff0    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+52  libart.so + 0x551f0c
+     fp = 0x00000078e8a081e0    lr = 0x000000790267cf78
+     sp = 0x00000078e8a080f8    pc = 0x0000007902af1f10
+    Found by: previous frame's frame pointer
+53  libart.so + 0xdcf74
+     fp = 0x00000078e8a082f0    lr = 0x0000007902a0d5e8
+     sp = 0x00000078e8a081f0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+54  libart.so + 0x46d5e4
+     fp = 0x00000078e8a083c0    lr = 0x0000007902a0e814
+     sp = 0x00000078e8a08300    pc = 0x0000007902a0d5e8
+    Found by: previous frame's frame pointer
+55  libart.so + 0x46e810
+     fp = 0x00000078e8a08490    lr = 0x0000007902a35154
+     sp = 0x00000078e8a083d0    pc = 0x0000007902a0e814
+    Found by: previous frame's frame pointer
+56  libart.so + 0x495150
+     fp = 0x00000078e8a084b0    lr = 0x0000007986d42928
+     sp = 0x00000078e8a084a0    pc = 0x0000007902a35154
+    Found by: previous frame's frame pointer
+57  libc.so + 0x67924
+     fp = 0x00000078e8a084e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e8a084c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+58  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e8a084f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 16
+ 0  libc.so + 0x69ec0
+     x0 = 0xfffffffffffffffc    x1 = 0x00000078e89020b8
+     x2 = 0x0000000000000010    x3 = 0x00000000ffffffff
+     x4 = 0x0000000000000000    x5 = 0x0000000000000008
+     x6 = 0x000000006fc3d788    x7 = 0x0000000000000000
+     x8 = 0x0000000000000016    x9 = 0x7fffffffffffffff
+    x10 = 0x000000000000000c   x11 = 0x0000000000000000
+    x12 = 0x0000007902ae8c78   x13 = 0x0000007902ae8cc0
+    x14 = 0x0000007902ae8d20   x15 = 0x0000000000000000
+    x16 = 0x0000007986da6498   x17 = 0x0000007986cfa700
+    x18 = 0x0000007902af0270   x19 = 0x00000078e8903588
+    x20 = 0x00000078fa08d568   x21 = 0x00000000ffffffff
+    x22 = 0x00000078e8903588   x23 = 0x00000078fa08d4c0
+    x24 = 0x0000000000000028   x25 = 0x000000000000000c
+    x26 = 0x00000078fa1e56a0   x27 = 0x0000000000000004
+    x28 = 0x0000000000000000    fp = 0x00000078e8902060
+     lr = 0x0000007986cfa738    sp = 0x00000078e8902040
+     pc = 0x0000007986d44ec0
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x1f734
+     fp = 0x00000078e8902210    lr = 0x0000007983b1bdd0
+     sp = 0x00000078e8902070    pc = 0x0000007986cfa738
+    Found by: previous frame's frame pointer
+ 2  libutils.so + 0x15dcc
+     fp = 0x00000078e8902260    lr = 0x0000007983b1bcb8
+     sp = 0x00000078e8902220    pc = 0x0000007983b1bdd0
+    Found by: previous frame's frame pointer
+ 3  libutils.so + 0x15cb4
+     fp = 0x00000078e8902280    lr = 0x00000079858f4760
+     sp = 0x00000078e8902270    pc = 0x0000007983b1bcb8
+    Found by: previous frame's frame pointer
+ 4  libandroid_runtime.so + 0x10f75c
+     fp = 0x00000078e8902368    lr = 0x000000007119e970
+     sp = 0x00000078e8902290    pc = 0x00000079858f4760
+    Found by: previous frame's frame pointer
+ 5  system@framework@boot.oat + 0x15d796c
+     fp = 0x00000078e8902460    lr = 0x000000790267cf78
+     sp = 0x00000078e8902378    pc = 0x000000007119e970
+    Found by: previous frame's frame pointer
+ 6  libart.so + 0xdcf74
+     fp = 0x00000078e89024f0    lr = 0x000000790283b24c
+     sp = 0x00000078e8902470    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+ 7  libart.so + 0x29b248
+     fp = 0x00000078e8902600    lr = 0x0000007902835834
+     sp = 0x00000078e8902500    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+ 8  libart.so + 0x295830
+     fp = 0x00000078e8902690    lr = 0x0000007902ad1f8c
+     sp = 0x00000078e8902610    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+ 9  libart.so + 0x531f88
+     fp = 0x00000078e89026e0    lr = 0x0000007902adab98
+     sp = 0x00000078e89026a0    pc = 0x0000007902ad1f8c
+    Found by: previous frame's frame pointer
+10  libart.so + 0x53ab94
+     fp = 0x00000078e8902770    lr = 0x0000007902815c98
+     sp = 0x00000078e89026f0    pc = 0x0000007902adab98
+    Found by: previous frame's frame pointer
+11  libart.so + 0x275c94
+     fp = 0x00000078e89027f0    lr = 0x000000790281b8a0
+     sp = 0x00000078e8902780    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+12  libart.so + 0x27b89c
+     fp = 0x00000078e8902980    lr = 0x0000007902835814
+     sp = 0x00000078e8902800    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+13  libart.so + 0x295810
+     fp = 0x00000078e8902a10    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e8902990    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+14  libart.so + 0x530d28
+     fp = 0x00000078e8902a60    lr = 0x0000007902adaa98
+     sp = 0x00000078e8902a20    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+15  libart.so + 0x53aa94
+     fp = 0x00000078e8902af0    lr = 0x0000007902815c98
+     sp = 0x00000078e8902a70    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+16  libart.so + 0x275c94
+     fp = 0x00000078e8902b70    lr = 0x000000790281b8a0
+     sp = 0x00000078e8902b00    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+17  libart.so + 0x27b89c
+     fp = 0x00000078e8902d30    lr = 0x0000007902835814
+     sp = 0x00000078e8902b80    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+18  libart.so + 0x295810
+     fp = 0x00000078e8902da0    lr = 0x0000007902ad2174
+     sp = 0x00000078e8902d40    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+19  libart.so + 0x532170
+     fp = 0x00000078e8902df0    lr = 0x0000007902adac18
+     sp = 0x00000078e8902db0    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+20  libart.so + 0x53ac14
+     fp = 0x00000078e8902e80    lr = 0x0000007902815c98
+     sp = 0x00000078e8902e00    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+21  libart.so + 0x275c94
+     fp = 0x00000078e8902fe0    lr = 0x0000007902ac38ec
+     sp = 0x00000078e8902e90    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+22  libart.so + 0x5238e8
+     fp = 0x00000078e89030e8    lr = 0x0000007902af1f10
+     sp = 0x00000078e8902ff0    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+23  libart.so + 0x551f0c
+     fp = 0x00000078e89031e0    lr = 0x000000790267cf78
+     sp = 0x00000078e89030f8    pc = 0x0000007902af1f10
+    Found by: previous frame's frame pointer
+24  libart.so + 0xdcf74
+     fp = 0x00000078e89032f0    lr = 0x0000007902a0d5e8
+     sp = 0x00000078e89031f0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+25  libart.so + 0x46d5e4
+     fp = 0x00000078e89033c0    lr = 0x0000007902a0e814
+     sp = 0x00000078e8903300    pc = 0x0000007902a0d5e8
+    Found by: previous frame's frame pointer
+26  libart.so + 0x46e810
+     fp = 0x00000078e8903490    lr = 0x0000007902a35154
+     sp = 0x00000078e89033d0    pc = 0x0000007902a0e814
+    Found by: previous frame's frame pointer
+27  libart.so + 0x495150
+     fp = 0x00000078e89034b0    lr = 0x0000007986d42928
+     sp = 0x00000078e89034a0    pc = 0x0000007902a35154
+    Found by: previous frame's frame pointer
+28  libc.so + 0x67924
+     fp = 0x00000078e89034e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e89034c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+29  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e89034f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 17
+ 0  libc.so + 0x1d7ec
+     x0 = 0x0000007902d10a30    x1 = 0x0000000000000000
+     x2 = 0x0000000000000000    x3 = 0x00000078e87fd1c8
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x00000000002ff620
+     x8 = 0x0000000000000062    x9 = 0xe00246b53f7f017c
+    x10 = 0x0000000000000000   x11 = 0x00000000000f4240
+    x12 = 0x0000007902ae8f30   x13 = 0x0000007902ae8f84
+    x14 = 0x0000007902ae8fe4   x15 = 0x0000000000000000
+    x16 = 0x0000007902bcc5f8   x17 = 0x0000007986cf87d0
+    x18 = 0x0000007902af0270   x19 = 0x0000007902d10a20
+    x20 = 0x00000078fa1f2000   x21 = 0x0000000000000000
+    x22 = 0x0000007902d10a30   x23 = 0x0000000000000bb8
+    x24 = 0x0000007902c97300   x25 = 0x00000078e87fe588
+    x26 = 0x0000000000000001   x27 = 0x00000078e87fe588
+    x28 = 0x0000007902d0fb20    fp = 0x00000078e87fd230
+     lr = 0x0000007902687440    sp = 0x00000078e87fd1c0
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libart.so + 0xe743c
+     fp = 0x00000078e87fd2d0    lr = 0x00000079029663f4
+     sp = 0x00000078e87fd240    pc = 0x0000007902687440
+    Found by: previous frame's frame pointer
+ 2  libart.so + 0x3c63f0
+     fp = 0x00000078e87fd340    lr = 0x0000007902967e54
+     sp = 0x00000078e87fd2e0    pc = 0x00000079029663f4
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0x3c7e50
+     fp = 0x00000078e87fd428    lr = 0x00000000705ec3f0
+     sp = 0x00000078e87fd350    pc = 0x0000007902967e54
+    Found by: previous frame's frame pointer
+ 4  system@framework@boot.oat + 0xa253ec
+     fp = 0x00000078e87fd520    lr = 0x000000790267cfb4
+     sp = 0x00000078e87fd438    pc = 0x00000000705ec3f0
+    Found by: previous frame's frame pointer
+ 5  libart.so + 0xdcfb0
+     fp = 0x00000078e87fd5b0    lr = 0x000000790283b24c
+     sp = 0x00000078e87fd530    pc = 0x000000790267cfb4
+    Found by: previous frame's frame pointer
+ 6  libart.so + 0x29b248
+     fp = 0x00000078e87fd6c0    lr = 0x0000007902835834
+     sp = 0x00000078e87fd5c0    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+ 7  libart.so + 0x295830
+     fp = 0x00000078e87fd730    lr = 0x0000007902ad2174
+     sp = 0x00000078e87fd6d0    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+ 8  libart.so + 0x532170
+     fp = 0x00000078e87fd780    lr = 0x0000007902adac18
+     sp = 0x00000078e87fd740    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+ 9  libart.so + 0x53ac14
+     fp = 0x00000078e87fd810    lr = 0x0000007902815c98
+     sp = 0x00000078e87fd790    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+10  libart.so + 0x275c94
+     fp = 0x00000078e87fd890    lr = 0x000000790281b8a0
+     sp = 0x00000078e87fd820    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+11  libart.so + 0x27b89c
+     fp = 0x00000078e87fda30    lr = 0x0000007902835814
+     sp = 0x00000078e87fd8a0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+12  libart.so + 0x295810
+     fp = 0x00000078e87fdaa0    lr = 0x0000007902ad2174
+     sp = 0x00000078e87fda40    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+13  libart.so + 0x532170
+     fp = 0x00000078e87fdaf0    lr = 0x0000007902adac18
+     sp = 0x00000078e87fdab0    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+14  libart.so + 0x53ac14
+     fp = 0x00000078e87fdb80    lr = 0x0000007902815c98
+     sp = 0x00000078e87fdb00    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+15  libart.so + 0x275c94
+     fp = 0x00000078e87fdc00    lr = 0x000000790281b8a0
+     sp = 0x00000078e87fdb90    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+16  libart.so + 0x27b89c
+     fp = 0x00000078e87fdd10    lr = 0x0000007902835814
+     sp = 0x00000078e87fdc10    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+17  libart.so + 0x295810
+     fp = 0x00000078e87fdd80    lr = 0x0000007902ad2174
+     sp = 0x00000078e87fdd20    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+18  libart.so + 0x532170
+     fp = 0x00000078e87fddd0    lr = 0x0000007902adac18
+     sp = 0x00000078e87fdd90    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+19  libart.so + 0x53ac14
+     fp = 0x00000078e87fde60    lr = 0x0000007902815c98
+     sp = 0x00000078e87fdde0    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+20  libart.so + 0x275c94
+     fp = 0x00000078e87fdfe0    lr = 0x0000007902ac38ec
+     sp = 0x00000078e87fde70    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+21  libart.so + 0x5238e8
+     fp = 0x00000078e87fe0e8    lr = 0x0000007902af1f10
+     sp = 0x00000078e87fdff0    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+22  libart.so + 0x551f0c
+     fp = 0x00000078e87fe1e0    lr = 0x000000790267cf78
+     sp = 0x00000078e87fe0f8    pc = 0x0000007902af1f10
+    Found by: previous frame's frame pointer
+23  libart.so + 0xdcf74
+     fp = 0x00000078e87fe2f0    lr = 0x0000007902a0d5e8
+     sp = 0x00000078e87fe1f0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+24  libart.so + 0x46d5e4
+     fp = 0x00000078e87fe3c0    lr = 0x0000007902a0e814
+     sp = 0x00000078e87fe300    pc = 0x0000007902a0d5e8
+    Found by: previous frame's frame pointer
+25  libart.so + 0x46e810
+     fp = 0x00000078e87fe490    lr = 0x0000007902a35154
+     sp = 0x00000078e87fe3d0    pc = 0x0000007902a0e814
+    Found by: previous frame's frame pointer
+26  libart.so + 0x495150
+     fp = 0x00000078e87fe4b0    lr = 0x0000007986d42928
+     sp = 0x00000078e87fe4a0    pc = 0x0000007902a35154
+    Found by: previous frame's frame pointer
+27  libc.so + 0x67924
+     fp = 0x00000078e87fe4e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e87fe4c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+28  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e87fe4f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 18
+ 0  libc.so + 0x1d7ec
+     x0 = 0x0000007902d10a70    x1 = 0x0000000000000000
+     x2 = 0x0000000000000000    x3 = 0x00000078e83fe1d8
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x00000000002ff626
+     x8 = 0x0000000000000062    x9 = 0xe00246b53f7f017c
+    x10 = 0x0000000000000000   x11 = 0x00000000000f4240
+    x12 = 0x0000007902ae8f30   x13 = 0x0000007902ae8f84
+    x14 = 0x0000007902ae8fe4   x15 = 0x0000000000000000
+    x16 = 0x0000007902bcc5f8   x17 = 0x0000007986cf87d0
+    x18 = 0x0000000000000008   x19 = 0x0000007902d10a60
+    x20 = 0x00000078fa1f2a00   x21 = 0x0000000000000000
+    x22 = 0x0000007902d10a70   x23 = 0x00000000000003e8
+    x24 = 0x0000007902c97340   x25 = 0x00000078e83ff588
+    x26 = 0x0000000000000001   x27 = 0x00000078e83ff588
+    x28 = 0x0000007902d0fbb8    fp = 0x00000078e83fe240
+     lr = 0x0000007902687440    sp = 0x00000078e83fe1d0
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libart.so + 0xe743c
+     fp = 0x00000078e83fe2e0    lr = 0x00000079029663f4
+     sp = 0x00000078e83fe250    pc = 0x0000007902687440
+    Found by: previous frame's frame pointer
+ 2  libart.so + 0x3c63f0
+     fp = 0x00000078e83fe350    lr = 0x0000007902967e54
+     sp = 0x00000078e83fe2f0    pc = 0x00000079029663f4
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0x3c7e50
+     fp = 0x00000078e83fe438    lr = 0x00000000705ec3f0
+     sp = 0x00000078e83fe360    pc = 0x0000007902967e54
+    Found by: previous frame's frame pointer
+ 4  system@framework@boot.oat + 0xa253ec
+     fp = 0x00000078e83fe530    lr = 0x000000790267cfb4
+     sp = 0x00000078e83fe448    pc = 0x00000000705ec3f0
+    Found by: previous frame's frame pointer
+ 5  libart.so + 0xdcfb0
+     fp = 0x00000078e83fe5c0    lr = 0x000000790283b24c
+     sp = 0x00000078e83fe540    pc = 0x000000790267cfb4
+    Found by: previous frame's frame pointer
+ 6  libart.so + 0x29b248
+     fp = 0x00000078e83fe6d0    lr = 0x0000007902835834
+     sp = 0x00000078e83fe5d0    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+ 7  libart.so + 0x295830
+     fp = 0x00000078e83fe740    lr = 0x0000007902ad2174
+     sp = 0x00000078e83fe6e0    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+ 8  libart.so + 0x532170
+     fp = 0x00000078e83fe790    lr = 0x0000007902adac18
+     sp = 0x00000078e83fe750    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+ 9  libart.so + 0x53ac14
+     fp = 0x00000078e83fe820    lr = 0x0000007902815c98
+     sp = 0x00000078e83fe7a0    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+10  libart.so + 0x275c94
+     fp = 0x00000078e83fe8a0    lr = 0x000000790281b8a0
+     sp = 0x00000078e83fe830    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+11  libart.so + 0x27b89c
+     fp = 0x00000078e83fea40    lr = 0x0000007902835814
+     sp = 0x00000078e83fe8b0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+12  libart.so + 0x295810
+     fp = 0x00000078e83feab0    lr = 0x0000007902ad2174
+     sp = 0x00000078e83fea50    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+13  libart.so + 0x532170
+     fp = 0x00000078e83feb00    lr = 0x0000007902adac18
+     sp = 0x00000078e83feac0    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+14  libart.so + 0x53ac14
+     fp = 0x00000078e83feb90    lr = 0x0000007902815c98
+     sp = 0x00000078e83feb10    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+15  libart.so + 0x275c94
+     fp = 0x00000078e83fec10    lr = 0x000000790281b8a0
+     sp = 0x00000078e83feba0    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+16  libart.so + 0x27b89c
+     fp = 0x00000078e83fed20    lr = 0x0000007902835814
+     sp = 0x00000078e83fec20    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+17  libart.so + 0x295810
+     fp = 0x00000078e83fed90    lr = 0x0000007902ad2174
+     sp = 0x00000078e83fed30    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+18  libart.so + 0x532170
+     fp = 0x00000078e83fede0    lr = 0x0000007902adac18
+     sp = 0x00000078e83feda0    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+19  libart.so + 0x53ac14
+     fp = 0x00000078e83fee70    lr = 0x0000007902815c98
+     sp = 0x00000078e83fedf0    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+20  libart.so + 0x275c94
+     fp = 0x00000078e83fefe0    lr = 0x0000007902ac38ec
+     sp = 0x00000078e83fee80    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+21  libart.so + 0x5238e8
+     fp = 0x00000078e83ff0e8    lr = 0x0000007902af1f10
+     sp = 0x00000078e83feff0    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+22  libart.so + 0x551f0c
+     fp = 0x00000078e83ff1e0    lr = 0x000000790267cf78
+     sp = 0x00000078e83ff0f8    pc = 0x0000007902af1f10
+    Found by: previous frame's frame pointer
+23  libart.so + 0xdcf74
+     fp = 0x00000078e83ff2f0    lr = 0x0000007902a0d5e8
+     sp = 0x00000078e83ff1f0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+24  libart.so + 0x46d5e4
+     fp = 0x00000078e83ff3c0    lr = 0x0000007902a0e814
+     sp = 0x00000078e83ff300    pc = 0x0000007902a0d5e8
+    Found by: previous frame's frame pointer
+25  libart.so + 0x46e810
+     fp = 0x00000078e83ff490    lr = 0x0000007902a35154
+     sp = 0x00000078e83ff3d0    pc = 0x0000007902a0e814
+    Found by: previous frame's frame pointer
+26  libart.so + 0x495150
+     fp = 0x00000078e83ff4b0    lr = 0x0000007986d42928
+     sp = 0x00000078e83ff4a0    pc = 0x0000007902a35154
+    Found by: previous frame's frame pointer
+27  libc.so + 0x67924
+     fp = 0x00000078e83ff4e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e83ff4c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+28  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e83ff4f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 19
+ 0  libc.so + 0x1d7ec
+     x0 = 0x00000078e82b8080    x1 = 0x0000000000000089
+     x2 = 0x00000000fffffffe    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x00000000ffffffff
+     x6 = 0x00000000ffffffff    x7 = 0x000000000080627c
+     x8 = 0x0000000000000062    x9 = 0x0000000000000000
+    x10 = 0x0000000000000000   x11 = 0x00000000fffffffe
+    x12 = 0x0000000000000000   x13 = 0x0000000000000001
+    x14 = 0xffffffffffffffff   x15 = 0x7c62000000000000
+    x16 = 0x0000007986da6240   x17 = 0x0000007986cf87d0
+    x18 = 0x0000000000000020   x19 = 0x00000078e82b8080
+    x20 = 0x00000000fffffffe   x21 = 0x0000000000000089
+    x22 = 0x00000078e8212598   x23 = 0x0000000000006cc1
+    x24 = 0x0000000000000000   x25 = 0x00000078e8116000
+    x26 = 0x0000000000000058   x27 = 0x0000000000000058
+    x28 = 0x0000000000000000    fp = 0x00000078e8212440
+     lr = 0x0000007986d02ab0    sp = 0x00000078e8212410
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x27aac
+     fp = 0x00000078e8212490    lr = 0x00000078e823a550
+     sp = 0x00000078e8212450    pc = 0x0000007986d02ab0
+    Found by: previous frame's frame pointer
+ 2  libbreakpad-core.so!threadDoThings(void*) + 0x74
+     fp = 0x00000078e82124b0    lr = 0x0000007986d42928
+     sp = 0x00000078e82124a0    pc = 0x00000078e823a550
+    Found by: previous frame's frame pointer
+ 3  libc.so + 0x1ef9c
+     fp = 0x00000078e82124e0    sp = 0x00000078e82124c0
+     pc = 0x0000007986cf9fa0
+    Found by: call frame info
+
+Thread 20
+ 0  libc.so + 0x69ec0
+     x0 = 0xfffffffffffffffc    x1 = 0x00000078e8115118
+     x2 = 0x0000000000000010    x3 = 0x00000000ffffffff
+     x4 = 0x0000000000000000    x5 = 0x0000000000000008
+     x6 = 0x00000079878dc000    x7 = 0x00000000002ff650
+     x8 = 0x0000000000000016    x9 = 0xe00246b53f7f017c
+    x10 = 0x00000000000001bb   x11 = 0x0000000000000002
+    x12 = 0x00000078e84fc088   x13 = 0x000000005def8ee5
+    x14 = 0x00317890d0884f40   x15 = 0x00008d4a5f60c41c
+    x16 = 0x0000007986da6498   x17 = 0x0000007986cfa700
+    x18 = 0x0000000000000001   x19 = 0x00000078e8115588
+    x20 = 0x00000078fa08d8e8   x21 = 0x00000000ffffffff
+    x22 = 0x00000078e8115588   x23 = 0x00000078fa08d840
+    x24 = 0x0000000000000028   x25 = 0x000000000000000c
+    x26 = 0x00000078e7288230   x27 = 0x00000078fa133f30
+    x28 = 0x0000000000000001    fp = 0x00000078e81150c0
+     lr = 0x0000007986cfa738    sp = 0x00000078e81150a0
+     pc = 0x0000007986d44ec0
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x1f734
+     fp = 0x00000078e8115270    lr = 0x0000007983b1bdd0
+     sp = 0x00000078e81150d0    pc = 0x0000007986cfa738
+    Found by: previous frame's frame pointer
+ 2  libutils.so + 0x15dcc
+     fp = 0x00000078e81152c0    lr = 0x0000007983b1bcb8
+     sp = 0x00000078e8115280    pc = 0x0000007983b1bdd0
+    Found by: previous frame's frame pointer
+ 3  libutils.so + 0x15cb4
+     fp = 0x00000078e81153b0    lr = 0x0000007986a6a1e8
+     sp = 0x00000078e81152d0    pc = 0x0000007983b1bcb8
+    Found by: previous frame's frame pointer
+ 4  libhwui.so + 0x731e4
+     fp = 0x00000078e8115420    lr = 0x0000007983b17514
+     sp = 0x00000078e81153c0    pc = 0x0000007986a6a1e8
+    Found by: previous frame's frame pointer
+ 5  libutils.so + 0x11510
+     fp = 0x00000078e8115490    lr = 0x000000798588ee4c
+     sp = 0x00000078e8115430    pc = 0x0000007983b17514
+    Found by: previous frame's frame pointer
+ 6  libandroid_runtime.so + 0xa9e48
+     fp = 0x00000078e81154b0    lr = 0x0000007986d42928
+     sp = 0x00000078e81154a0    pc = 0x000000798588ee4c
+    Found by: previous frame's frame pointer
+ 7  libc.so + 0x67924
+     fp = 0x00000078e81154e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e81154c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+ 8  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e81154f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 21
+ 0  libc.so + 0x6a8c4
+     x0 = 0x00000078e7dff3b8    x1 = 0x0000000000000000
+     x2 = 0x000000007fffffff    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x00000078e72b2bc0
+     x8 = 0x0000000000000065    x9 = 0x0000000005f5e100
+    x10 = 0x00000000000003e8   x11 = 0xe00246b53f7f017c
+    x12 = 0x0000000000000000   x13 = 0x00000000ffffffff
+    x14 = 0x00000000fffffffe   x15 = 0x0000000000000000
+    x16 = 0x0000007986da6cc0   x17 = 0x0000007986d458c0
+    x18 = 0x000000000008021c   x19 = 0x00000078e7dff588
+    x20 = 0x00000078fa73ef20   x21 = 0x00000078fa7bf100
+    x22 = 0x00000000000804b8   x23 = 0x00000078f481e000
+    x24 = 0x0000000000001000   x25 = 0x00000078fa7bf110
+    x26 = 0x00000078fa7bf118   x27 = 0x0000000000000001
+    x28 = 0x0000000000001000    fp = 0x00000078e7dff3e0
+     lr = 0x0000007986d1cd04    sp = 0x00000078e7dff3b0
+     pc = 0x0000007986d458c4
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x41d00
+     fp = 0x0000000000080238    lr = 0x00000078f2cecc78
+     sp = 0x00000078e7dff3f0    pc = 0x0000007986d1cd04
+    Found by: previous frame's frame pointer
+ 2  libGLES_mali.so + 0x52dad0
+     sp = 0x00000078e7dff468    pc = 0x00000078f2cecad4
+    Found by: stack scanning
+ 3  libc.so + 0x678fc
+     sp = 0x00000078e7dff488    pc = 0x0000007986d42900
+    Found by: stack scanning
+ 4  libc.so + 0x67924
+     sp = 0x00000078e7dff4a0    pc = 0x0000007986d42928
+    Found by: stack scanning
+ 5  libc.so + 0x1ef9c
+     sp = 0x00000078e7dff4c0    pc = 0x0000007986cf9fa0
+    Found by: stack scanning
+ 6  libGLES_mali.so + 0x52dad0
+     sp = 0x00000078e7dff558    pc = 0x00000078f2cecad4
+    Found by: stack scanning
+
+Thread 22
+ 0  libc.so + 0x1d7ec
+     x0 = 0x00000078fa7f903c    x1 = 0x0000000000000089
+     x2 = 0x00000000fffffffe    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x00000000ffffffff
+     x6 = 0x00000000ffffffff    x7 = 0x7f7f7f7f7f7f7f7f
+     x8 = 0x0000000000000062    x9 = 0x0000000000000000
+    x10 = 0x0000000000000000   x11 = 0x00000000fffffffe
+    x12 = 0x0000000000000000   x13 = 0x00000078e7d024f0
+    x14 = 0x0000000000000100   x15 = 0x00000078e8114c58
+    x16 = 0x0000007986da6240   x17 = 0x0000007986cf87d0
+    x18 = 0x0000000000081250   x19 = 0x00000078fa7f903c
+    x20 = 0x00000000fffffffe   x21 = 0x0000000000000089
+    x22 = 0x00000078e7d02598   x23 = 0x0000000000006cf3
+    x24 = 0x0000000000000000   x25 = 0x00000078e7c06000
+    x26 = 0x0000000000000002   x27 = 0x0000000000000002
+    x28 = 0x00000078fa7f903c    fp = 0x00000078e7d02440
+     lr = 0x0000007986d02ab0    sp = 0x00000078e7d02410
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x27aac
+     fp = 0x00000078e7d024b0    lr = 0x00000078f2cdf174
+     sp = 0x00000078e7d02450    pc = 0x0000007986d02ab0
+    Found by: previous frame's frame pointer
+ 2  libGLES_mali.so + 0x520170
+     fp = 0x00000078e7d024e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e7d024c0    pc = 0x00000078f2cdf174
+    Found by: previous frame's frame pointer
+ 3  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e7d024f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 23
+ 0  libc.so + 0x1d7ec
+     x0 = 0x00000078fa7f90c4    x1 = 0x0000000000000089
+     x2 = 0x00000000fffffffe    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x00000000ffffffff
+     x6 = 0x00000000ffffffff    x7 = 0x7f7f7f7f7f7f7f7f
+     x8 = 0x0000000000000062    x9 = 0x0000000000000000
+    x10 = 0x0000000000000000   x11 = 0x00000000fffffffe
+    x12 = 0x0000000000000000   x13 = 0x00000078e79ff4f0
+    x14 = 0x0000000000000100   x15 = 0x00000078e8114c58
+    x16 = 0x0000007986da6240   x17 = 0x0000007986cf87d0
+    x18 = 0x0000000000081250   x19 = 0x00000078fa7f90c4
+    x20 = 0x00000000fffffffe   x21 = 0x0000000000000089
+    x22 = 0x00000078e79ff598   x23 = 0x0000000000006cf3
+    x24 = 0x0000000000000000   x25 = 0x00000078e7903000
+    x26 = 0x0000000000000002   x27 = 0x0000000000000002
+    x28 = 0x00000078fa7f90c4    fp = 0x00000078e79ff440
+     lr = 0x0000007986d02ab0    sp = 0x00000078e79ff410
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x27aac
+     fp = 0x00000078e79ff4b0    lr = 0x00000078f2cdf174
+     sp = 0x00000078e79ff450    pc = 0x0000007986d02ab0
+    Found by: previous frame's frame pointer
+ 2  libGLES_mali.so + 0x520170
+     fp = 0x00000078e79ff4e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e79ff4c0    pc = 0x00000078f2cdf174
+    Found by: previous frame's frame pointer
+ 3  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e79ff4f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 24
+ 0  libc.so + 0x1d7ec
+     x0 = 0x00000078fa7f914c    x1 = 0x0000000000000089
+     x2 = 0x00000000fffffffe    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x00000000ffffffff
+     x6 = 0x00000000ffffffff    x7 = 0x7f7f7f7f7f7f7f7f
+     x8 = 0x0000000000000062    x9 = 0x0000000000000000
+    x10 = 0x0000000000000000   x11 = 0x00000000fffffffe
+    x12 = 0x0000000000000000   x13 = 0x00000078e79024f0
+    x14 = 0x0000000000000100   x15 = 0x00000078e8114c58
+    x16 = 0x0000007986da6240   x17 = 0x0000007986cf87d0
+    x18 = 0x0000000000081250   x19 = 0x00000078fa7f914c
+    x20 = 0x00000000fffffffe   x21 = 0x0000000000000089
+    x22 = 0x00000078e7902598   x23 = 0x0000000000006cf3
+    x24 = 0x0000000000000000   x25 = 0x00000078e7806000
+    x26 = 0x0000000000000002   x27 = 0x0000000000000002
+    x28 = 0x00000078fa7f914c    fp = 0x00000078e7902440
+     lr = 0x0000007986d02ab0    sp = 0x00000078e7902410
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x27aac
+     fp = 0x00000078e79024b0    lr = 0x00000078f2cdf174
+     sp = 0x00000078e7902450    pc = 0x0000007986d02ab0
+    Found by: previous frame's frame pointer
+ 2  libGLES_mali.so + 0x520170
+     fp = 0x00000078e79024e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e79024c0    pc = 0x00000078f2cdf174
+    Found by: previous frame's frame pointer
+ 3  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e79024f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 25
+ 0  libc.so + 0x1d7ec
+     x0 = 0x00000078fa7f91d4    x1 = 0x0000000000000089
+     x2 = 0x00000000fffffffe    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x00000000ffffffff
+     x6 = 0x00000000ffffffff    x7 = 0x0000000000000000
+     x8 = 0x0000000000000062    x9 = 0x0000000000000000
+    x10 = 0x0000000000000000   x11 = 0x00000000fffffffe
+    x12 = 0x0000000000000000   x13 = 0x0000000000000000
+    x14 = 0x0000000000000000   x15 = 0x0000000000000000
+    x16 = 0x0000007986da6240   x17 = 0x0000007986cf87d0
+    x18 = 0x00000001ff44b000   x19 = 0x00000078fa7f91d4
+    x20 = 0x00000000fffffffe   x21 = 0x0000000000000089
+    x22 = 0x00000078e7805598   x23 = 0x0000000000006cf3
+    x24 = 0x0000000000000000   x25 = 0x00000078e7709000
+    x26 = 0x0000000000000002   x27 = 0x0000000000000002
+    x28 = 0x00000078fa7f91d4    fp = 0x00000078e7805440
+     lr = 0x0000007986d02ab0    sp = 0x00000078e7805410
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x27aac
+     fp = 0x00000078e78054b0    lr = 0x00000078f2cdf174
+     sp = 0x00000078e7805450    pc = 0x0000007986d02ab0
+    Found by: previous frame's frame pointer
+ 2  libGLES_mali.so + 0x520170
+     fp = 0x00000078e78054e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e78054c0    pc = 0x00000078f2cdf174
+    Found by: previous frame's frame pointer
+ 3  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e78054f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 26
+ 0  libc.so + 0x69fdc
+     x0 = 0x00000078e7708330    x1 = 0x0000000000000004
+     x2 = 0x0000000000000000    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x0000000000000000
+     x6 = 0x0000000000000000    x7 = 0x7f7f7f7f7f7f7f7f
+     x8 = 0x0000000000000049    x9 = 0x00000000ffffffff
+    x10 = 0x0000000000000001   x11 = 0x0000000000000000
+    x12 = 0x0000000000000002   x13 = 0x000000000000004b
+    x14 = 0x0000000000000096   x15 = 0x0000000000000000
+    x16 = 0x0000007986da6558   x17 = 0x0000007986d016b4
+    x18 = 0x000000000000000c   x19 = 0x0000000000000004
+    x20 = 0x00000078e7708330   x21 = 0x0000000000000000
+    x22 = 0x00000078e7708588   x23 = 0x00000078f483f270
+    x24 = 0x0000000000000000   x25 = 0x00000078fa7bfee0
+    x26 = 0x0000000000001800   x27 = 0x0000000000000000
+    x28 = 0x0000000000000000    fp = 0x00000078e77082a0
+     lr = 0x0000007986d01710    sp = 0x00000078e7708260
+     pc = 0x0000007986d44fdc
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x2670c
+     fp = 0x0000000000000003    lr = 0x00000078f2cdf504
+     sp = 0x00000078e77082b0    pc = 0x0000007986d01710
+    Found by: previous frame's frame pointer
+
+Thread 27
+ 0  libc.so + 0x1d7ec
+     x0 = 0x00000078fa658ac8    x1 = 0x0000000000000089
+     x2 = 0x00000000fffffffe    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x00000000ffffffff
+     x6 = 0x00000000ffffffff    x7 = 0x0000000000000001
+     x8 = 0x0000000000000062    x9 = 0x0000000000000000
+    x10 = 0x0000000000000000   x11 = 0x00000000fffffffe
+    x12 = 0x0000000000000000   x13 = 0x0000000000000020
+    x14 = 0x0000000000000000   x15 = 0x00000078f4829348
+    x16 = 0x0000007986da6240   x17 = 0x0000007986cf87d0
+    x18 = 0x0000000000089460   x19 = 0x00000078fa658ac8
+    x20 = 0x00000000fffffffe   x21 = 0x0000000000000089
+    x22 = 0x00000078e760b598   x23 = 0x00000078fa658ac8
+    x24 = 0x0000000000000000   x25 = 0x00000078fa658ad8
+    x26 = 0x0000000000089ed0   x27 = 0x00000078f4127f31
+    x28 = 0x0000000000000000    fp = 0x00000078e760b400
+     lr = 0x0000007986d02ab0    sp = 0x00000078e760b3d0
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x27aac
+     fp = 0x0000000000000000    lr = 0x00000078f2f68858
+     sp = 0x00000078e760b410    pc = 0x0000007986d02ab0
+    Found by: previous frame's frame pointer
+
+Thread 28
+ 0  libc.so + 0x1d7ec
+     x0 = 0x00000078e72b1f18    x1 = 0x0000000000000089
+     x2 = 0x0000000000000000    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x00000000ffffffff
+     x6 = 0x00000000ffffffff    x7 = 0x0000000080000000
+     x8 = 0x0000000000000062    x9 = 0x0000000000000089
+    x10 = 0x0000000000000001   x11 = 0x0000000000000000
+    x12 = 0x0000000000000000   x13 = 0x0000000000000000
+    x14 = 0x0000000000000100   x15 = 0x00000078e81148d8
+    x16 = 0x0000007986da6240   x17 = 0x0000007986cf87d0
+    x18 = 0x0000000000000100   x19 = 0x00000078e72b1f48
+    x20 = 0x00000078e71ff598   x21 = 0x00000078e72b1f18
+    x22 = 0x0000000000000000   x23 = 0x0000000000000089
+    x24 = 0x0000000000000000   x25 = 0x00000078e7103000
+    x26 = 0x0000000000000002   x27 = 0x0000000000000002
+    x28 = 0x0000007984162008    fp = 0x00000078e71ff380
+     lr = 0x0000007986d41fdc    sp = 0x00000078e71ff350
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x66fd8
+     fp = 0x00000078e71ff390    lr = 0x00000079869348d0
+     sp = 0x00000078e71ff390    pc = 0x0000007986d41fdc
+    Found by: previous frame's frame pointer
+ 2  libc++.so + 0x768cc
+     fp = 0x00000078e71ff3e0    lr = 0x0000007985da0d40
+     sp = 0x00000078e71ff3a0    pc = 0x00000079869348d0
+    Found by: previous frame's frame pointer
+ 3  libhidlbase.so + 0x1bd3c
+     fp = 0x00000078e71ff490    lr = 0x0000007985da0b80
+     sp = 0x00000078e71ff3f0    pc = 0x0000007985da0d40
+    Found by: previous frame's frame pointer
+ 4  libhidlbase.so + 0x1bb7c
+     fp = 0x00000078e71ff4b0    lr = 0x0000007986d42928
+     sp = 0x00000078e71ff4a0    pc = 0x0000007985da0b80
+    Found by: previous frame's frame pointer
+ 5  libc.so + 0x67924
+     fp = 0x00000078e71ff4e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e71ff4c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+ 6  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e71ff4f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 29
+ 0  libc.so + 0x1d7ec
+     x0 = 0x00000078fa61fcf8    x1 = 0x0000000000000089
+     x2 = 0x00000000000000a2    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x00000000ffffffff
+     x6 = 0x00000000ffffffff    x7 = 0x00000078e6d7d99c
+     x8 = 0x0000000000000062    x9 = 0x0000000000000089
+    x10 = 0x0000000000000001   x11 = 0x0000000000000000
+    x12 = 0x00000078e6d7d9a4   x13 = 0x00000078e7361fc0
+    x14 = 0x00000078e6d7d9a0   x15 = 0x00000000434e1df9
+    x16 = 0x0000007986da6240   x17 = 0x0000007986cf87d0
+    x18 = 0x0000000042f3532e   x19 = 0x00000078fa61fcd0
+    x20 = 0x00000078e6d7e598   x21 = 0x00000078fa61fcf8
+    x22 = 0x00000000000000a2   x23 = 0x0000000000000089
+    x24 = 0x0000000000000000   x25 = 0x00000078e6c82000
+    x26 = 0x0000000000000000   x27 = 0x0000000000000000
+    x28 = 0x00000078fa6d3e00    fp = 0x00000078e6d7e380
+     lr = 0x0000007986d41fdc    sp = 0x00000078e6d7e350
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x66fd8
+     fp = 0x00000078e6d7e3b0    lr = 0x0000007986a6caa8
+     sp = 0x00000078e6d7e390    pc = 0x0000007986d41fdc
+    Found by: previous frame's frame pointer
+ 2  libhwui.so + 0x75aa4
+     fp = 0x00000078e6d7e420    lr = 0x0000007983b17514
+     sp = 0x00000078e6d7e3c0    pc = 0x0000007986a6caa8
+    Found by: previous frame's frame pointer
+ 3  libutils.so + 0x11510
+     fp = 0x00000078e6d7e490    lr = 0x000000798588ee4c
+     sp = 0x00000078e6d7e430    pc = 0x0000007983b17514
+    Found by: previous frame's frame pointer
+ 4  libandroid_runtime.so + 0xa9e48
+     fp = 0x00000078e6d7e4b0    lr = 0x0000007986d42928
+     sp = 0x00000078e6d7e4a0    pc = 0x000000798588ee4c
+    Found by: previous frame's frame pointer
+ 5  libc.so + 0x67924
+     fp = 0x00000078e6d7e4e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e6d7e4c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+ 6  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e6d7e4f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 30
+ 0  libc.so + 0x1d7ec
+     x0 = 0x00000078fa61fe38    x1 = 0x0000000000000089
+     x2 = 0x000000000000005e    x3 = 0x0000000000000000
+     x4 = 0x0000000000000000    x5 = 0x00000000ffffffff
+     x6 = 0x00000000ffffffff    x7 = 0x00000078e6c80bdc
+     x8 = 0x0000000000000062    x9 = 0x0000000000000089
+    x10 = 0x0000000000000001   x11 = 0x0000000000000000
+    x12 = 0x00000078e6c80be4   x13 = 0x00000078e7e93b70
+    x14 = 0x00000078e6c80be0   x15 = 0x00000000c18a6a11
+    x16 = 0x0000007986da6240   x17 = 0x0000007986cf87d0
+    x18 = 0x0000000043233f2f   x19 = 0x00000078fa61fe10
+    x20 = 0x00000078e6c81598   x21 = 0x00000078fa61fe38
+    x22 = 0x000000000000005e   x23 = 0x0000000000000089
+    x24 = 0x0000000000000000   x25 = 0x00000078e6b85000
+    x26 = 0x0000000000000000   x27 = 0x0000000000000000
+    x28 = 0x00000078fa6d3e80    fp = 0x00000078e6c81380
+     lr = 0x0000007986d41fdc    sp = 0x00000078e6c81350
+     pc = 0x0000007986cf87ec
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x66fd8
+     fp = 0x00000078e6c813b0    lr = 0x0000007986a6caa8
+     sp = 0x00000078e6c81390    pc = 0x0000007986d41fdc
+    Found by: previous frame's frame pointer
+ 2  libhwui.so + 0x75aa4
+     fp = 0x00000078e6c81420    lr = 0x0000007983b17514
+     sp = 0x00000078e6c813c0    pc = 0x0000007986a6caa8
+    Found by: previous frame's frame pointer
+ 3  libutils.so + 0x11510
+     fp = 0x00000078e6c81490    lr = 0x000000798588ee4c
+     sp = 0x00000078e6c81430    pc = 0x0000007983b17514
+    Found by: previous frame's frame pointer
+ 4  libandroid_runtime.so + 0xa9e48
+     fp = 0x00000078e6c814b0    lr = 0x0000007986d42928
+     sp = 0x00000078e6c814a0    pc = 0x000000798588ee4c
+    Found by: previous frame's frame pointer
+ 5  libc.so + 0x67924
+     fp = 0x00000078e6c814e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e6c814c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+ 6  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e6c814f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Thread 31
+ 0  libc.so + 0x6affc
+     x0 = 0x0000000000006d01    x1 = 0x00000078e6b82ce4
+     x2 = 0x0000000000000000    x3 = 0x0000000000000000
+     x4 = 0x00000078e6b83170    x5 = 0x0000007900455107
+     x6 = 0x0000000000000001    x7 = 0x0000000000000000
+     x8 = 0x0000000000000104    x9 = 0xe00246b53f7f017c
+    x10 = 0x0000000000430000   x11 = 0x0000007902ae8c30
+    x12 = 0x0000007902ae8c78   x13 = 0x0000007902ae8cc0
+    x14 = 0x0000007902ae8d20   x15 = 0x0000000000000000
+    x16 = 0x0000007986da6960   x17 = 0x0000007986d45ff8
+    x18 = 0x00000078e6b82c9c   x19 = 0x0000000000006d01
+    x20 = 0x00000078e6b84588   x21 = 0x00000078fa6d5400
+    x22 = 0x00000078e6b82fbc   x23 = 0x0000007900455107
+    x24 = 0x0000000000000008   x25 = 0x00000078e6b84588
+    x26 = 0x00000078fa6d54a0   x27 = 0x0000000000000002
+    x28 = 0x0000000000000001    fp = 0x00000078e6b82d00
+     lr = 0x00000078fb0a6bcc    sp = 0x00000078e6b82ce0
+     pc = 0x0000007986d45ffc
+    Found by: given as instruction pointer in context
+ 1  libopenjdk.so + 0x29bc8
+     fp = 0x00000078e6b82de8    lr = 0x00000000705eb5d8
+     sp = 0x00000078e6b82d10    pc = 0x00000078fb0a6bcc
+    Found by: previous frame's frame pointer
+ 2  system@framework@boot.oat + 0xa245d4
+     fp = 0x00000078e6b82ee0    lr = 0x000000790267cf78
+     sp = 0x00000078e6b82df8    pc = 0x00000000705eb5d8
+    Found by: previous frame's frame pointer
+ 3  libart.so + 0xdcf74
+     fp = 0x00000078e6b82f70    lr = 0x000000790283b24c
+     sp = 0x00000078e6b82ef0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+ 4  libart.so + 0x29b248
+     fp = 0x00000078e6b83070    lr = 0x0000007902835834
+     sp = 0x00000078e6b82f80    pc = 0x000000790283b24c
+    Found by: previous frame's frame pointer
+ 5  libart.so + 0x295830
+     fp = 0x00000078e6b83100    lr = 0x0000007902ad1f8c
+     sp = 0x00000078e6b83080    pc = 0x0000007902835834
+    Found by: previous frame's frame pointer
+ 6  libart.so + 0x531f88
+     fp = 0x00000078e6b83150    lr = 0x0000007902adab98
+     sp = 0x00000078e6b83110    pc = 0x0000007902ad1f8c
+    Found by: previous frame's frame pointer
+ 7  libart.so + 0x53ab94
+     fp = 0x00000078e6b831e0    lr = 0x0000007902815c98
+     sp = 0x00000078e6b83160    pc = 0x0000007902adab98
+    Found by: previous frame's frame pointer
+ 8  libart.so + 0x275c94
+     fp = 0x00000078e6b83260    lr = 0x000000790281b8a0
+     sp = 0x00000078e6b831f0    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+ 9  libart.so + 0x27b89c
+     fp = 0x00000078e6b83370    lr = 0x0000007902835814
+     sp = 0x00000078e6b83270    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+10  libart.so + 0x295810
+     fp = 0x00000078e6b833e0    lr = 0x0000007902ad2174
+     sp = 0x00000078e6b83380    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+11  libart.so + 0x532170
+     fp = 0x00000078e6b83430    lr = 0x0000007902adac18
+     sp = 0x00000078e6b833f0    pc = 0x0000007902ad2174
+    Found by: previous frame's frame pointer
+12  libart.so + 0x53ac14
+     fp = 0x00000078e6b834c0    lr = 0x0000007902815c98
+     sp = 0x00000078e6b83440    pc = 0x0000007902adac18
+    Found by: previous frame's frame pointer
+13  libart.so + 0x275c94
+     fp = 0x00000078e6b83540    lr = 0x000000790281b8a0
+     sp = 0x00000078e6b834d0    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+14  libart.so + 0x27b89c
+     fp = 0x00000078e6b83650    lr = 0x0000007902835814
+     sp = 0x00000078e6b83550    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+15  libart.so + 0x295810
+     fp = 0x00000078e6b83720    lr = 0x0000007902ad1ce8
+     sp = 0x00000078e6b83660    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+16  libart.so + 0x531ce4
+     fp = 0x00000078e6b83770    lr = 0x0000007902adac98
+     sp = 0x00000078e6b83730    pc = 0x0000007902ad1ce8
+    Found by: previous frame's frame pointer
+17  libart.so + 0x53ac94
+     fp = 0x00000078e6b83800    lr = 0x0000007902815c98
+     sp = 0x00000078e6b83780    pc = 0x0000007902adac98
+    Found by: previous frame's frame pointer
+18  libart.so + 0x275c94
+     fp = 0x00000078e6b83880    lr = 0x000000790281b8a0
+     sp = 0x00000078e6b83810    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+19  libart.so + 0x27b89c
+     fp = 0x00000078e6b839e0    lr = 0x0000007902835814
+     sp = 0x00000078e6b83890    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+20  libart.so + 0x295810
+     fp = 0x00000078e6b83a70    lr = 0x0000007902ad0d2c
+     sp = 0x00000078e6b839f0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+21  libart.so + 0x530d28
+     fp = 0x00000078e6b83ac0    lr = 0x0000007902adaa98
+     sp = 0x00000078e6b83a80    pc = 0x0000007902ad0d2c
+    Found by: previous frame's frame pointer
+22  libart.so + 0x53aa94
+     fp = 0x00000078e6b83b50    lr = 0x0000007902815c98
+     sp = 0x00000078e6b83ad0    pc = 0x0000007902adaa98
+    Found by: previous frame's frame pointer
+23  libart.so + 0x275c94
+     fp = 0x00000078e6b83bd0    lr = 0x000000790281b8a0
+     sp = 0x00000078e6b83b60    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+24  libart.so + 0x27b89c
+     fp = 0x00000078e6b83cd0    lr = 0x0000007902835814
+     sp = 0x00000078e6b83be0    pc = 0x000000790281b8a0
+    Found by: previous frame's frame pointer
+25  libart.so + 0x295810
+     fp = 0x00000078e6b83da0    lr = 0x0000007902ad1ce8
+     sp = 0x00000078e6b83ce0    pc = 0x0000007902835814
+    Found by: previous frame's frame pointer
+26  libart.so + 0x531ce4
+     fp = 0x00000078e6b83df0    lr = 0x0000007902adac98
+     sp = 0x00000078e6b83db0    pc = 0x0000007902ad1ce8
+    Found by: previous frame's frame pointer
+27  libart.so + 0x53ac94
+     fp = 0x00000078e6b83e80    lr = 0x0000007902815c98
+     sp = 0x00000078e6b83e00    pc = 0x0000007902adac98
+    Found by: previous frame's frame pointer
+28  libart.so + 0x275c94
+     fp = 0x00000078e6b83fe0    lr = 0x0000007902ac38ec
+     sp = 0x00000078e6b83e90    pc = 0x0000007902815c98
+    Found by: previous frame's frame pointer
+29  libart.so + 0x5238e8
+     fp = 0x00000078e6b840e8    lr = 0x0000007902af1f10
+     sp = 0x00000078e6b83ff0    pc = 0x0000007902ac38ec
+    Found by: previous frame's frame pointer
+30  libart.so + 0x551f0c
+     fp = 0x00000078e6b841e0    lr = 0x000000790267cf78
+     sp = 0x00000078e6b840f8    pc = 0x0000007902af1f10
+    Found by: previous frame's frame pointer
+31  libart.so + 0xdcf74
+     fp = 0x00000078e6b842f0    lr = 0x0000007902a0d5e8
+     sp = 0x00000078e6b841f0    pc = 0x000000790267cf78
+    Found by: previous frame's frame pointer
+32  libart.so + 0x46d5e4
+     fp = 0x00000078e6b843c0    lr = 0x0000007902a0e814
+     sp = 0x00000078e6b84300    pc = 0x0000007902a0d5e8
+    Found by: previous frame's frame pointer
+33  libart.so + 0x46e810
+     fp = 0x00000078e6b84490    lr = 0x0000007902a35154
+     sp = 0x00000078e6b843d0    pc = 0x0000007902a0e814
+    Found by: previous frame's frame pointer
+34  libart.so + 0x495150
+     fp = 0x00000078e6b844b0    lr = 0x0000007986d42928
+     sp = 0x00000078e6b844a0    pc = 0x0000007902a35154
+    Found by: previous frame's frame pointer
+35  libc.so + 0x67924
+     fp = 0x00000078e6b844e0    lr = 0x0000007986cf9fa0
+     sp = 0x00000078e6b844c0    pc = 0x0000007986d42928
+    Found by: previous frame's frame pointer
+36  libc.so + 0x1ef9c
+     fp = 0x0000000000000000    lr = 0x0000000000000000
+     sp = 0x00000078e6b844f0    pc = 0x0000007986cf9fa0
+    Found by: previous frame's frame pointer
+
+Loaded modules:
+0x12c00000 - 0x52bfffff  dalvik-main space (region space) (deleted)  ???  (WARNING: No symbols, , )
+0x6f18c000 - 0x6fbc6fff  system@framework@boot.art  ???  (WARNING: No symbols, system@framework@boot.art, 000000000000000000000000000000000)
+0x6fbc7000 - 0x7240afff  system@framework@boot.oat  ???  (WARNING: No symbols, system@framework@boot.oat, 700E7313C764BAECB9DA65AFBF292CDE0)
+0x7241e000 - 0x724a8fff  dalvik-zygote space (deleted)  ???  (WARNING: No symbols, , )
+0x724a9000 - 0x7641dfff  dalvik-non moving space (deleted)  ???  (WARNING: No symbols, , )
+0x7641e000 - 0x9641dfff  dalvik-free list large object space (deleted)  ???  (WARNING: No symbols, , )
+0x9641e000 - 0x9841dfff  dalvik-data-code-cache (deleted)  ???  (WARNING: No symbols, , )
+0x9841e000 - 0x9a41dfff  dalvik-jit-code-cache (deleted)  ???  (WARNING: No symbols, , )
+0xebad6000 - 0xebad6fff  dalvik-Sentinel fault page (deleted)  ???  (WARNING: No symbols, , )
+0x5c5965a000 - 0x5c5965efff  app_process64  ???  (main)  (WARNING: No symbols, app_process64, BFA9A69DB966F9949B85CCD4313118E60)
+0x78e7411000 - 0x78e750efff  hwbinder  ???  (WARNING: No symbols, , )
+0x78e8213000 - 0x78e82a2fff  libbreakpad-core.so  ???
+0x78e869c000 - 0x78e869dfff  libion.so  ???
+0x78e8e15000 - 0x78e8e26fff  base.odex  ???  (WARNING: No symbols, base.odex, F44288904A11CBED80EF81BAA13C6F850)
+0x78e8ebd000 - 0x78e93aefff  base.vdex  ???
+0x78e96a6000 - 0x78e97a3fff  binder  ???  (WARNING: No symbols, , )
+0x78f27bf000 - 0x78f4668fff  libGLES_mali.so  ???  (WARNING: No symbols, libGLES_mali.so, DDBE434F4AF968D80AF43DA1FB7122EC0)
+0x78f4885000 - 0x78f489dfff  gralloc.sp9832e.so  ???
+0x78f48fb000 - 0x78f48fcfff  libwebviewchromium_loader.so  ???
+0x78f4902000 - 0x78f4921fff  libcompiler_rt.so  ???
+0x78f49c0000 - 0x78f49c1fff  libhardware.so  ???
+0x78f49f7000 - 0x78f4ae1fff  libc++.so  ???
+0x78f4b1d000 - 0x78f4b39fff  libutils.so  ???
+0x78f4b40000 - 0x78f4b48fff  android.hardware.graphics.mapper@2.0-impl.so  ???
+0x78f4b82000 - 0x78f4ba3fff  liblzma.so  ???
+0x78f4bdd000 - 0x78f4becfff  libcutils.so  ???
+0x78f4c25000 - 0x78f4c3dfff  libunwind.so  ???
+0x78f4cce000 - 0x78f4cf2fff  libhwbinder.so  ???
+0x78f4d06000 - 0x78f4d0ffff  android.hardware.graphics.common@1.0.so  ???
+0x78f4d58000 - 0x78f4d67fff  libbase.so  ???
+0x78f4d77000 - 0x78f4deafff  libhidltransport.so  ???
+0x78f4e0b000 - 0x78f4e2afff  android.hardware.graphics.mapper@2.0.so  ???
+0x78f4e68000 - 0x78f4e77fff  libbase.so  ???
+0x78f4e99000 - 0x78f4eb8fff  libhidlbase.so  ???
+0x78f4ecd000 - 0x78f4ee6fff  libbacktrace.so  ???
+0x78f4f18000 - 0x78f4f37fff  libhidlbase.so  ???
+0x78f4f43000 - 0x78f4fb6fff  libhidltransport.so  ???
+0x78f6c46000 - 0x78f6cc0fff  tzdata  ???
+0x78f6cbd000 - 0x78f6cf8fff  libjavacrypto.so  ???
+0x78f6d03000 - 0x78f6d0dfff  libsoundpool.so  ???
+0x78f6d2f000 - 0x78f6d7cfff  hyph-hu.hyb  ???
+0x78f6d7d000 - 0x78f6dcdfff  RobotoCondensed-BoldItalic.ttf  ???
+0x78f6dce000 - 0x78f6e18fff  RobotoCondensed-Bold.ttf  ???
+0x78f6e19000 - 0x78f6e69fff  RobotoCondensed-MediumItalic.ttf  ???
+0x78f6e6a000 - 0x78f6eb4fff  RobotoCondensed-Medium.ttf  ???
+0x78f6eb5000 - 0x78f6f05fff  RobotoCondensed-Italic.ttf  ???
+0x78f6f06000 - 0x78f6f4ffff  RobotoCondensed-Regular.ttf  ???
+0x78f6f50000 - 0x78f6fa1fff  RobotoCondensed-LightItalic.ttf  ???
+0x78f6fa2000 - 0x78f6febfff  RobotoCondensed-Light.ttf  ???
+0x78f6fec000 - 0x78f76ddfff  NotoColorEmoji.ttf  ???
+0x78f76de000 - 0x78f88adfff  NotoSansCJK-Regular.ttc  ???
+0x78f88ae000 - 0x78f895bfff  NotoSansSymbols-Regular-Subsetted.ttf  ???
+0x78f895c000 - 0x78f89befff  NotoSansTibetan-Regular.ttf  ???
+0x78f89bf000 - 0x78f9ffffff  icudt58l.dat  ???
+0x78fa206000 - 0x78fa261fff  NotoSansTibetan-Bold.ttf  ???
+0x78fa262000 - 0x78fa2ddfff  NotoSansEgyptianHieroglyphs-Regular.ttf  ???
+0x78fa2de000 - 0x78fa358fff  NotoSansCuneiform-Regular.ttf  ???
+0x78fa359000 - 0x78fa3aafff  Roboto-BoldItalic.ttf  ???
+0x78fa3ab000 - 0x78fa3f5fff  Roboto-Bold.ttf  ???
+0x78fa4ff000 - 0x78fa5fffff  dalvik-Jit thread pool worker thread 0 (deleted)  ???  (WARNING: No symbols, , )
+0x78fa816000 - 0x78fa913fff  dalvik-allocspace non moving space mark-bitmap 1 (deleted)  ???  (WARNING: No symbols, , )
+0x78fa914000 - 0x78faa11fff  dalvik-allocspace non moving space live-bitmap 1 (deleted)  ???  (WARNING: No symbols, , )
+0x78fa9e3000 - 0x78facc3fff  libart-compiler.so  ???
+0x78fad07000 - 0x78fad3afff  libart-dexlayout.so  ???
+0x78fad47000 - 0x78fae29fff  libvixl-arm64.so  ???
+0x78fae3e000 - 0x78faf62fff  libvixl-arm.so  ???
+0x78faf95000 - 0x78fafe5fff  Roboto-BlackItalic.ttf  ???
+0x78fafe6000 - 0x78fafedfff  libopenjdkjvm.so  ???
+0x78fb012000 - 0x78fb053fff  libssl.so  ???
+0x78fb07d000 - 0x78fb0b6fff  libopenjdk.so  ???  (WARNING: No symbols, libopenjdk.so, 9E6CC07653A4034743938A8112FAF2550)
+0x78fb0c3000 - 0x78fc703fff  icudt58l.dat  ???
+0x78fc6ff000 - 0x78fc747fff  libjavacore.so  ???
+0x78fc750000 - 0x78fc79afff  Roboto-Black.ttf  ???
+0x78fc79b000 - 0x78fc7a0fff  libtinyalsa.so  ???
+0x78fc7e6000 - 0x78fc7e8fff  libwebviewchromium_plat_support.so  ???
+0x78fc80a000 - 0x78fc889fff  android.hardware.renderscript@1.0.so  ???
+0x78fc8d2000 - 0x78fc8e0fff  libRS.so  ???
+0x78fc911000 - 0x78fc912fff  libOpenSLES.so  ???
+0x78fc953000 - 0x78fc954fff  libOpenMAXAL.so  ???
+0x78fc989000 - 0x78fc98bfff  libtextclassifier_hash.so  ???
+0x78fc9cf000 - 0x78fca5ffff  libneuralnetworks.so  ???
+0x78fcc10000 - 0x78fcc5dfff  android.hardware.neuralnetworks@1.0.so  ???
+0x78fcc85000 - 0x78fcc85fff  libjnigraphics.so  ???
+0x78fcc86000 - 0x78fcc87fff  libjnigraphics.so  ???
+0x78fcc8e000 - 0x78fccdefff  Roboto-MediumItalic.ttf  ???
+0x78fccdf000 - 0x78fccf3fff  libGLESv3.so  ???
+0x78fccf8000 - 0x78fcd61fff  libmedia_jni.so  ???
+0x78fcd96000 - 0x78fcdaffff  libmediandk.so  ???
+0x78fcdce000 - 0x78fcdddfff  libmidi.so  ???
+0x78fce02000 - 0x78fce2bfff  libmtp.so  ???
+0x78fce36000 - 0x78fce64fff  libexif.so  ???
+0x78fce8a000 - 0x78fcea6fff  libcamera2ndk.so  ???
+0x78fcebe000 - 0x78fceecfff  libaaudio.so  ???
+0x78fcf0f000 - 0x78fcf2afff  libandroid.so  ???
+0x78fcf5a000 - 0x78fd021fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x78fd022000 - 0x78fd221fff  dalvik-rb copying gc mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x78fd222000 - 0x78fda21fff  dalvik-concurrent copying gc mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x78fda22000 - 0x78fe222fff  dalvik-live stack (deleted)  ???  (WARNING: No symbols, , )
+0x78fe223000 - 0x78fea23fff  dalvik-allocation stack (deleted)  ???  (WARNING: No symbols, , )
+0x78fea24000 - 0x78fee24fff  dalvik-card table (deleted)  ???  (WARNING: No symbols, , )
+0x78fee25000 - 0x78fef24fff  dalvik-large object free list space allocation info map (deleted)  ???  (WARNING: No symbols, , )
+0x78fef25000 - 0x78fff24fff  dalvik-region space live bitmap (deleted)  ???  (WARNING: No symbols, , )
+0x78fff25000 - 0x7900024fff   non moving space mark-bitmap 0 (deleted)  ???  (WARNING: No symbols, , )
+0x7900025000 - 0x7900124fff   non moving space live-bitmap 0 (deleted)  ???  (WARNING: No symbols, , )
+0x7900125000 - 0x79025c4fff  system@framework@boot.vdex  ???  (WARNING: No symbols, system@framework@boot.vdex, 000000000000000000000000000000000)
+0x79025a0000 - 0x7902bbbfff  libart.so  ???  (WARNING: No symbols, libart.so, E3E7F1522865F1C605BCE52F57324AEA0)
+0x7903005000 - 0x79030ccfff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x79030cd000 - 0x79030cdfff  libsigchain.so  ???
+0x79030ce000 - 0x79030cffff  libsigchain.so  ???
+0x79030df000 - 0x7903129fff  Roboto-Medium.ttf  ???
+0x790312a000 - 0x790313cfff  liblz4.so  ???
+0x7903176000 - 0x7903179fff  libtombstoned_client.so  ???
+0x79831a7000 - 0x79831a9fff  android.hidl.token@1.0-utils.so  ???
+0x79831c1000 - 0x79831c4fff  libusbhost.so  ???
+0x7983154000 - 0x79834e7fff  libstagefright.so  ???
+0x798358e000 - 0x7983597fff  android.hardware.graphics.common@1.0.so  ???
+0x79835e0000 - 0x79835f2fff  libimg_utils.so  ???
+0x7983618000 - 0x798361bfff  libstagefright_http_support.so  ???
+0x798364b000 - 0x79836d6fff  libbinder.so  ???  (WARNING: No symbols, libbinder.so, F6C3F8974D7BE8E17646270404CB39160)
+0x7983728000 - 0x798372cfff  libprocessgroup.so  ???
+0x7983745000 - 0x7983768fff  libexpat.so  ???
+0x7983785000 - 0x79837fcfff  libharfbuzz_ng.so  ???
+0x798381b000 - 0x798382ffff  libsensor.so  ???
+0x798383c000 - 0x7983874fff  libmediadrm.so  ???
+0x798388c000 - 0x798388dfff  libgraphicsenv.so  ???
+0x7983893000 - 0x79838d3fff  NotoSerif-BoldItalic.ttf  ???
+0x79838bb000 - 0x798391dfff  libmedia_omx.so  ???
+0x7983969000 - 0x798396ffff  libnativehelper.so  ???
+0x7983970000 - 0x7983a0dfff  libgui.so  ???
+0x7983a28000 - 0x7983a78fff  Roboto-Italic.ttf  ???
+0x7983a79000 - 0x7983a79fff  libleakdetect.so  ???
+0x7983a7a000 - 0x7983a7bfff  libleakdetect.so  ???
+0x7983a85000 - 0x7983a86fff  libhardware_legacy.so  ???
+0x7983a90000 - 0x7983accfff  NotoSerif-Italic.ttf  ???
+0x7983acd000 - 0x7983ad5fff  libGLESv1_CM.so  ???
+0x7983ae6000 - 0x7983b05fff  u:object_r:hwservicemanager_prop:s0  ???  (WARNING: No symbols, , )
+0x7983b06000 - 0x7983b22fff  libutils.so  ???  (WARNING: No symbols, libutils.so, AD93DFBC69FAC60DB874CE125DD532CA0)
+0x7983b29000 - 0x7983fe2fff  libpdfium.so  ???
+0x798400f000 - 0x79840a2fff  android.hardware.media.omx@1.0.so  ???
+0x79840bd000 - 0x79840dcfff  dalvik-CompilerMetadata (deleted)  ???  (WARNING: No symbols, , )
+0x79840da000 - 0x798412ffff  libvintf.so  ???
+0x798413f000 - 0x798415efff  android.hardware.graphics.mapper@2.0.so  ???
+0x798416e000 - 0x798418dfff  dalvik-CompilerMetadata (deleted)  ???  (WARNING: No symbols, , )
+0x798412f000 - 0x7984921fff  libskia.so  ???
+0x79849a7000 - 0x79849b6fff  libcutils.so  ???
+0x79849c3000 - 0x79849ecfff  libEGL.so  ???
+0x7984a16000 - 0x7984a35fff  libminikin.so  ???
+0x7984a4e000 - 0x7984a6dfff  dalvik-CompilerMetadata (deleted)  ???  (WARNING: No symbols, , )
+0x7984a6e000 - 0x7984a86fff  libunwind.so  ???
+0x7984af5000 - 0x7984b14fff  dalvik-CompilerMetadata (deleted)  ???  (WARNING: No symbols, , )
+0x7984b15000 - 0x7984b22fff  libtinyxml2.so  ???
+0x7984b38000 - 0x7984b57fff  dalvik-LinearAlloc (deleted)  ???  (WARNING: No symbols, , )
+0x7984b57000 - 0x7984b64fff  libmediautils.so  ???
+0x7984b7d000 - 0x7984b9cfff  dalvik-LinearAlloc (deleted)  ???  (WARNING: No symbols, , )
+0x7984b9d000 - 0x7984bb3fff  liblog.so  ???
+0x7984bc1000 - 0x7984be0fff  dalvik-CompilerMetadata (deleted)  ???  (WARNING: No symbols, , )
+0x7984be1000 - 0x7984bf5fff  libselinux.so  ???
+0x7984c05000 - 0x7984c24fff  dalvik-CompilerMetadata (deleted)  ???  (WARNING: No symbols, , )
+0x7984c25000 - 0x7984c28fff  libpowermanager.so  ???
+0x7984c34000 - 0x7984c53fff  dalvik-CompilerMetadata (deleted)  ???  (WARNING: No symbols, , )
+0x7984c54000 - 0x7984c74fff  libui.so  ???
+0x7984c7b000 - 0x7984c9afff  dalvik-LinearAlloc (deleted)  ???  (WARNING: No symbols, , )
+0x7984c9b000 - 0x7984cb9fff  libpcre2.so  ???
+0x7984cd0000 - 0x7984cdafff  libziparchive.so  ???
+0x7984ce8000 - 0x7984d24fff  NotoSerif-Bold.ttf  ???
+0x7984d25000 - 0x7984d35fff  libaudioutils.so  ???
+0x7984d29000 - 0x7984ebefff  libicuuc.so  ???
+0x7984ed9000 - 0x7984f23fff  Roboto-Regular.ttf  ???
+0x7984f22000 - 0x7984f2bfff  libcamera_metadata.so  ???
+0x7984f37000 - 0x7984f73fff  NotoSerif-Regular.ttf  ???
+0x7984f74000 - 0x7984f75fff  android.hardware.configstore-utils.so  ???
+0x7984f78000 - 0x7984f7bfff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7984f7c000 - 0x7984f81fff  event-log-tags  ???
+0x7984f8c000 - 0x7984f93fff  probe.db-shm  ???
+0x7984f99000 - 0x7984fa3fff  libappfuse.so  ???
+0x7984fa7000 - 0x7984faafff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7984fb0000 - 0x7984fcffff  dalvik-LinearAlloc (deleted)  ???  (WARNING: No symbols, , )
+0x7984fd0000 - 0x7985016fff  libRScpp.so  ???
+0x7985019000 - 0x798501afff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7985025000 - 0x7985044fff  dalvik-CompilerMetadata (deleted)  ???  (WARNING: No symbols, , )
+0x798503d000 - 0x798506afff  libinput.so  ???
+0x7985074000 - 0x7985077fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7985091000 - 0x7985091fff  libvndksupport.so  ???
+0x7985092000 - 0x7985093fff  libvndksupport.so  ???
+0x798509a000 - 0x79850ebfff  Roboto-LightItalic.ttf  ???
+0x79850ec000 - 0x79850eefff  libspeexresampler.so  ???
+0x7985117000 - 0x7985118fff  libpackagelistparser.so  ???
+0x798511b000 - 0x798511cfff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7985131000 - 0x7985154fff  hyph-nn.hyb  ???
+0x7985153000 - 0x798515bfff  libaudiomanager.so  ???
+0x7985160000 - 0x7985161fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x798516c000 - 0x798518ffff  hyph-nb.hyb  ???
+0x798518c000 - 0x798519bfff  libsoundtrigger.so  ???
+0x79851b2000 - 0x79851c0fff  hyph-en-us.hyb  ???
+0x79851c1000 - 0x79851dbfff  hyph-de-ch-1901.hyb  ???
+0x79851dc000 - 0x79851ddfff  libdl.so  ???
+0x79851e1000 - 0x79851e2fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x79851e3000 - 0x79851ebfff  hyph-ga.hyb  ???
+0x79851ec000 - 0x7985236fff  Roboto-Light.ttf  ???
+0x7985237000 - 0x798523bfff  android.hardware.media@1.0.so  ???
+0x798523f000 - 0x7985240fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7985246000 - 0x798525ffff  hyph-de-1996.hyb  ???
+0x7985260000 - 0x798527afff  hyph-de-1901.hyb  ???
+0x7985274000 - 0x79852b5fff  libwilhelm.so  ???
+0x79852c4000 - 0x79852e3fff  dalvik-LinearAlloc (deleted)  ???  (WARNING: No symbols, , )
+0x79852e3000 - 0x7985322fff  libprotobuf-cpp-lite.so  ???
+0x798532d000 - 0x7985338fff  hyph-en-gb.hyb  ???
+0x7985339000 - 0x7985341fff  hyph-cy.hyb  ???
+0x7985342000 - 0x798539afff  libclang_rt.ubsan_standalone-aarch64-android.so  ???
+0x79856b1000 - 0x79856b2fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x79856b3000 - 0x79856cdfff  framework-res__auto_generated_rro.apk  ???
+0x79856ce000 - 0x79856d0fff  libnativebridge.so  ???
+0x79856d9000 - 0x79856e5fff  hyph-cu.hyb  ???
+0x79856e6000 - 0x7985705fff  HelveticaNeueRegular.ttf  ???
+0x7985706000 - 0x798571ffff  libbacktrace.so  ???
+0x7985723000 - 0x7985726fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7985727000 - 0x7985743fff  DancingScript-Bold.ttf  ???
+0x7985744000 - 0x7985765fff  liblzma.so  ???
+0x798576e000 - 0x798576ffff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7985775000 - 0x798577efff  HelveticaNeueMedium.ttf  ???
+0x798577f000 - 0x7985788fff  HelveticaNeueLight.ttf  ???
+0x7985783000 - 0x79857a6fff  libdrmframework.so  ???
+0x79857ae000 - 0x79857b7fff  HelveticaNeueThin.ttf  ???
+0x79857b8000 - 0x79857d4fff  DancingScript-Regular.ttf  ???
+0x79857d5000 - 0x79857dafff  libheif.so  ???
+0x79857e3000 - 0x79857ecfff  CarroisGothicSC-Regular.ttf  ???
+0x79857ed000 - 0x79857fbfff  ComingSoon.ttf  ???
+0x79857fc000 - 0x7985817fff  NotoSansMongolian-Regular.ttf  ???
+0x79857e5000 - 0x79859dafff  libandroid_runtime.so  ???  (WARNING: No symbols, libandroid_runtime.so, 53F9748A5CB2E07C779BC681CC3A09BE0)
+0x7985a03000 - 0x7985a13fff  CutiveMono.ttf  ???
+0x7985a14000 - 0x7985a32fff  NotoSansYi-Regular.ttf  ???
+0x7985a2c000 - 0x7985a6dfff  libstagefright_foundation.so  ???
+0x7985a77000 - 0x7985a91fff  DroidSansMono.ttf  ???
+0x7985a92000 - 0x7985aa1fff  NotoSansVai-Regular.ttf  ???
+0x7985aa2000 - 0x7985aadfff  NotoSansTaiTham-Regular.ttf  ???
+0x7985aae000 - 0x7985ab1fff  libdebuggerd_client.so  ???
+0x7985abb000 - 0x7985adbfff  NotoSansBamum-Regular.ttf  ???
+0x7985ada000 - 0x7985af7fff  libvulkan.so  ???
+0x7985afc000 - 0x7985b15fff  NotoSansMyanmarUI-Bold.ttf  ???
+0x7985b14000 - 0x7985b3bfff  android.hardware.configstore@1.0.so  ???
+0x7985b40000 - 0x7985b58fff  NotoSansLepcha-Regular.ttf  ???
+0x7985b58000 - 0x7985b6ffff  android.hardware.graphics.allocator@2.0.so  ???
+0x7985b74000 - 0x7985b75fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7985b76000 - 0x7985b7bfff  hyph-et.hyb  ???
+0x7985b7c000 - 0x7985b88fff  NotoSansSyriacWestern-Regular.ttf  ???
+0x7985b89000 - 0x7985bcefff  libjpeg.so  ???
+0x7985bd1000 - 0x7985bd4fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7985bd5000 - 0x7985bd8fff  hyph-es.hyb  ???
+0x7985bd9000 - 0x7985be7fff  NotoSansLinearB-Regular.ttf  ???
+0x7985be8000 - 0x7985c01fff  NotoSansMyanmarUI-Regular.ttf  ???
+0x7985bed000 - 0x7985c5cfff  libaudioclient.so  ???
+0x7985c6d000 - 0x7985c6efff  hyph-sl.hyb  ???
+0x7985c6f000 - 0x7985c75fff  NotoSansPhagsPa-Regular.ttf  ???
+0x7985c76000 - 0x7985c90fff  NotoSansMyanmar-Bold.ttf  ???
+0x7985c91000 - 0x7985cabfff  NotoSansMyanmar-Regular.ttf  ???
+0x7985ca5000 - 0x7985d6ffff  libdng_sdk.so  ???
+0x7985d78000 - 0x7985d84fff  NotoSansSyriacEastern-Regular.ttf  ???
+0x7985d85000 - 0x7985da4fff  libhidlbase.so  ???  (WARNING: No symbols, libhidlbase.so, 64CDE378301A07562BED1ACEFCF7B9C10)
+0x7985da8000 - 0x7985da9fff  hyph-mn-cyrl.hyb  ???
+0x7985daa000 - 0x7985dcdfff  NotoSansKhmer-VF.ttf  ???
+0x7985dce000 - 0x7985dd1fff  libnativewindow.so  ???
+0x7985dd5000 - 0x7985dd6fff  hyph-fr.hyb  ???
+0x7985dd7000 - 0x7985dd8fff  hyph-da.hyb  ???
+0x7985dd9000 - 0x7985ddbfff  NotoSansTaiLe-Regular.ttf  ???
+0x7985ddc000 - 0x7985e01fff  NotoSansSinhala-Bold.ttf  ???
+0x7985e02000 - 0x7985e33fff  libpng.so  ???
+0x7985e37000 - 0x7985e3ffff  NotoSansSymbols-Regular-Subsetted2.ttf  ???
+0x7985e40000 - 0x7985e42fff  libstdc++.so  ???
+0x7985e45000 - 0x7985e46fff  NotoSansUgaritic-Regular.ttf  ???
+0x7985e47000 - 0x7985e4afff  NotoSansTifinagh-Regular.ttf  ???
+0x7985e4b000 - 0x7985e4efff  NotoSansTaiViet-Regular.ttf  ???
+0x7985e4f000 - 0x7985e76fff  NotoSansSinhala-Regular.ttf  ???
+0x7985e77000 - 0x7985e8afff  NotoSansOriyaUI-Bold.ttf  ???
+0x7985e73000 - 0x79860a1fff  libicui18n.so  ???
+0x79860b6000 - 0x79860b7fff  NotoSansTagbanwa-Regular.ttf  ???
+0x79860b8000 - 0x79860c6fff  NotoSansKaithi-Regular.ttf  ???
+0x79860c7000 - 0x79860dbfff  NotoSansOriya-Bold.ttf  ???
+0x79860dc000 - 0x79860f0fff  libGLESv2.so  ???
+0x79860f3000 - 0x79860f3fff  230534ce-153c-4d66-9929-f574ebf92c13 (deleted)  ???  (WARNING: No symbols, , )
+0x79860f4000 - 0x79860fffff  NotoSansSyriacEstrangela-Regular.ttf  ???
+0x7986100000 - 0x7986114fff  NotoSansOriya-Regular.ttf  ???
+0x7986115000 - 0x7986119fff  libnativeloader.so  ???
+0x798611c000 - 0x798611cfff  GFXStats-27841 (deleted)  ???  (WARNING: No symbols, , )
+0x798611d000 - 0x7986120fff  NotoSansSylotiNagri-Regular.ttf  ???
+0x7986121000 - 0x7986123fff  NotoSansSundanese-Regular.ttf  ???
+0x7986124000 - 0x7986128fff  NotoSansSaurashtra-Regular.ttf  ???
+0x7986129000 - 0x7986144fff  NotoSansTeluguUI-Bold.ttf  ???
+0x7986143000 - 0x79861bafff  libft2.so  ???
+0x79861c0000 - 0x79861c1fff  NotoSansTagalog-Regular.ttf  ???
+0x79861c2000 - 0x79861c3fff  NotoSansShavian-Regular.ttf  ???
+0x79861c4000 - 0x79861c6fff  NotoSansSamaritan-Regular.ttf  ???
+0x79861c7000 - 0x79861c9fff  NotoSansRunic-Regular.ttf  ???
+0x79861ca000 - 0x79861e6fff  libvorbisidec.so  ???
+0x79861ea000 - 0x79861fdfff  NotoSansOriyaUI-Regular.ttf  ???
+0x79861fe000 - 0x7986219fff  NotoSansTeluguUI-Regular.ttf  ???
+0x7986213000 - 0x7986263fff  android.hardware.cas@1.0.so  ???
+0x798626b000 - 0x798626cfff  NotoSansRejang-Regular.ttf  ???
+0x798626d000 - 0x7986280fff  NotoSansKannadaUI-Bold.ttf  ???
+0x7986281000 - 0x79862b7fff  libm.so  ???
+0x79862bb000 - 0x79862bcfff  NotoSansPhoenician-Regular.ttf  ???
+0x79862bd000 - 0x79862d7fff  NotoSansTelugu-Bold.ttf  ???
+0x79862d8000 - 0x7986330fff  libsonivox.so  ???
+0x798633b000 - 0x798634efff  NotoSansKannadaUI-Regular.ttf  ???
+0x798634f000 - 0x798636afff  NotoSansTelugu-Regular.ttf  ???
+0x798636b000 - 0x798637afff  libbase.so  ???
+0x798637d000 - 0x798637efff  NotoSansOsmanya-Regular.ttf  ???
+0x798637f000 - 0x7986380fff  NotoSansOldTurkic-Regular.ttf  ???
+0x7986381000 - 0x7986385fff  NotoSansNKo-Regular.ttf  ???
+0x7986381000 - 0x79863cbfff  android.hardware.graphics.bufferqueue@1.0.so  ???
+0x79863d2000 - 0x79863d2fff  hyph-und-ethi.hyb  ???
+0x79863d3000 - 0x79863d4fff  NotoSansOldSouthArabian-Regular.ttf  ???
+0x79863d5000 - 0x79863e8fff  NotoSansKannada-Bold.ttf  ???
+0x79863e9000 - 0x7986402fff  NotoSansBengaliUI-Bold.ttf  ???
+0x7986402000 - 0x798641cfff  android.hardware.memtrack@1.0.so  ???
+0x7986421000 - 0x7986424fff  NotoSansOldPersian-Regular.ttf  ???
+0x7986425000 - 0x798642afff  NotoSansKharoshthi-Regular.ttf  ???
+0x798642b000 - 0x7986445fff  NotoSansBengaliUI-Regular.ttf  ???
+0x7986446000 - 0x798645efff  NotoSansBengali-Bold.ttf  ???
+0x798645f000 - 0x7986460fff  libsync.so  ???
+0x7986463000 - 0x7986464fff  NotoSansOldItalic-Regular.ttf  ???
+0x7986465000 - 0x7986473fff  NotoSansCherokee-Regular.ttf  ???
+0x7986474000 - 0x798648cfff  NotoSansBengali-Regular.ttf  ???
+0x798648d000 - 0x79864a1fff  libz.so  ???
+0x79864a4000 - 0x79864adfff  NotoSansJavanese-Regular.ttf  ???
+0x79864ae000 - 0x79864cafff  NotoSansGujaratiUI-Regular.ttf  ???
+0x79864cb000 - 0x79864e7fff  NotoSansGujarati-Bold.ttf  ???
+0x79864e8000 - 0x79864e9fff  libhardware.so  ???
+0x79864ec000 - 0x79864edfff  NotoSansOlChiki-Regular.ttf  ???
+0x79864ee000 - 0x79864f9fff  NotoSansCanadianAboriginal-Regular.ttf  ???
+0x79864fa000 - 0x7986517fff  NotoSansGujarati-Regular.ttf  ???
+0x7986517000 - 0x798652efff  android.hidl.allocator@1.0.so  ???
+0x7986533000 - 0x7986533fff  hyph-tk.hyb  ???
+0x7986534000 - 0x7986548fff  NotoSansKannada-Regular.ttf  ???
+0x7986549000 - 0x7986555fff  libstagefright_xmlparser.so  ???
+0x7986558000 - 0x798655bfff  NotoSansNewTaiLue-Regular.ttf  ???
+0x798655c000 - 0x7986561fff  NotoSansCoptic-Regular.ttf  ???
+0x7986562000 - 0x798657ffff  NotoSansDevanagariUI-Bold.ttf  ???
+0x798657d000 - 0x79865a4fff  android.hidl.memory@1.0.so  ???
+0x79865a9000 - 0x79865a9fff  hyph-te.hyb  ???
+0x79865aa000 - 0x79865adfff  NotoSansMeeteiMayek-Regular.ttf  ???
+0x79865ae000 - 0x79865bafff  NotoSansAdlam-Regular.ttf  ???
+0x79865bb000 - 0x79865d9fff  NotoSansDevanagariUI-Regular.ttf  ???
+0x79865d8000 - 0x79865f6fff  android.hardware.cas.native@1.0.so  ???
+0x79865fb000 - 0x79865fefff  NotoSansMandaic-Regular.ttf  ???
+0x79865ff000 - 0x798660cfff  NotoSansMalayalamUI-Bold.ttf  ???
+0x798660d000 - 0x798660efff  libnetd_client.so  ???
+0x7986612000 - 0x7986612fff  hyph-ta.hyb  ???
+0x7986613000 - 0x7986614fff  NotoSansOgham-Regular.ttf  ???
+0x7986615000 - 0x798661afff  NotoSansBrahmi-Regular.ttf  ???
+0x798661b000 - 0x7986628fff  NotoSansMalayalamUI-Regular.ttf  ???
+0x7986629000 - 0x7986649fff  NotoSansDevanagari-Bold.ttf  ???
+0x7986641000 - 0x79866b4fff  libhidltransport.so  ???
+0x79866be000 - 0x79866befff  hyph-pt.hyb  ???
+0x79866bf000 - 0x79866c6fff  NotoSansBalinese-Regular.ttf  ???
+0x798667e000 - 0x798679bfff  libmedia.so  ???
+0x79867d5000 - 0x79867d5fff  hyph-pa.hyb  ???
+0x79867d6000 - 0x79867d7fff  NotoSansLydian-Regular.ttf  ???
+0x79867d8000 - 0x79867ddfff  NotoSansCham-Bold.ttf  ???
+0x79867de000 - 0x798682efff  Roboto-ThinItalic.ttf  ???
+0x798682f000 - 0x7986831fff  libhidlmemory.so  ???
+0x7986834000 - 0x7986835fff  NotoSansLycian-Regular.ttf  ???
+0x7986836000 - 0x7986838fff  NotoSansLimbu-Regular.ttf  ???
+0x7986839000 - 0x7986840fff  NotoSansLaoUI-Bold.ttf  ???
+0x7986841000 - 0x7986843fff  libETC1.so  ???
+0x7986846000 - 0x7986847fff  NotoSansLisu-Regular.ttf  ???
+0x7986848000 - 0x7986849fff  NotoSansKayahLi-Regular.ttf  ???
+0x798684a000 - 0x798686bfff  NotoSansDevanagari-Regular.ttf  ???
+0x798686c000 - 0x798688ffff  NotoSansEthiopic-Bold.ttf  ???
+0x798688f000 - 0x79868a8fff  libstagefright_flacdec.so  ???
+0x79868ac000 - 0x79868acfff  hyph-or.hyb  ???
+0x79868ad000 - 0x79868aefff  NotoSansInscriptionalParthian-Regular.ttf  ???
+0x79868af000 - 0x79868b0fff  NotoSansInscriptionalPahlavi-Regular.ttf  ???
+0x79868b1000 - 0x79868b8fff  NotoSansLaoUI-Regular.ttf  ???
+0x79868b9000 - 0x79868c6fff  NotoSansMalayalam-Bold.ttf  ???
+0x79868be000 - 0x79869a8fff  libc++.so  ???  (WARNING: No symbols, libc++.so, 4A1ED28E9303DA233B20508C773B56B80)
+0x79869b6000 - 0x79869b7fff  NotoSansImperialAramaic-Regular.ttf  ???
+0x79869b8000 - 0x79869bffff  NotoSansLao-Bold.ttf  ???
+0x79869c0000 - 0x79869e2fff  NotoSansEthiopic-Regular.ttf  ???
+0x79869e3000 - 0x79869e7fff  libstagefright_omx_utils.so  ???
+0x79869ea000 - 0x79869eafff  hyph-mr.hyb  ???
+0x79869eb000 - 0x79869ecfff  NotoSansHanunoo-Regular.ttf  ???
+0x79869ed000 - 0x79869f6fff  NotoSansKhmerUI-Regular.ttf  ???
+0x79869f7000 - 0x7986a04fff  NotoSansMalayalam-Regular.ttf  ???
+0x79869f7000 - 0x7986af3fff  libhwui.so  ???  (WARNING: No symbols, libhwui.so, AE856167DDF1870221DF76B6A625C0FF0)
+0x7986b01000 - 0x7986b04fff  NotoSansGlagolitic-Regular.ttf  ???
+0x7986b05000 - 0x7986b22fff  NotoNaskhArabicUI-Bold.ttf  ???
+0x7986b1f000 - 0x7986c33fff  libsqlite.so  ???
+0x7986c39000 - 0x7986c41fff  NotoSansKhmerUI-Bold.ttf  ???
+0x7986c42000 - 0x7986c5ffff  NotoNaskhArabicUI-Regular.ttf  ???
+0x7986c60000 - 0x7986c77fff  libpiex.so  ???
+0x7986c7a000 - 0x7986c7afff  hyph-ml.hyb  ???
+0x7986c7b000 - 0x7986c83fff  NotoSansTamilUI-Bold.ttf  ???
+0x7986c84000 - 0x7986c8cfff  NotoSansTamilUI-Regular.ttf  ???
+0x7986c8d000 - 0x7986cb7fff  libmemunreachable.so  ???
+0x7986cbb000 - 0x7986cbdfff  NotoSansDeseret-Regular.ttf  ???
+0x7986cbe000 - 0x7986cdafff  NotoNaskhArabic-Bold.ttf  ???
+0x7986cdb000 - 0x7986d9ffff  libc.so  ???  (WARNING: No symbols, libc.so, E74D09DA341D1659B012C060282FA7480)
+0x7986db2000 - 0x7986db3fff  NotoSansGothic-Regular.ttf  ???
+0x7986db4000 - 0x7986dbcfff  NotoSansTamil-Bold.ttf  ???
+0x7986dbd000 - 0x7986dc5fff  NotoSansTamil-Regular.ttf  ???
+0x7986dbb000 - 0x7986e3ffff  android.hardware.drm@1.0.so  ???
+0x7986e4a000 - 0x7986e4afff  hyph-kn.hyb  ???
+0x7986e4b000 - 0x7986e96fff  Roboto-Thin.ttf  ???
+0x7986e96000 - 0x7986eaefff  android.hidl.token@1.0.so  ???
+0x7986eb3000 - 0x7986ecefff  NotoSansGujaratiUI-Bold.ttf  ???
+0x7986ecf000 - 0x7986eebfff  NotoNaskhArabic-Regular.ttf  ???
+0x7986edc000 - 0x7986f30fff  libcamera_client.so  ???
+0x7986f3d000 - 0x7986f42fff  NotoSansCham-Regular.ttf  ???
+0x7986f43000 - 0x7986f62fff  u:object_r:persist_debug_prop:s0  ???  (WARNING: No symbols, , )
+0x7986f62000 - 0x7986fb1fff  libandroidfw.so  ???
+0x7986fb6000 - 0x7986fbdfff  NotoSansLao-Regular.ttf  ???
+0x7986fbe000 - 0x7986fddfff  u:object_r:qemu_prop:s0  ???  (WARNING: No symbols, , )
+0x7986fde000 - 0x79870e2fff  libcrypto.so  ???
+0x79870f7000 - 0x79870fafff  NotoSansBatak-Regular.ttf  ???
+0x79870fb000 - 0x7987102fff  NotoSansGurmukhiUI-Bold.ttf  ???
+0x7987102000 - 0x7987116fff  libmedia_helper.so  ???
+0x798711b000 - 0x798711bfff  hyph-hy.hyb  ???
+0x798711c000 - 0x798711dfff  NotoSansCypriot-Regular.ttf  ???
+0x798711e000 - 0x7987125fff  NotoSansGurmukhiUI-Regular.ttf  ???
+0x7987141000 - 0x7987165fff  libhwbinder.so  ???
+0x798716a000 - 0x798716dfff  NotoSansThaana-Bold.ttf  ???
+0x798716e000 - 0x7987175fff  NotoSansGurmukhi-Bold.ttf  ???
+0x7987176000 - 0x798717dfff  NotoSansGurmukhi-Regular.ttf  ???
+0x798717e000 - 0x798719dfff  u:object_r:radio_prop:s0  ???  (WARNING: No symbols, , )
+0x798719e000 - 0x798719ffff  libmemtrack.so  ???
+0x79871a3000 - 0x79871a3fff  hyph-hr.hyb  ???
+0x79871a4000 - 0x79871a7fff  NotoSansThaana-Regular.ttf  ???
+0x79871a8000 - 0x79871acfff  NotoSansGeorgian-Bold.ttf  ???
+0x79871ad000 - 0x79871b1fff  NotoSansGeorgian-Regular.ttf  ???
+0x79871b2000 - 0x79871d1fff  u:object_r:default_prop:s0  ???  (WARNING: No symbols, , )
+0x79871d1000 - 0x79871dffff  libmediametrics.so  ???
+0x79871e3000 - 0x79871e3fff  hyph-hi.hyb  ???
+0x79871e4000 - 0x79871e8fff  NotoSansThaiUI-Bold.ttf  ???
+0x79871e9000 - 0x7987208fff  properties_serial  ???  (WARNING: No symbols, , )
+0x798720e000 - 0x7987213fff  NotoSansThaiUI-Regular.ttf  ???
+0x7987214000 - 0x7987218fff  NotoSansThai-Bold.ttf  ???
+0x7987219000 - 0x798721efff  NotoSansThai-Regular.ttf  ???
+0x7987220000 - 0x7987220fff  hyph-gu.hyb  ???
+0x7987221000 - 0x7987225fff  NotoSansHebrew-Bold.ttf  ???
+0x7987227000 - 0x7987227fff  hyph-eu.hyb  ???  (WARNING: No symbols, hyph-eu.hyb, 000000000000000000000000000000000)
+0x7987229000 - 0x7987229fff  hyph-bn.hyb  ???
+0x798722a000 - 0x7987249fff  dalvik-LinearAlloc (deleted)  ???  (WARNING: No symbols, , )
+0x798724c000 - 0x798724ffff  NotoSansArmenian-Bold.ttf  ???
+0x7987250000 - 0x7987254fff  NotoSansHebrew-Regular.ttf  ???
+0x7987255000 - 0x7987255fff  event-log-tags  ???  (WARNING: No symbols, , )
+0x7987256000 - 0x7987257fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7987262000 - 0x7987263fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7987274000 - 0x7987277fff  NotoSansArmenian-Regular.ttf  ???
+0x7987282000 - 0x7987285fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987287000 - 0x79872a2fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79872a4000 - 0x79872a4fff  hyph-bg.hyb  ???
+0x79872a5000 - 0x79872acfff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79872ae000 - 0x79872aefff  hyph-as.hyb  ???
+0x79872af000 - 0x79872b0fff  NotoSansCarian-Regular.ttf  ???
+0x79872b1000 - 0x79872c4fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79872c7000 - 0x79872d6fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79872d8000 - 0x79872dffff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79872e2000 - 0x79872e3fff  NotoSansBuhid-Regular.ttf  ???
+0x79872e4000 - 0x79872fbfff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79872fe000 - 0x7987305fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987307000 - 0x798733afff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x798733c000 - 0x7987353fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987355000 - 0x7987357fff  NotoSansAvestan-Regular.ttf  ???
+0x7987358000 - 0x7987363fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987365000 - 0x798736cfff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x798736f000 - 0x79873cafff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79873cc000 - 0x79873dbfff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79873dd000 - 0x79873defff  NotoSansBuginese-Regular.ttf  ???
+0x79873e0000 - 0x7987413fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987416000 - 0x7987419fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x798741d000 - 0x798742cfff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x798742f000 - 0x7987442fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987446000 - 0x7987455fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x798745a000 - 0x7987461fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987466000 - 0x79874a5fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79874a7000 - 0x79874a8fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x79874a9000 - 0x79874b4fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79874b7000 - 0x79874b8fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x79874b9000 - 0x79874e0fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79874e5000 - 0x7987528fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x798752c000 - 0x798753bfff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x798753f000 - 0x7987540fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7987541000 - 0x79875b8fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79875ba000 - 0x79875c1fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79875c3000 - 0x7987616fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987619000 - 0x7987619fff  dalvik-mod union bitmap (deleted)  ???  (WARNING: No symbols, , )
+0x798761a000 - 0x7987621fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987624000 - 0x7987625fff  dalvik-indirect ref table (deleted)  ???  (WARNING: No symbols, , )
+0x7987626000 - 0x7987641fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987643000 - 0x798765afff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x798765c000 - 0x7987683fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987684000 - 0x79876c3fff  dalvik-mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79876c4000 - 0x79876e3fff  dalvik-large marked objects (deleted)  ???  (WARNING: No symbols, , )
+0x79876e4000 - 0x7987703fff  dalvik-large live objects (deleted)  ???  (WARNING: No symbols, , )
+0x7987706000 - 0x7987715fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987716000 - 0x7987735fff  u:object_r:fingerprint_prop:s0  ???  (WARNING: No symbols, , )
+0x7987736000 - 0x7987755fff  u:object_r:debug_prop:s0  ???  (WARNING: No symbols, , )
+0x7987758000 - 0x798775bfff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x798775e000 - 0x7987779fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x798777a000 - 0x7987799fff  u:object_r:vold_prop:s0  ???  (WARNING: No symbols, , )
+0x798779c000 - 0x79877abfff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x79877c0000 - 0x79877dffff  u:object_r:config_prop:s0  ???  (WARNING: No symbols, , )
+0x79877e0000 - 0x79877fffff  u:object_r:dalvik_prop:s0  ???  (WARNING: No symbols, , )
+0x7987802000 - 0x7987805fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987806000 - 0x7987825fff  u:object_r:system_prop:s0  ???  (WARNING: No symbols, , )
+0x7987826000 - 0x7987845fff  u:object_r:log_tag_prop:s0  ???  (WARNING: No symbols, , )
+0x798784a000 - 0x7987851fff  dalvik-thread local mark stack (deleted)  ???  (WARNING: No symbols, , )
+0x7987852000 - 0x7987852fff  230534ce-153c-4d66-9929-f574ebf92c13 (deleted)  ???  (WARNING: No symbols, , )
+0x7987858000 - 0x7987877fff  u:object_r:logd_prop:s0  ???  (WARNING: No symbols, , )
+0x7987883000 - 0x79878a2fff  u:object_r:debug_prop:s0  ???  (WARNING: No symbols, , )
+0x79878a3000 - 0x79878c2fff  properties_serial  ???  (WARNING: No symbols, , )
+0x79878dd000 - 0x79878ddfff  linux-gate.so  ???
+0x79878de000 - 0x79879d2fff  linker64  ???  (WARNING: No symbols, linker64, 224D69A8712FED2118A69B7821FC58260)

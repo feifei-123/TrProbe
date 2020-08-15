@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+apply from: 'p.config.gradle'
+apply from: rootProject.file('publish.gradle')
+
+
+android {
+    compileSdkVersion compile_SdkVersion
+    buildToolsVersion build_ToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion min_sdk
+        targetSdkVersion target_sdk
+        versionCode 1
+        versionName "1.0"
+
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+
+        maven { url "https://jitpack.io" }
+        maven { url 'http://maven.timo.sogou/nexus/repository/Public-Repositories/' }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+
+    }
+
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api "androidx.appcompat:appcompat:$support"
+
+//    //room数据库框架
+//    api "androidx.room:room-common:$room"
+//    api "androidx.room:room-runtime:$room"
+//    api "androidx.room:room-ktx:$room"
+//    kapt "androidx.room:room-compiler:$room"
+
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation project(':breakpad-build')
+    api project(':logClient')
+    api project(':store')
+
+}
