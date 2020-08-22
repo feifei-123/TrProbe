@@ -22,13 +22,6 @@
             android:onClick="onClick"
             android:layout_gravity="center_horizontal" />
 
-    <Button
-        android:id="@+id/btn_test_dynamic_bind"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="unwind调用栈"
-        android:onClick="onClick"
-        android:layout_gravity="center_horizontal" />
 
     <Button
         android:id="@+id/btn_anr"
@@ -38,13 +31,7 @@
         android:onClick="onClick"
         android:layout_gravity="center_horizontal" />
 
-    <Button
-            android:id="@+id/btn_coffee_catcher"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Coffe_catch"
-            android:onClick="onClick"
-            android:layout_gravity="center_horizontal" />
+
 
     <Button
             android:id="@+id/btn_log"

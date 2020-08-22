@@ -1,0 +1,110 @@
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+apply from: rootProject.file('version.gradle')
+
+
+//上传jcener 需要的一些常量定义
+def siteUrl = 'https://@github.com:feifei-123/TrProbe'
+def gitUrl = 'https://@github.com:feifei-123/TrProbe.git'
+
+def repository = 'maven'
+group = 'com.sogou.iot'
+def artifact_id = ARTIFACT_ID
+def releaseVersion = VERSION_NAME
+version = VERSION_NAME
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('bintray.properties').newDataInputStream())
+def developer_id = properties.getProperty("developer.id")
+def developer_name = properties.getProperty("developer.name")
+def developer_email = properties.getProperty("developer.email")
+
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                name 'crash、anr catch utils for android '
+                url siteUrl
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id developer_id
+                        name developer_name
+                        email developer_email
+                    }
+                }
+
+                scm {
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
+                }
+            }
+
+        }
+
+        pom.whenConfigured { pom ->
+            pom.dependencies.forEach { dep ->
+
+                println("--modify  pom --->>" + dep.getArtifactId())
+                if (dep.getVersion() == "unspecified") {
+                    println("--modify the dependenies module in pom.xml--->>" + dep.getArtifactId())
+
+                    println("--before modify -->>" + dep.getGroupId() + ":" + dep.getArtifactId() + ":" + dep.getVersion())
+                    dep.setGroupId(project.ext.GROUP)
+                    dep.setVersion(project.ext.VERSION_NAME)
+
+                    println("--after modify -->>" + dep.getGroupId() + ":" + dep.getArtifactId() + ":" + dep.getVersion())
+                }
+            }
+        }
+    }
+}
+
+//task androidJavadocs(type: Javadoc) {
+//    source = android.sourceSets.main.java.srcDirs
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//}
+
+//task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
+//    classifier = 'javadoc'
+//    from androidJavadocs.destinationDir
+//}
+
+task androidSourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+
+artifacts {
+    archives androidSourcesJar
+//    archives androidJavadocsJar
+}
+
+bintray {
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apikey")
+    configurations = ['archives']
+    pkg {
+        version {
+            name = releaseVersion
+            desc = "detect anr、crash for android ${releaseVersion}"
+        }
+        repo = repository
+        name = artifact_id
+        licenses = ['Apache-2.0']
+        vcsUrl = gitUrl
+        publish = true
+    }
+}
+
+

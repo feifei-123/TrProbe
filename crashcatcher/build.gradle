@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 apply from: 'p.config.gradle'
-apply from: rootProject.file('publish.gradle')
+apply from: rootProject.file('jcenter_publish.gradle')
 
 
 android {
@@ -34,8 +34,11 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
-//    api project(':logClient')
-    api project(':breakpad-build')
-    api project(':store')
-    api project(':logClient')
+    debugApi project(':breakpad-build')
+    debugApi project(':store')
+    debugApi project(':logClient')
+
+    releaseApi "com.sogou.iot:breakpad-build:$archives_probe_version"
+    releaseApi "com.sogou.iot:store:$archives_probe_version"
+    releaseApi "com.sogou.iot:logClient:$archives_probe_version"
 }

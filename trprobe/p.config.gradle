@@ -1,17 +1,7 @@
 
 apply from: rootProject.file('version.gradle')
 
-ext{
-    MAVEN_URL = "$MAVEN_URL"
-    GROUP = "$GROUP"
+ext {
     ARTIFACT_ID = "trprobe"
     VERSION_NAME = "$archives_trprobe_version"
-
-    USERNAME = "deployment"
-    PASSWORD = "X1androidTeemo"
-
-    DEVEOPER_ID = "123456"
-    DEVELOPER_NAME = "feifei"
-    DEVELOPER_EMAIL = "524790862@qq.com"
-
 }

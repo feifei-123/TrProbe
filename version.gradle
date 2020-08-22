@@ -13,8 +13,7 @@ ext {
     gsonVersion = "2.8.1"
 
 
-
-    archives_probe_version = "1.0.5.4"
+    archives_probe_version = "0.0.1"
 
     archives_blockcatcher_version = archives_probe_version
     archives_crashcatcher_version = archives_probe_version
@@ -24,12 +23,6 @@ ext {
     archives_logClient_version = archives_probe_version
     archives_logService_version = archives_probe_version
     archives_store_version = archives_probe_version
-
-    //私有maven 仓库
-    MAVEN_URL = "http://maven.timo.sogou/nexus/repository/Releases/"
-    //本地仓库 -临时调试使用
-    //MAVEN_URL = 'file:///Users/feifei/Desktop/TM/LocalMaven'
-    GROUP = "com.sogou.teemo.translate.trcomponent"
 
 
 }

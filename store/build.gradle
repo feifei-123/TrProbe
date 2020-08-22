@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 apply from: 'p.config.gradle'
-apply from: rootProject.file('publish.gradle')
+apply from: rootProject.file('jcenter_publish.gradle')
 
 android {
     compileSdkVersion compile_SdkVersion
@@ -39,5 +39,8 @@ dependencies {
     api "androidx.room:room-runtime:$room"
     api "androidx.room:room-ktx:$room"
     kapt "androidx.room:room-compiler:$room"
-    api project(':logClient')
+
+    debugApi project(':logClient')
+    releaseApi "com.sogou.iot:logClient:$archives_probe_version"
+
 }

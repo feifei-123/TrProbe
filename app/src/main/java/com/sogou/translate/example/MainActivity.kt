@@ -13,7 +13,6 @@ import com.sogou.tm.commonlib.log.Logu
 import com.sogou.translate.breakpad.BreakPadCore
 
 
-
 import java.io.File
 
 
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         Manifest.permission.ACCESS_FINE_LOCATION
     )
 
-    fun checkPermision(){
+    fun checkPermision() {
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
             val checks = ArrayList<String>()
             for (permission in permissions) {
@@ -42,16 +41,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 requestPermissions(checks.toTypedArray(), 1)
             }
 
-//            if(Settings.canDrawOverlays(this)) {
-//                Logu.d("canDrawOverlays true")
-//            }else{
-//               Logu.d("canDrawOverlays false")
-//               val intent = Intent(
-//                   Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-//                   Uri.parse("package:$packageName")
-//               )
-//               startActivityForResult(intent, 0)
-//            }
         }
     }
 
@@ -62,8 +51,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         checkPermision()
 
-        Thread{
-            while(true){
+        Thread {
+            while (true) {
                 Thread.sleep(1000)
                 Logu.d("feifei call timetick")
             }
@@ -75,24 +64,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View) {
 
         when (view.id) {
-            R.id.btn_test_dynamic_bind -> {
-//                BreakPadCore.testUnWind()
-                Logu.d("feifei - btn_test_dynamic_bind")
-            }
+
             R.id.btn_go2crash_natvie -> {
-
-//                Thread {
-//                    Logu.d(
-//                        "feifei",
-//                        "go2CrashNatvie:" + Thread.currentThread().id + ",name:" + Thread.currentThread().name
-//                    )
-                    BreakPadCore.go2crash()
-//                }.start() //
-
+                Logu.d("feifei - btn_test_dynamic_bind")
+                BreakPadCore.go2crash()
             }
-            R.id.btn_go2crash_java ->{
+            R.id.btn_go2crash_java -> {
                 Logu.d("feifei", "go2CrashJava")
-                var j = 10/0
+                var j = 10 / 0
             }
 
             R.id.btn_anr -> try {
@@ -102,17 +81,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 e.printStackTrace()
             }
 
-            R.id.btn_coffee_catcher->{
-                Toast.makeText(this,"测试",Toast.LENGTH_LONG).show()
-            }
 
-            R.id.btn_log->{
+            R.id.btn_log -> {
                 var i = 0;
                 Thread({
-                    while (true){
+                    while (true) {
                         i++
 
-                        Logu.d("feifei","输出测试111:${i}")
+                        Logu.d("feifei", "输出测试111:${i}")
 
 
                         Thread.sleep(1000)
@@ -123,16 +99,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
-
     override fun onRequestPermissionsResult(
-            requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+        requestCode: Int, permissions: Array<String>, grantResults: IntArray
+    ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
 
     }
 
     companion object {
 
-        // Used to load the 'native-lib' library on application startup.
         private val WRITE_EXTERNAL_STORAGE_REQUEST_CODE = 100
     }
 }

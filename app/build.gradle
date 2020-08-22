@@ -52,11 +52,17 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "androidx.appcompat:appcompat:$support"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-//    implementation "androidx.constraintlayout:constraintlayout:$constraintlayout"
 
-    api project(':trprobe')
+//    api project(':trprobe')
     debugCompile 'com.amitshekhar.android:debug-db:1.0.0'
-//    implementation 'com.tencent.bugly:crashreport:latest.release'
-//    implementation 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+
+    implementation "com.sogou.iot:trprobe:$archives_probe_version"
+    implementation "com.sogou.iot:logClient:$archives_probe_version"
+    implementation "com.sogou.iot:logService:$archives_probe_version"
+    implementation "com.sogou.iot:store:$archives_probe_version"
+    implementation "com.sogou.iot:blockcatcher:$archives_probe_version"
+    implementation "com.sogou.iot:crashcatcher:$archives_probe_version"
+    implementation "com.sogou.iot:breakpad-build:$archives_probe_version"
+
 
 }

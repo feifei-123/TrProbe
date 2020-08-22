@@ -4,7 +4,8 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 apply from: 'p.config.gradle'
-apply from: rootProject.file('publish.gradle')
+//apply from: rootProject.file('publish.gradle')
+apply from: rootProject.file('jcenter_publish.gradle')
 
 
 android {
@@ -61,16 +62,15 @@ dependencies {
 
     api "androidx.appcompat:appcompat:$support"
 
-//    //room数据库框架
-//    api "androidx.room:room-common:$room"
-//    api "androidx.room:room-runtime:$room"
-//    api "androidx.room:room-ktx:$room"
-//    kapt "androidx.room:room-compiler:$room"
-
+    implementation "androidx.appcompat:appcompat:$support"
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
-    implementation project(':breakpad-build')
-    api project(':logClient')
-    api project(':store')
+    debugApi project(':breakpad-build')
+    debugApi project(':logClient')
+    debugApi project(':store')
+
+    releaseApi "com.sogou.iot:logClient:$archives_probe_version"
+    releaseApi "com.sogou.iot:store:$archives_probe_version"
+    releaseApi "com.sogou.iot:breakpad-build:$archives_probe_version"
 
 }

@@ -2,15 +2,8 @@
 apply from: rootProject.file('version.gradle')
 
 ext{
-    MAVEN_URL = "$MAVEN_URL"
-    GROUP = "$GROUP"
-    ARTIFACT_ID = "mod_logService"
+
+    ARTIFACT_ID = "logService"
     VERSION_NAME = "$archives_logService_version"
-
-
-
-    DEVEOPER_ID = "123456"
-    DEVELOPER_NAME = "feifei"
-    DEVELOPER_EMAIL = "524790862@qq.com"
 
 }

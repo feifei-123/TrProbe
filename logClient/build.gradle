@@ -1,10 +1,8 @@
 apply plugin: 'com.android.library'
 
-
-//apply from: rootProject.file("plugin.gradle")
-
+//
 apply from: 'p.config.gradle'
-apply from: rootProject.file('publish.gradle')
+apply from: rootProject.file('jcenter_publish.gradle')
 
 android {
     compileSdkVersion compile_SdkVersion
@@ -34,24 +32,6 @@ android {
 }
 
 
-//// ./gradlew upload
-//uploadArchives {
-//    configuration = configurations.archives
-//    repositories {
-//        mavenDeployer {
-//            pom.groupId = GROUP
-//            pom.artifactId = POM_ARTIFACT_ID
-//            pom.version = VERSION_NAME
-//            snapshotRepository(url: SNAPSHOT_REPOSITORY_URL) {
-////                authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
-//            }
-//            repository(url: RELEASE_REPOSITORY_URL) {
-////                authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
-//            }
-//
-//        }
-//    }
-//}
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
