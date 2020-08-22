@@ -28,7 +28,7 @@ TrProbe 项目主要职责是作为辅助组件,监控和分析 集成它的Andr
 ### 三、集成方式
 #### 1、引入方式
 
-在项目根目录build.gradle buildscrpit中加入 maven { url 'http://maven.timo.sogou/nexus/repository/Public-Repositories/' } 仓库
+在项目根目录build.gradle buildscrpit中加入      maven { url 'https://dl.bintray.com/feifei123/maven/' } 仓库
 
 
 ```
@@ -37,7 +37,7 @@ buildscript {
     repositories {
         google()
         jcenter()
-        maven { url 'http://maven.timo.sogou/nexus/repository/Public-Repositories/' }
+            maven { url 'https://dl.bintray.com/feifei123/maven/' }
         maven {
             url 'https://maven.google.com/'
             name 'Google'
@@ -49,7 +49,14 @@ buildscript {
 
 ```
 dependencies {
-    api "com.sogou.teemo.translate.trcomponent:trprobe:1.0.1.8"
+      implementation "com.sogou.iot:trprobe:$archives_probe_version"
+       implementation "com.sogou.iot:logClient:$archives_probe_version"
+       implementation "com.sogou.iot:logService:$archives_probe_version"
+       implementation "com.sogou.iot:store:$archives_probe_version"
+       implementation "com.sogou.iot:blockcatcher:$archives_probe_version"
+       implementation "com.sogou.iot:crashcatcher:$archives_probe_version"
+       implementation "com.sogou.iot:breakpad-build:$archives_probe_version"
+
 }
 ```
 
